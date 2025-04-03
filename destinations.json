@@ -1,0 +1,338 @@
+[
+    {
+      "state": "Andhra Pradesh",
+      "state_image": "state/andhra-pradesh.avif",
+      "region": "South",
+      "destinations": [
+        {"name": "Tirupati", "teaser": "A sacred pilgrimage to Lord Venkateswara.", "place_image": "place/tirupati.avif", "link": "/destinations/andhra-pradesh/tirupati", "type": "Historical", "popularity": "High"},
+        {"name": "Araku Valley", "teaser": "Lush hills and coffee plantations await.", "place_image": "place/araku-valley.avif", "link": "/destinations/andhra-pradesh/araku-valley", "type": "Hill Station", "popularity": "Medium"},
+        {"name": "Vishakhapatnam", "teaser": "Beaches and bustling ports beckon.", "place_image": "place/vishakhapatnam.avif", "link": "/destinations/andhra-pradesh/vishakhapatnam", "type": "Beach", "popularity": "High"},
+        {"name": "Gandikota", "teaser": "India’s Grand Canyon stuns.", "place_image": "place/gandikota.avif", "link": "/destinations/andhra-pradesh/gandikota", "type": "Historical", "popularity": "Medium"},
+        {"name": "Lepakshi", "teaser": "Ancient temples whisper history.", "place_image": "place/lepakshi.avif", "link": "/destinations/andhra-pradesh/lepakshi", "type": "Historical", "popularity": "Low"}
+      ]
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "state_image": "state/arunachal-pradesh.avif",
+      "region": "East",
+      "destinations": [
+        {"name": "Tawang", "teaser": "Monasteries perch atop Himalayan peaks.", "place_image": "place/tawang.avif", "link": "/destinations/arunachal-pradesh/tawang", "type": "Hill Station", "popularity": "High"},
+        {"name": "Ziro Valley", "teaser": "Tribal culture meets serene landscapes.", "place_image": "place/ziro-valley.avif", "link": "/destinations/arunachal-pradesh/ziro-valley", "type": "Hill Station", "popularity": "Medium"},
+        {"name": "Bomdila", "teaser": "Snowy vistas and monasteries enchant.", "place_image": "place/bomdila.avif", "link": "/destinations/arunachal-pradesh/bomdila", "type": "Hill Station", "popularity": "Medium"},
+        {"name": "Itanagar", "teaser": "A blend of tradition and modernity.", "place_image": "place/itanagar.avif", "link": "/destinations/arunachal-pradesh/itanagar", "type": "Historical", "popularity": "Low"},
+        {"name": "Sela Pass", "teaser": "A high-altitude gateway to beauty.", "place_image": "place/sela-pass.avif", "link": "/destinations/arunachal-pradesh/sela-pass", "type": "Hill Station", "popularity": "Medium"}
+      ]
+    },
+    {
+      "state": "Assam",
+      "state_image": "state/assam.avif",
+      "region": "East",
+      "destinations": [
+        {"name": "Kaziranga National Park", "teaser": "Home to the one-horned rhino.", "place_image": "place/kaziranga-national-park.avif", "link": "/destinations/assam/kaziranga-national-park", "type": "Wildlife", "popularity": "High"},
+        {"name": "Majuli Island", "teaser": "The world’s largest river island awaits.", "place_image": "place/majuli-island.avif", "link": "/destinations/assam/majuli-island", "type": "Historical", "popularity": "Medium"},
+        {"name": "Kamakhya Temple", "teaser": "A sacred Shakti Peeth calls.", "place_image": "place/kamakhya-temple.avif", "link": "/destinations/assam/kamakhya-temple", "type": "Historical", "popularity": "High"},
+        {"name": "Manas National Park", "teaser": "Tigers roam this lush wilderness.", "place_image": "place/manas-national-park.avif", "link": "/destinations/assam/manas-national-park", "type": "Wildlife", "popularity": "Medium"},
+        {"name": "Haflong", "teaser": "Assam’s only hill station beckons.", "place_image": "place/haflong.avif", "link": "/destinations/assam/haflong", "type": "Hill Station", "popularity": "Low"}
+      ]
+    },
+    {
+      "state": "Bihar",
+      "state_image": "state/bihar.avif",
+      "region": "East",
+      "destinations": [
+        {"name": "Bodh Gaya", "teaser": "Where Buddha attained enlightenment.", "place_image": "place/bodh-gaya.avif", "link": "/destinations/bihar/bodh-gaya", "type": "Historical", "popularity": "High"},
+        {"name": "Nalanda", "teaser": "Ruins of an ancient university inspire.", "place_image": "place/nalanda.avif", "link": "/destinations/bihar/nalanda", "type": "Historical", "popularity": "Medium"},
+        {"name": "Rajgir", "teaser": "Hot springs and history converge.", "place_image": "place/rajgir.avif", "link": "/destinations/bihar/rajgir", "type": "Historical", "popularity": "Medium"},
+        {"name": "Vaishali", "teaser": "Cradle of Buddhism and Jainism.", "place_image": "place/vaishali.avif", "link": "/destinations/bihar/vaishali", "type": "Historical", "popularity": "Low"},
+        {"name": "Vikramshila", "teaser": "Echoes of an ancient learning center.", "place_image": "place/vikramshila.avif", "link": "/destinations/bihar/vikramshila", "type": "Historical", "popularity": "Low"}
+      ]
+    },
+    {
+      "state": "Chhattisgarh",
+      "state_image": "state/chhattisgarh.avif",
+      "region": "East",
+      "destinations": [
+        {"name": "Chitrakote Waterfalls", "teaser": "India’s Niagara roars in glory.", "place_image": "place/chitrakote-waterfalls.avif", "link": "/destinations/chhattisgarh/chitrakote-waterfalls", "type": "Natural", "popularity": "High"},
+        {"name": "Bastar", "teaser": "Tribal culture meets lush forests.", "place_image": "place/bastar.avif", "link": "/destinations/chhattisgarh/bastar", "type": "Historical", "popularity": "Medium"},
+        {"name": "Mainpat", "teaser": "Chhattisgarh’s hidden hill retreat.", "place_image": "place/mainpat.avif", "link": "/destinations/chhattisgarh/mainpat", "type": "Hill Station", "popularity": "Low"},
+        {"name": "Kanger Valley National Park", "teaser": "Caves and wildlife thrive here.", "place_image": "place/kanger-valley-national-park.avif", "link": "/destinations/chhattisgarh/kanger-valley-national-park", "type": "Wildlife", "popularity": "Medium"},
+        {"name": "Bhoramdeo Temple", "teaser": "A medieval architectural gem.", "place_image": "place/bhoramdeo-temple.avif", "link": "/destinations/chhattisgarh/bhoramdeo-temple", "type": "Historical", "popularity": "Low"}
+      ]
+    },
+    {
+      "state": "Goa",
+      "state_image": "state/goa.avif",
+      "region": "West",
+      "destinations": [
+        {"name": "Baga Beach", "teaser": "Party vibes and sandy shores.", "place_image": "place/baga-beach.avif", "link": "/destinations/goa/baga-beach", "type": "Beach", "popularity": "High"},
+        {"name": "Calangute Beach", "teaser": "Sun, sea, and bustling energy.", "place_image": "place/calangute-beach.avif", "link": "/destinations/goa/calangute-beach", "type": "Beach", "popularity": "High"},
+        {"name": "Dudhsagar Waterfalls", "teaser": "A milky cascade in the jungle.", "place_image": "place/dudhsagar-waterfalls.avif", "link": "/destinations/goa/dudhsagar-waterfalls", "type": "Natural", "popularity": "High"},
+        {"name": "Fort Aguada", "teaser": "A Portuguese legacy by the sea.", "place_image": "place/fort-aguada.avif", "link": "/destinations/goa/fort-aguada", "type": "Historical", "popularity": "Medium"},
+        {"name": "Basilica of Bom Jesus", "teaser": "A UNESCO marvel of faith.", "place_image": "place/basilica-of-bom-jesus.avif", "link": "/destinations/goa/basilica-of-bom-jesus", "type": "Historical", "popularity": "High"}
+      ]
+    },
+    {
+      "state": "Gujarat",
+      "state_image": "state/gujarat.avif",
+      "region": "West",
+      "destinations": [
+        {"name": "Gir National Park", "teaser": "The last refuge of Asiatic lions.", "place_image": "place/gir-national-park.avif", "link": "/destinations/gujarat/gir-national-park", "type": "Wildlife", "popularity": "High"},
+        {"name": "Rann of Kutch", "teaser": "A vast white salt desert glows.", "place_image": "place/rann-of-kutch.avif", "link": "/destinations/gujarat/rann-of-kutch", "type": "Natural", "popularity": "High"},
+        {"name": "Somnath Temple", "teaser": "A sacred Jyotirlinga by the sea.", "place_image": "place/somnath-temple.avif", "link": "/destinations/gujarat/somnath-temple", "type": "Historical", "popularity": "High"},
+        {"name": "Dwarka", "teaser": "Lord Krishna’s ancient kingdom.", "place_image": "place/dwarka.avif", "link": "/destinations/gujarat/dwarka", "type": "Historical", "popularity": "Medium"},
+        {"name": "Sabarmati Ashram", "teaser": "Gandhi’s peaceful legacy lives.", "place_image": "place/sabarmati-ashram.avif", "link": "/destinations/gujarat/sabarmati-ashram", "type": "Historical", "popularity": "Medium"}
+      ]
+    },
+    {
+      "state": "Haryana",
+      "state_image": "state/haryana.avif",
+      "region": "North",
+      "destinations": [
+        {"name": "Sultanpur Bird Sanctuary", "teaser": "A haven for migratory birds.", "place_image": "place/sultanpur-bird-sanctuary.avif", "link": "/destinations/haryana/sultanpur-bird-sanctuary", "type": "Wildlife", "popularity": "Medium"},
+        {"name": "Kurukshetra", "teaser": "Epic tales of Mahabharata unfold.", "place_image": "place/kurukshetra.avif", "link": "/destinations/haryana/kurukshetra", "type": "Historical", "popularity": "High"},
+        {"name": "Pinjore Gardens", "teaser": "Mughal elegance in serene greens.", "place_image": "place/pinjore-gardens.avif", "link": "/destinations/haryana/pinjore-gardens", "type": "Historical", "popularity": "Medium"},
+        {"name": "Morni Hills", "teaser": "A quiet retreat in the hills.", "place_image": "place/morni-hills.avif", "link": "/destinations/haryana/morni-hills", "type": "Hill Station", "popularity": "Low"},
+        {"name": "Damdama Lake", "teaser": "A peaceful escape by the water.", "place_image": "place/damdama-lake.avif", "link": "/destinations/haryana/damdama-lake", "type": "Natural", "popularity": "Low"}
+      ]
+    },
+    {
+      "state": "Himachal Pradesh",
+      "state_image": "state/himachal-pradesh.avif",
+      "region": "North",
+      "destinations": [
+        {"name": "Manali", "teaser": "Adventure meets snowy peaks.", "place_image": "place/manali.avif", "link": "/destinations/himachal-pradesh/manali", "type": "Hill Station", "popularity": "High"},
+        {"name": "Shimla", "teaser": "Colonial charm in the hills.", "place_image": "place/shimla.avif", "link": "/destinations/himachal-pradesh/shimla", "type": "Hill Station", "popularity": "High"},
+        {"name": "Dharamshala", "teaser": "Tibetan culture in serene heights.", "place_image": "place/dharamshala.avif", "link": "/destinations/himachal-pradesh/dharamshala", "type": "Hill Station", "popularity": "High"},
+        {"name": "Spiti Valley", "teaser": "A rugged Himalayan wonderland.", "place_image": "place/spiti-valley.avif", "link": "/destinations/himachal-pradesh/spiti-valley", "type": "Hill Station", "popularity": "Medium"},
+        {"name": "Kullu", "teaser": "River valleys and festive spirit.", "place_image": "place/kullu.avif", "link": "/destinations/himachal-pradesh/kullu", "type": "Hill Station", "popularity": "Medium"}
+      ]
+    },
+    {
+      "state": "Jharkhand",
+      "state_image": "state/jharkhand.avif",
+      "region": "East",
+      "destinations": [
+        {"name": "Betla National Park", "teaser": "Wildlife roams lush forests.", "place_image": "place/betla-national-park.avif", "link": "/destinations/jharkhand/betla-national-park", "type": "Wildlife", "popularity": "Medium"},
+        {"name": "Deoghar", "teaser": "Sacred temples draw devotees.", "place_image": "place/deoghar.avif", "link": "/destinations/jharkhand/deoghar", "type": "Historical", "popularity": "High"},
+        {"name": "Ranchi Waterfalls", "teaser": "Cascades near the capital amaze.", "place_image": "place/ranchi-waterfalls.avif", "link": "/destinations/jharkhand/ranchi-waterfalls", "type": "Natural", "popularity": "Medium"},
+        {"name": "Netarhat", "teaser": "A tranquil hilltop escape.", "place_image": "place/netarhat.avif", "link": "/destinations/jharkhand/netarhat", "type": "Hill Station", "popularity": "Low"},
+        {"name": "Parasnath", "teaser": "Jain pilgrims climb holy hills.", "place_image": "place/parasnath.avif", "link": "/destinations/jharkhand/parasnath", "type": "Historical", "popularity": "Medium"}
+      ]
+    },
+    {
+      "state": "Karnataka",
+      "state_image": "state/karnataka.avif",
+      "region": "South",
+      "destinations": [
+        {"name": "Coorg", "teaser": "Coffee hills and misty charm.", "place_image": "place/coorg.avif", "link": "/destinations/karnataka/coorg", "type": "Hill Station", "popularity": "High"},
+        {"name": "Hampi", "teaser": "Ancient ruins tell epic tales.", "place_image": "place/hampi.avif", "link": "/destinations/karnataka/hampi", "type": "Historical", "popularity": "High"},
+        {"name": "Gokarna", "teaser": "Beaches and temples in harmony.", "place_image": "place/gokarna.avif", "link": "/destinations/karnataka/gokarna", "type": "Beach", "popularity": "Medium"},
+        {"name": "Mysore", "teaser": "Palaces gleam with royal splendor.", "place_image": "place/mysore.avif", "link": "/destinations/karnataka/mysore", "type": "Historical", "popularity": "High"},
+        {"name": "Jog Falls", "teaser": "A majestic plunge into nature.", "place_image": "place/jog-falls.avif", "link": "/destinations/karnataka/jog-falls", "type": "Natural", "popularity": "Medium"}
+      ]
+    },
+    {
+      "state": "Kerala",
+      "state_image": "state/kerala.avif",
+      "region": "South",
+      "destinations": [
+        {"name": "Munnar", "teaser": "Tea gardens cloak misty hills.", "place_image": "place/munnar.avif", "link": "/destinations/kerala/munnar", "type": "Hill Station", "popularity": "High"},
+        {"name": "Alleppey (Backwaters)", "teaser": "Sail through tranquil waters.", "place_image": "place/alleppey.avif", "link": "/destinations/kerala/alleppey", "type": "Beach", "popularity": "High"},
+        {"name": "Wayanad", "teaser": "Forests and peaks captivate.", "place_image": "place/wayanad.avif", "link": "/destinations/kerala/wayanad", "type": "Hill Station", "popularity": "Medium"},
+        {"name": "Kovalam", "teaser": "Crescent beaches invite relaxation.", "place_image": "place/kovalam.avif", "link": "/destinations/kerala/kovalam", "type": "Beach", "popularity": "Medium"},
+        {"name": "Thekkady", "teaser": "Wildlife thrives amid spices.", "place_image": "place/thekkady.avif", "link": "/destinations/kerala/thekkady", "type": "Wildlife", "popularity": "Medium"}
+      ]
+    },
+    {
+      "state": "Madhya Pradesh",
+      "state_image": "state/madhya-pradesh.avif",
+      "region": "North",
+      "destinations": [
+        {"name": "Khajuraho", "teaser": "Erotic temples stun in stone.", "place_image": "place/khajuraho.avif", "link": "/destinations/madhya-pradesh/khajuraho", "type": "Historical", "popularity": "High"},
+        {"name": "Kanha National Park", "teaser": "Tigers rule this jungle realm.", "place_image": "place/kanha-national-park.avif", "link": "/destinations/madhya-pradesh/kanha-national-park", "type": "Wildlife", "popularity": "High"},
+        {"name": "Pachmarhi", "teaser": "Hills and waterfalls soothe.", "place_image": "place/pachmarhi.avif", "link": "/destinations/madhya-pradesh/pachmarhi", "type": "Hill Station", "popularity": "Medium"},
+        {"name": "Ujjain", "teaser": "A holy city of ancient faith.", "place_image": "place/ujjain.avif", "link": "/destinations/madhya-pradesh/ujjain", "type": "Historical", "popularity": "High"},
+        {"name": "Gwalior", "teaser": "Forts echo royal grandeur.", "place_image": "place/gwalior.avif", "link": "/destinations/madhya-pradesh/gwalior", "type": "Historical", "popularity": "Medium"}
+      ]
+    },
+    {
+      "state": "Maharashtra",
+      "state_image": "state/maharashtra.avif",
+      "region": "West",
+      "destinations": [
+        {"name": "Mumbai", "teaser": "The city of dreams pulses.", "place_image": "place/mumbai.avif", "link": "/destinations/maharashtra/mumbai", "type": "Historical", "popularity": "High"},
+        {"name": "Ajanta & Ellora Caves", "teaser": "Ancient art carved in rock.", "place_image": "place/ajanta-ellora-caves.avif", "link": "/destinations/maharashtra/ajanta-ellora-caves", "type": "Historical", "popularity": "High"},
+        {"name": "Mahabaleshwar", "teaser": "Strawberries sweeten hilltop views.", "place_image": "place/mahabaleshwar.avif", "link": "/destinations/maharashtra/mahabaleshwar", "type": "Hill Station", "popularity": "High"},
+        {"name": "Lonavala", "teaser": "Misty hills and waterfalls charm.", "place_image": "place/lonavala.avif", "link": "/destinations/maharashtra/lonavala", "type": "Hill Station", "popularity": "High"},
+        {"name": "Shirdi", "teaser": "Sai Baba’s blessings await.", "place_image": "place/shirdi.avif", "link": "/destinations/maharashtra/shirdi", "type": "Historical", "popularity": "High"}
+      ]
+    },
+    {
+      "state": "Manipur",
+      "state_image": "state/manipur.avif",
+      "region": "East",
+      "destinations": [
+        {"name": "Loktak Lake", "teaser": "Floating islands drift in beauty.", "place_image": "place/loktak-lake.avif", "link": "/destinations/manipur/loktak-lake", "type": "Natural", "popularity": "High"},
+        {"name": "Imphal", "teaser": "A vibrant cultural heart beats.", "place_image": "place/imphal.avif", "link": "/destinations/manipur/imphal", "type": "Historical", "popularity": "Medium"},
+        {"name": "Kangla Fort", "teaser": "History stands in ancient walls.", "place_image": "place/kangla-fort.avif", "link": "/destinations/manipur/kangla-fort", "type": "Historical", "popularity": "Medium"},
+        {"name": "Keibul Lamjao National Park", "teaser": "Rare deer dance on water.", "place_image": "place/keibul-lamjao-national-park.avif", "link": "/destinations/manipur/keibul-lamjao-national-park", "type": "Wildlife", "popularity": "Medium"},
+        {"name": "Dzuko Valley", "teaser": "A floral paradise blooms.", "place_image": "place/dzuko-valley.avif", "link": "/destinations/manipur/dzuko-valley", "type": "Hill Station", "popularity": "Low"}
+      ]
+    },
+    {
+      "state": "Meghalaya",
+      "state_image": "state/meghalaya.avif",
+      "region": "East",
+      "destinations": [
+        {"name": "Shillong", "teaser": "Scotland of the East enchants.", "place_image": "place/shillong.avif", "link": "/destinations/meghalaya/shillong", "type": "Hill Station", "popularity": "High"},
+        {"name": "Cherrapunji", "teaser": "Rain-soaked hills mesmerize.", "place_image": "place/cherrapunji.avif", "link": "/destinations/meghalaya/cherrapunji", "type": "Natural", "popularity": "High"},
+        {"name": "Living Root Bridges", "teaser": "Nature’s living art thrives.", "place_image": "place/living-root-bridges.avif", "link": "/destinations/meghalaya/living-root-bridges", "type": "Natural", "popularity": "High"},
+        {"name": "Dawki", "teaser": "Crystal-clear rivers dazzle.", "place_image": "place/dawki.avif", "link": "/destinations/meghalaya/dawki", "type": "Natural", "popularity": "Medium"},
+        {"name": "Mawlynnong", "teaser": "Asia’s cleanest village shines.", "place_image": "place/mawlynnong.avif", "link": "/destinations/meghalaya/mawlynnong", "type": "Natural", "popularity": "Medium"}
+      ]
+    },
+    {
+      "state": "Mizoram",
+      "state_image": "state/mizoram.avif",
+      "region": "East",
+      "destinations": [
+        {"name": "Aizawl", "teaser": "Hills bloom with Mizo culture.", "place_image": "place/aizawl.avif", "link": "/destinations/mizoram/aizawl", "type": "Hill Station", "popularity": "High"},
+        {"name": "Vantawng Falls", "teaser": "A cascade of natural splendor.", "place_image": "place/vantawng-falls.avif", "link": "/destinations/mizoram/vantawng-falls", "type": "Natural", "popularity": "Medium"},
+        {"name": "Reiek", "teaser": "A hilltop view of serenity.", "place_image": "place/reiek.avif", "link": "/destinations/mizoram/reiek", "type": "Hill Station", "popularity": "Low"},
+        {"name": "Champhai", "teaser": "Rice fields meet Myanmar’s edge.", "place_image": "place/champhai.avif", "link": "/destinations/mizoram/champhai", "type": "Natural", "popularity": "Low"},
+        {"name": "Tamdil Lake", "teaser": "A tranquil waterside retreat.", "place_image": "place/tamdil-lake.avif", "link": "/destinations/mizoram/tamdil-lake", "type": "Natural", "popularity": "Low"}
+      ]
+    },
+    {
+      "state": "Nagaland",
+      "state_image": "state/nagaland.avif",
+      "region": "East",
+      "destinations": [
+        {"name": "Kohima", "teaser": "War history meets tribal life.", "place_image": "place/kohima.avif", "link": "/destinations/nagaland/kohima", "type": "Historical", "popularity": "High"},
+        {"name": "Dzukou Valley", "teaser": "A valley of endless flowers.", "place_image": "place/dzukou-valley.avif", "link": "/destinations/nagaland/dzukou-valley", "type": "Hill Station", "popularity": "Medium"},
+        {"name": "Mokokchung", "teaser": "Ao Naga traditions thrive.", "place_image": "place/mokokchung.avif", "link": "/destinations/nagaland/mokokchung", "type": "Historical", "popularity": "Low"},
+        {"name": "Mon", "teaser": "Konyak headhunters’ legacy lives.", "place_image": "place/mon.avif", "link": "/destinations/nagaland/mon", "type": "Historical", "popularity": "Low"},
+        {"name": "Japfu Peak", "teaser": "A trek to stunning heights.", "place_image": "place/japfu-peak.avif", "link": "/destinations/nagaland/japfu-peak", "type": "Hill Station", "popularity": "Low"}
+      ]
+    },
+    {
+      "state": "Odisha",
+      "state_image": "state/odisha.avif",
+      "region": "East",
+      "destinations": [
+        {"name": "Puri", "teaser": "Jagannath’s divine abode calls.", "place_image": "place/puri.avif", "link": "/destinations/odisha/puri", "type": "Historical", "popularity": "High"},
+        {"name": "Konark Sun Temple", "teaser": "A chariot carved in stone.", "place_image": "place/konark-sun-temple.avif", "link": "/destinations/odisha/konark-sun-temple", "type": "Historical", "popularity": "High"},
+        {"name": "Chilika Lake", "teaser": "Flamingos grace Asia’s largest lagoon.", "place_image": "place/chilika-lake.avif", "link": "/destinations/odisha/chilika-lake", "type": "Natural", "popularity": "Medium"},
+        {"name": "Bhubaneswar", "teaser": "Temples dot the city of faith.", "place_image": "place/bhubaneswar.avif", "link": "/destinations/odisha/bhubaneswar", "type": "Historical", "popularity": "High"},
+        {"name": "Simlipal National Park", "teaser": "Tigers roam dense forests.", "place_image": "place/simlipal-national-park.avif", "link": "/destinations/odisha/simlipal-national-park", "type": "Wildlife", "popularity": "Medium"}
+      ]
+    },
+    {
+      "state": "Punjab",
+      "state_image": "state/punjab.avif",
+      "region": "North",
+      "destinations": [
+        {"name": "Golden Temple (Amritsar)", "teaser": "Sikhism’s holiest shrine glows.", "place_image": "place/golden-temple.avif", "link": "/destinations/punjab/golden-temple", "type": "Historical", "popularity": "High"},
+        {"name": "Wagah Border", "teaser": "Patriotism pulses at dusk.", "place_image": "place/wagah-border.avif", "link": "/destinations/punjab/wagah-border", "type": "Historical", "popularity": "High"},
+        {"name": "Jallianwala Bagh", "teaser": "A somber tribute to sacrifice.", "place_image": "place/jallianwala-bagh.avif", "link": "/destinations/punjab/jallianwala-bagh", "type": "Historical", "popularity": "High"},
+        {"name": "Anandpur Sahib", "teaser": "Sikh heritage shines bright.", "place_image": "place/anandpur-sahib.avif", "link": "/destinations/punjab/anandpur-sahib", "type": "Historical", "popularity": "Medium"},
+        {"name": "Patiala", "teaser": "Royal palaces exude grandeur.", "place_image": "place/patiala.avif", "link": "/destinations/punjab/patiala", "type": "Historical", "popularity": "Medium"}
+      ]
+    },
+    {
+      "state": "Rajasthan",
+      "state_image": "state/rajasthan.avif",
+      "region": "North",
+      "destinations": [
+        {"name": "Jaipur", "teaser": "Pink palaces dazzle all.", "place_image": "place/jaipur.avif", "link": "/destinations/rajasthan/jaipur", "type": "Historical", "popularity": "High"},
+        {"name": "Udaipur", "teaser": "Lakes reflect royal elegance.", "place_image": "place/udaipur.avif", "link": "/destinations/rajasthan/udaipur", "type": "Historical", "popularity": "High"},
+        {"name": "Jaisalmer", "teaser": "Golden sands hold desert secrets.", "place_image": "place/jaisalmer.avif", "link": "/destinations/rajasthan/jaisalmer", "type": "Historical", "popularity": "High"},
+        {"name": "Mount Abu", "teaser": "Rajasthan’s lone hill retreat.", "place_image": "place/mount-abu.avif", "link": "/destinations/rajasthan/mount-abu", "type": "Hill Station", "popularity": "Medium"},
+        {"name": "Ranthambore National Park", "teaser": "Tigers prowl amid ancient ruins.", "place_image": "place/ranthambore-national-park.avif", "link": "/destinations/rajasthan/ranthambore-national-park", "type": "Wildlife", "popularity": "High"}
+      ]
+    },
+    {
+      "state": "Sikkim",
+      "state_image": "state/sikkim.avif",
+      "region": "East",
+      "destinations": [
+        {"name": "Gangtok", "teaser": "A vibrant Himalayan capital.", "place_image": "place/gangtok.avif", "link": "/destinations/sikkim/gangtok", "type": "Hill Station", "popularity": "High"},
+        {"name": "Nathula Pass", "teaser": "A snowy Indo-China frontier.", "place_image": "place/nathula-pass.avif", "link": "/destinations/sikkim/nathula-pass", "type": "Hill Station", "popularity": "High"},
+        {"name": "Tsomgo Lake", "teaser": "A glacial lake shimmers.", "place_image": "place/tsomgo-lake.avif", "link": "/destinations/sikkim/tsomgo-lake", "type": "Natural", "popularity": "High"},
+        {"name": "Yumthang Valley", "teaser": "Flowers paint the Himalayas.", "place_image": "place/yumthang-valley.avif", "link": "/destinations/sikkim/yumthang-valley", "type": "Hill Station", "popularity": "Medium"},
+        {"name": "Pelling", "teaser": "Kanchenjunga looms in serenity.", "place_image": "place/pelling.avif", "link": "/destinations/sikkim/pelling", "type": "Hill Station", "popularity": "Medium"}
+      ]
+    },
+    {
+      "state": "Tamil Nadu",
+      "state_image": "state/tamil-nadu.avif",
+      "region": "South",
+      "destinations": [
+        {"name": "Ooty", "teaser": "Queen of hills blooms.", "place_image": "place/ooty.avif", "link": "/destinations/tamil-nadu/ooty", "type": "Hill Station", "popularity": "High"},
+        {"name": "Kodaikanal", "teaser": "Misty hills offer peace.", "place_image": "place/kodaikanal.avif", "link": "/destinations/tamil-nadu/kodaikanal", "type": "Hill Station", "popularity": "High"},
+        {"name": "Mahabalipuram", "teaser": "Rock-cut wonders by the sea.", "place_image": "place/mahabalipuram.avif", "link": "/destinations/tamil-nadu/mahabalipuram", "type": "Historical", "popularity": "High"},
+        {"name": "Rameswaram", "teaser": "A sacred island pilgrimage.", "place_image": "place/rameswaram.avif", "link": "/destinations/tamil-nadu/rameswaram", "type": "Historical", "popularity": "High"},
+        {"name": "Kanyakumari", "teaser": "Where three seas meet.", "place_image": "place/kanyakumari.avif", "link": "/destinations/tamil-nadu/kanyakumari", "type": "Beach", "popularity": "High"}
+      ]
+    },
+    {
+      "state": "Telangana",
+      "state_image": "state/telangana.avif",
+      "region": "South",
+      "destinations": [
+        {"name": "Hyderabad", "teaser": "Biryanis and Charminar allure.", "place_image": "place/hyderabad.avif", "link": "/destinations/telangana/hyderabad", "type": "Historical", "popularity": "High"},
+        {"name": "Warangal", "teaser": "Forts echo Kakatiya glory.", "place_image": "place/warangal.avif", "link": "/destinations/telangana/warangal", "type": "Historical", "popularity": "Medium"},
+        {"name": "Nagarjuna Sagar", "teaser": "A dam and ancient ruins.", "place_image": "place/nagarjuna-sagar.avif", "link": "/destinations/telangana/nagarjuna-sagar", "type": "Historical", "popularity": "Medium"},
+        {"name": "Bhadrachalam", "teaser": "Lord Rama’s temple by the river.", "place_image": "place/bhadrachalam.avif", "link": "/destinations/telangana/bhadrachalam", "type": "Historical", "popularity": "Medium"},
+        {"name": "Medak", "teaser": "A Gothic church stands tall.", "place_image": "place/medak.avif", "link": "/destinations/telangana/medak", "type": "Historical", "popularity": "Low"}
+      ]
+    },
+    {
+      "state": "Tripura",
+      "state_image": "state/tripura.avif",
+      "region": "East",
+      "destinations": [
+        {"name": "Ujjayanta Palace", "teaser": "Royal elegance in Agartala.", "place_image": "place/ujjayanta-palace.avif", "link": "/destinations/tripura/ujjayanta-palace", "type": "Historical", "popularity": "High"},
+        {"name": "Neermahal", "teaser": "A palace floats on water.", "place_image": "place/neermahal.avif", "link": "/destinations/tripura/neermahal", "type": "Historical", "popularity": "High"},
+        {"name": "Unakoti", "teaser": "Rock carvings tell ancient tales.", "place_image": "place/unakoti.avif", "link": "/destinations/tripura/unakoti", "type": "Historical", "popularity": "Medium"},
+        {"name": "Jampui Hills", "teaser": "Orange groves crown the hills.", "place_image": "place/jampui-hills.avif", "link": "/destinations/tripura/jampui-hills", "type": "Hill Station", "popularity": "Low"},
+        {"name": "Tripura Sundari Temple", "teaser": "A Shakti Peeth of reverence.", "place_image": "place/tripura-sundari-temple.avif", "link": "/destinations/tripura/tripura-sundari-temple", "type": "Historical", "popularity": "Medium"}
+      ]
+    },
+    {
+      "state": "Uttar Pradesh",
+      "state_image": "state/uttar-pradesh.avif",
+      "region": "North",
+      "destinations": [
+        {"name": "Agra (Taj Mahal)", "teaser": "Love’s marble monument shines.", "place_image": "place/agra-taj-mahal.avif", "link": "/destinations/uttar-pradesh/agra-taj-mahal", "type": "Historical", "popularity": "High"},
+        {"name": "Varanasi", "teaser": "Spirituality flows by the Ganges.", "place_image": "place/varanasi.avif", "link": "/destinations/uttar-pradesh/varanasi", "type": "Historical", "popularity": "High"},
+        {"name": "Lucknow", "teaser": "Nawabi charm and kebabs delight.", "place_image": "place/lucknow.avif", "link": "/destinations/uttar-pradesh/lucknow", "type": "Historical", "popularity": "High"},
+        {"name": "Mathura & Vrindavan", "teaser": "Krishna’s birthplace enchants.", "place_image": "place/mathura-vrindavan.avif", "link": "/destinations/uttar-pradesh/mathura-vrindavan", "type": "Historical", "popularity": "High"},
+        {"name": "Allahabad", "teaser": "Rivers meet in sacred union.", "place_image": "place/allahabad.avif", "link": "/destinations/uttar-pradesh/allahabad", "type": "Historical", "popularity": "Medium"}
+      ]
+    },
+    {
+      "state": "Uttarakhand",
+      "state_image": "state/uttarakhand.avif",
+      "region": "North",
+      "destinations": [
+        {"name": "Rishikesh", "teaser": "Yoga and rapids converge.", "place_image": "place/rishikesh.avif", "link": "/destinations/uttarakhand/rishikesh", "type": "Hill Station", "popularity": "High"},
+        {"name": "Mussoorie", "teaser": "Queen of hills charms all.", "place_image": "place/mussoorie.avif", "link": "/destinations/uttarakhand/mussoorie", "type": "Hill Station", "popularity": "High"},
+        {"name": "Nainital", "teaser": "Lakes reflect Himalayan beauty.", "place_image": "place/nainital.avif", "link": "/destinations/uttarakhand/nainital", "type": "Hill Station", "popularity": "High"},
+        {"name": "Kedarnath", "teaser": "A holy trek to Shiva’s abode.", "place_image": "place/kedarnath.avif", "link": "/destinations/uttarakhand/kedarnath", "type": "Historical", "popularity": "High"},
+        {"name": "Jim Corbett National Park", "teaser": "Tigers roam India’s oldest park.", "place_image": "place/jim-corbett-national-park.avif", "link": "/destinations/uttarakhand/jim-corbett-national-park", "type": "Wildlife", "popularity": "High"}
+      ]
+    },
+    {
+      "state": "West Bengal",
+      "state_image": "state/west-bengal.avif",
+      "region": "East",
+      "destinations": [
+        {"name": "Darjeeling", "teaser": "Tea gardens frame Himalayan views.", "place_image": "place/darjeeling.avif", "link": "/destinations/west-bengal/darjeeling", "type": "Hill Station", "popularity": "High"},
+        {"name": "Kolkata", "teaser": "Culture thrives in the City of Joy.", "place_image": "place/kolkata.avif", "link": "/destinations/west-bengal/kolkata", "type": "Historical", "popularity": "High"},
+        {"name": "Sundarbans", "teaser": "Mangroves hide royal tigers.", "place_image": "place/sundarbans.avif", "link": "/destinations/west-bengal/sundarbans", "type": "Wildlife", "popularity": "High"},
+        {"name": "Digha", "teaser": "Beaches offer coastal calm.", "place_image": "place/digha.avif", "link": "/destinations/west-bengal/digha", "type": "Beach", "popularity": "Medium"},
+        {"name": "Bishnupur", "teaser": "Terracotta temples tell tales.", "place_image": "place/bishnupur.avif", "link": "/destinations/west-bengal/bishnupur", "type": "Historical", "popularity": "Medium"}
+      ]
+    }
+  ]

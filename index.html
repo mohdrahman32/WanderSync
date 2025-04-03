@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderSync - Explore India's Wild Beauty</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display (Headings) and Montserrat (Body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Hover.css CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Ensures no horizontal overflow */
+            width: 100vw; /* Explicitly set body width to viewport width */
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .wood-texture {
+            background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+            background-blend-mode: overlay;
+        }
+        .hero-overlay {
+            background: rgba(46, 91, 52, 0.5); /* Forest Green with opacity */
+        }
+        .vine-divider {
+            height: 2px;
+            background: url('https://www.transparenttextures.com/patterns/vine.png');
+        }
+        /* Welcome Fade Effect */
+        .welcome-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: black;
+            z-index: 9999;
+            opacity: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #F5E8C7;
+            font-size: 2rem;
+            font-family: 'Playfair Display', serif;
+            pointer-events: none;
+        }
+        /* Loading Circle */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(135deg, #2E5B34 0%, #F5E8C7 100%);
+            z-index: 9999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        .loading-circle {
+            width: 80px;
+            height: 80px;
+            border: 8px solid #D4A017;
+            border-top: 8px solid transparent;
+            border-radius: 50%;
+            animation: spin 1.5s linear infinite, pulse 1.5s ease-in-out infinite;
+            position: relative;
+        }
+        .loading-circle::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 60px;
+            height: 60px;
+            background: radial-gradient(circle, #2E5B34 10%, transparent 70%);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(212, 160, 23, 0.7); }
+            70% { box-shadow: 0 0 0 20px rgba(212, 160, 23, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(212, 160, 23, 0); }
+        }
+        /* Hamburger Menu Styling */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background: #fff;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+        .nav-menu {
+            display: flex;
+        }
+        /* Custom Container for Full Width on Mobile */
+        .custom-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            width: 100%;
+        }
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #2E5B34;
+                padding: 1rem;
+                flex-direction: column;
+                text-align: center;
+                z-index: 20;
+            }
+            .nav-menu.active {
+                display: flex;
+            }
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+            /* Header Adjustments */
+            header h1 {
+                font-size: 1.5rem;
+            }
+            header p {
+                display: none;
+            }
+            /* Hero Section */
+            .hero-overlay {
+                padding: 1rem;
+            }
+            .hero-overlay h2 {
+                font-size: 1.5rem;
+                line-height: 1.5;
+            }
+            .hero-overlay p {
+                font-size: 0.9rem;
+                margin-bottom: 1rem;
+            }
+            .hero-overlay a {
+                font-size: 0.9rem;
+                padding: 0.5rem 1rem;
+            }
+            /* Featured Destinations */
+            .featured-destinations img {
+                height: 120px;
+                object-fit: cover;
+            }
+            .featured-destinations h4 {
+                font-size: 1rem;
+            }
+            .featured-destinations p {
+                font-size: 0.75rem;
+            }
+            /* Why WanderSync */
+            .why-wandersync img {
+                height: 40px;
+            }
+            .why-wandersync h4 {
+                font-size: 1rem;
+            }
+            .why-wandersync p {
+                font-size: 0.75rem;
+            }
+            /* Footer */
+            footer h4 {
+                font-size: 1rem;
+            }
+            footer ul {
+                font-size: 0.9rem;
+            }
+            footer form input, footer form button {
+                font-size: 0.9rem;
+                padding: 0.25rem;
+            }
+            /* Remove Side Gap */
+            .custom-container {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            section {
+                width: 100vw;
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Welcome Overlay -->
+    <div class="welcome-overlay" id="welcome-overlay">Welcome to WanderSync</div>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loading-circle"></div>
+    </div>
+    <!-- Header Section -->
+    <header class="bg-[#2E5B34] wood-texture text-white py-4 sticky top-0 z-10">
+        <div class="custom-container flex justify-between items-center px-4">
+            <div class="flex items-center space-x-2">
+                <h1 class="text-3xl font-bold text-white tracking-wide">WanderSync</h1>
+                <p class="text-sm italic hidden md:block">Explore India’s Wild Beauty, Step by Step</p>
+            </div>
+            <div class="hamburger md:hidden" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="nav-menu md:flex md:space-x-6" id="nav-menu">
+                <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-center w-full">
+                    <li><a href="#" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block">Home</a></li>
+                    <li><a href="destination.html" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block navigation-link">Destinations</a></li>
+                    <li><a href="#" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block">Plan Your Trip</a></li>
+                    <li><a href="#" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block">About</a></li>
+                    <li><a href="#" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-[70vh] bg-cover bg-center" style="background-image: url('assets/hero.avif');">
+        <div class="absolute inset-0 hero-overlay flex items-center justify-center">
+            <div class="text-center text-white px-4">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4" id="hero-headline">Discover India’s Best Destinations</h2>
+                <p class="text-lg md:text-xl mb-6">From Himalayan trails to coastal retreats, plan your journey with WanderSync.</p>
+                <a href="destination.html" class="bg-[#D4A017] text-white px-6 py-3 rounded-full shadow-lg hvr-pulse-grow navigation-link">Start Exploring</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="py-12 bg-white">
+        <div class="custom-container px-4">
+            <h3 class="text-3xl font-bold text-[#2E5B34] text-center mb-8" data-aos="fade-up">Featured Destinations</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 featured-destinations">
+                <a href="destination.html" class="hvr-float bg-[#F5E8C7] rounded-lg overflow-hidden border-2 border-[#2E5B34] transition" data-aos="fade-up" data-aos-delay="100">
+                    <img src="place/jaipur.avif" alt="Jaipur" class="w-full h-40 object-cover md:h-48">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold text-[#2E5B34]">Jaipur</h4>
+                        <p class="text-sm text-gray-700">The Pink City of Royal Splendor</p>
+                    </div>
+                </a>
+                <a href="destination.html" class="hvr-float bg-[#F5E8C7] rounded-lg overflow-hidden border-2 border-[#2E5B34] transition" data-aos="fade-up" data-aos-delay="200">
+                    <img src="state/goa.avif" alt="Goa" class="w-full h-40 object-cover md:h-48">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold text-[#2E5B34]">Goa</h4>
+                        <p class="text-sm text-gray-700">Beaches and Bohemian Bliss</p>
+                    </div>
+                </a>
+                <a href="destination.html" class="hvr-float bg-[#F5E8C7] rounded-lg overflow-hidden border-2 border-[#2E5B34] transition" data-aos="fade-up" data-aos-delay="300">
+                    <img src="place/munnar.avif" alt="Munnar" class="w-full h-40 object-cover md:h-48">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold text-[#2E5B34]">Munnar</h4>
+                        <p class="text-sm text-gray-700">Tea Gardens and Misty Hills</p>
+                    </div>
+                </a>
+                <a href="destination.html" class="hvr-float bg-[#F5E8C7] rounded-lg overflow-hidden border-2 border-[#2E5B34] transition" data-aos="fade-up" data-aos-delay="400">
+                    <img src="place/varanasi.avif" alt="Varanasi" class="w-full h-40 object-cover md:h-48">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold text-[#2E5B34]">Varanasi</h4>
+                        <p class="text-sm text-gray-700">Spiritual Heart of India</p>
+                    </div>
+                </a>
+                <a href="destination.html" class="hvr-float bg-[#F5E8C7] rounded-lg overflow-hidden border-2 border-[#2E5B34] transition" data-aos="fade-up" data-aos-delay="500">
+                    <img src="place/leh.avif" alt="Leh" class="w-full h-40 object-cover md:h-48">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold text-[#2E5B34]">Leh</h4>
+                        <p class="text-sm text-gray-700">High-Altitude Himalayan Escape</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why WanderSync? -->
+    <section class="py-12 bg-[#F5E8C7]">
+        <div class="custom-container px-4">
+            <h3 class="text-3xl font-bold text-[#2E5B34] text-center mb-8" data-aos="fade-up">Why WanderSync?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 why-wandersync">
+                <div class="text-center" data-aos="fade-right" data-aos-delay="100">
+                    <img src="https://img.icons8.com/ios-filled/50/2E5B34/leaf.png" alt="Curated Excellence" class="mx-auto mb-4 hvr-bounce-in">
+                    <h4 class="text-xl font-semibold text-[#2E5B34]">Curated Excellence</h4>
+                    <p class="text-gray-700">Discover the best hotels and restaurants handpicked for you.</p>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://img.icons8.com/?size=100&id=10106&format=png&color=000000" alt="Forest-Inspired Routes" class="mx-auto mb-4 hvr-bounce-in">
+                    <h4 class="text-xl font-semibold text-[#2E5B34]">Forest-Inspired Routes</h4>
+                    <p class="text-gray-700">Travel scenic paths inspired by India’s natural beauty.</p>
+                </div>
+                <div class="text-center" data-aos="fade-left" data-aos-delay="300">
+                    <img src="https://img.icons8.com/ios-filled/50/2E5B34/book.png" alt="Comprehensive Guides" class="mx-auto mb-4 hvr-bounce-in">
+                    <h4 class="text-xl font-semibold text-[#2E5B34]">Comprehensive Guides</h4>
+                    <p class="text-gray-700">All-in-one travel details for a seamless journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#3C2F2F] text-white py-8">
+        <div class="custom-container px-4">
+            <div class="vine-divider mb-6"></div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-[#D4A017] transition">Home</a></li>
+                        <li><a href="destination.html" class="hover:text-[#D4A017] transition navigation-link">Destinations</a></li>
+                        <li><a href="#" class="hover:text-[#D4A017] transition">Plan Your Trip</a></li>
+                        <li><a href="#" class="hover:text-[#D4A017] transition">About</a></li>
+                        <li><a href="#" class="hover:text-[#D4A017] transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="text-xl font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-[#D4A017] transition hvr-icon-bounce"><img src="https://img.icons8.com/ios-filled/24/D4A017/facebook-new.png" alt="Facebook" class="hvr-icon"></a>
+                        <a href="#" class="hover:text-[#D4A017] transition hvr-icon-bounce"><img src="https://img.icons8.com/ios-filled/24/D4A017/instagram-new.png" alt="Instagram" class="hvr-icon"></a>
+                        <a href="#" class="hover:text-[#D4A017] transition hvr-icon-bounce"><img src="https://img.icons8.com/ios-filled/24/D4A017/twitter.png" alt="Twitter" class="hvr-icon"></a>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <h4 class="text-xl font-semibold mb-4">Newsletter</h4>
+                    <form class="flex flex-col space-y-2">
+                        <input type="email" placeholder="Your Email" class="p-2 rounded bg-[#F5E8C7] text-gray-800">
+                        <button type="submit" class="bg-[#D4A017] text-white p-2 rounded hover:bg-[#b58900] transition hvr-buzz">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <p class="text-center mt-6 text-sm" data-aos="fade-up" data-aos-delay="400">© 2025 WanderSync. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderSync - Destinations</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display (Headings) and Montserrat (Body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Hover.css CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        .wood-texture {
+            background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+            background-blend-mode: overlay;
+        }
+        .sepia-filter {
+            filter: sepia(40%);
+        }
+        .state-card {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .state-image-container {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+        .state-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .explore-btn {
+            opacity: 0;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: opacity 0.3s ease;
+        }
+        .state-card:hover .explore-btn {
+            opacity: 1;
+        }
+        .dropdown-content {
+            display: none;
+            background: #2E5B34;
+            padding: 1rem;
+            color: white;
+            width: 100%;
+        }
+        .individual-destination {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #F5E8C7;
+            z-index: 30;
+            padding: 2rem;
+        }
+        .hotel-card.luxury { border-left: 4px solid #FFD700; }
+        .hotel-card.moderate { border-left: 4px solid #C0C0C0; }
+        .hotel-card.budget { border-left: 4px solid #CD7F32; }
+        .collapse-btn {
+            display: block;
+            margin: 0 auto;
+            background: #D4A017;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            cursor: pointer;
+        }
+        /* Search Bar Styling */
+.search-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+.search-input {
+    width: 100%;
+    padding: 0.75rem 2.5rem 0.75rem 1rem;
+    border: 2px solid #2E5B34;
+    border-radius: 9999px;
+    background: #F5E8C7;
+    transition: all 0.3s ease;
+}
+.search-input:focus {
+    outline: none;
+    border-color: #D4A017;
+    box-shadow: 0 0 10px rgba(212, 160, 23, 0.5);
+}
+.search-icon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2E5B34;
+}
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #2E5B34;
+    color: white;
+    border-radius: 0 0 1rem 1rem;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    z-index: 50; /* Increased z-index to ensure it appears above state cards */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for better visibility */
+}
+.suggestion-item {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+.suggestion-item:hover {
+    background: #D4A017;
+}
+        /* Individual Destination Image Styling */
+        .place-image-box {
+            position: relative;
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto 1rem;
+            border: 4px solid #2E5B34;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .place-image-box:hover {
+            transform: scale(1.05);
+        }
+        .place-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .place-overlay {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(46, 91, 52, 0.7);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        /* Hamburger Menu Styling */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background: #fff;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+        .nav-menu {
+            display: flex;
+        }
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #2E5B34;
+                padding: 1rem;
+                flex-direction: column;
+                text-align: center;
+                z-index: 20;
+            }
+            .nav-menu.active {
+                display: flex;
+            }
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+            .state-image-container {
+                height: 150px;
+            }
+            .search-container {
+                max-width: 100%;
+                padding: 0 1rem;
+            }
+            .place-image-box {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header Section (Same as Homepage) -->
+    <header class="bg-[#2E5B34] wood-texture text-white py-4 sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="flex items-center space-x-2">
+                <h1 class="text-3xl font-bold text-white tracking-wide">WanderSync</h1>
+                <p class="text-sm italic hidden md:block">Explore India’s Wild Beauty, Step by Step</p>
+            </div>
+            <div class="hamburger md:hidden" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="nav-menu md:flex md:space-x-6" id="nav-menu">
+                <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-center w-full">
+                    <li><a href="index.html" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block">Home</a></li>
+                    <li><a href="destinations.html" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block">Destinations</a></li>
+                    <li><a href="#" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block">Plan Your Trip</a></li>
+                    <li><a href="#" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block">About</a></li>
+                    <li><a href="#" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Destinations List Section -->
+    <section class="py-12 bg-white relative" id="destinations-list">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-[#2E5B34] text-center mb-8" data-aos="fade-up">Explore India’s States</h2>
+            <div class="search-container" data-aos="fade-up" data-aos-delay="100">
+                <input type="text" id="search-input" class="search-input" placeholder="Search for a state...">
+                <span class="search-icon">🔍</span>
+                <div class="suggestions" id="suggestions"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="state-cards"></div>
+        </div>
+    </section>
+
+    <!-- Individual Destination Section (Hidden Initially) -->
+    <section class="individual-destination" id="individual-destination">
+        <button class="bg-[#D4A017] text-white px-4 py-2 rounded-full mb-6" id="back-btn">Back</button>
+        <div class="destination-overview mb-8" data-aos="fade-up">
+            <div class="place-image-box">
+                <img id="dest-hero-img" class="place-image sepia-filter" alt="Destination Hero">
+                <div class="place-overlay" id="place-overlay"></div>
+            </div>
+            <h2 id="dest-title" class="text-3xl font-bold text-[#2E5B34] text-center"></h2>
+            <p id="dest-overview" class="text-gray-700 mt-2 text-center"></p>
+        </div>
+        <div class="top-hotels mb-8" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="text-2xl font-bold text-[#2E5B34] mb-4 text-center">Top 5 Hotels</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4" id="dest-hotels"></div>
+        </div>
+        <div class="top-restaurants mb-8" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="text-2xl font-bold text-[#2E5B34] mb-4 text-center">Top 5 Restaurants</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4" id="dest-restaurants"></div>
+        </div>
+        <div class="must-visit-spots mb-8" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="text-2xl font-bold text-[#2E5B34] mb-4 text-center">Must-Visit Spots</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4" id="dest-spots"></div>
+        </div>
+        <div class="travel-details" data-aos="fade-up" data-aos-delay="400">
+            <h3 class="text-2xl font-bold text-[#2E5B34] mb-4 text-center">Essential Travel Details</h3>
+            <div class="bg-[#F5E8C7] p-4 rounded-lg" id="dest-travel-details"></div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="destinations.js"></script>
+</body>
+</html> 
