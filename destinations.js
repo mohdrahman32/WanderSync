@@ -5,7 +5,6 @@ AOS.init({
     once: true
 });
 
-// Global variable to store states data
 let allStates = [];
 
 // Fetch JSON Data
@@ -125,6 +124,49 @@ function toggleDropdown(state, card, exploreBtn) {
     }
 }
 
+// Setup Search Bar
+function setupSearchBar() {
+    const searchBar = document.getElementById('search-bar');
+    const suggestions = document.getElementById('suggestions');
+
+    searchBar.addEventListener('input', () => {
+        const query = searchBar.value.toLowerCase();
+        if (query.length > 0) {
+            const filteredStates = allStates.filter(state => state.state.toLowerCase().includes(query));
+            if (filteredStates.length > 0) {
+                suggestions.innerHTML = filteredStates.map(state => `
+                    <div class="suggestion-item" data-state="${state.state}">${state.state}</div>
+                `).join('');
+                suggestions.style.display = 'block';
+                gsap.fromTo(suggestions, { height: 0 }, { height: 'auto', duration: 0.5, ease: 'power2.out' });
+            } else {
+                suggestions.style.display = 'none';
+            }
+        } else {
+            suggestions.style.display = 'none';
+            renderStateCards(allStates);
+        }
+    });
+
+    suggestions.addEventListener('click', (e) => {
+        const selectedState = e.target.dataset.state;
+        if (selectedState) {
+            const filteredStates = allStates.filter(state => state.state === selectedState);
+            renderStateCards(filteredStates);
+            suggestions.style.display = 'none';
+            searchBar.value = selectedState;
+        }
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!searchBar.contains(e.target) && !suggestions.contains(e.target)) {
+            gsap.to(suggestions, { height: 0, duration: 0.3, ease: 'power2.in', onComplete: () => {
+                suggestions.style.display = 'none';
+            }});
+        }
+    });
+}
+
 // Show Individual Destination with Fade Animation
 function showIndividualDestination(state, placeName) {
     const destination = state.destinations.find(dest => dest.name === placeName);
@@ -199,56 +241,6 @@ function renderIndividualDestination(dest) {
         <p><strong>Travel Tips:</strong> ${dest.travel_details.tips}</p>
         <p><strong>Nearby Destinations:</strong> ${dest.travel_details.nearby}</p>
     `;
-}
-
-// Setup Search Bar
-function setupSearchBar() {
-    const searchInput = document.getElementById('search-input');
-    const suggestionsContainer = document.getElementById('suggestions');
-
-    searchInput.addEventListener('input', () => {
-        const query = searchInput.value.toLowerCase();
-        suggestionsContainer.innerHTML = '';
-        
-        if (query) {
-            const filteredStates = allStates.filter(state => 
-                state.state.toLowerCase().includes(query)
-            );
-            if (filteredStates.length > 0) {
-                suggestionsContainer.style.display = 'block';
-                filteredStates.forEach(state => {
-                    const suggestion = document.createElement('div');
-                    suggestion.className = 'suggestion-item';
-                    suggestion.textContent = state.state;
-                    suggestion.addEventListener('click', () => {
-                        searchInput.value = state.state;
-                        renderStateCards([state]);
-                        suggestionsContainer.style.display = 'none';
-                    });
-                    suggestionsContainer.appendChild(suggestion);
-                });
-                gsap.from('.suggestion-item', {
-                    opacity: 0,
-                    y: 10,
-                    duration: 0.3,
-                    stagger: 0.1,
-                    ease: 'power2.out'
-                });
-            } else {
-                suggestionsContainer.style.display = 'none';
-            }
-        } else {
-            suggestionsContainer.style.display = 'none';
-            renderStateCards(allStates);
-        }
-    });
-
-    // Hide suggestions when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!searchInput.contains(e.target) && !suggestionsContainer.contains(e.target)) {
-            suggestionsContainer.style.display = 'none';
-        }
-    });
 }
 
 // Header Animations (Same as Homepage)
