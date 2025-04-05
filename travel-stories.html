@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderSync - Travel Stories</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display and Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Hover.css CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        .wood-texture {
+            background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+            background-blend-mode: overlay;
+        }
+        .hero-overlay {
+            background: rgba(46, 91, 52, 0.5); /* Forest Green with opacity */
+        }
+        .vine-divider {
+            height: 2px;
+            background: url('https://www.transparenttextures.com/patterns/vine.png');
+        }
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background: #fff;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #2E5B34;
+                padding: 1rem;
+                flex-direction: column;
+                text-align: center;
+                z-index: 20;
+            }
+            .nav-menu.active {
+                display: flex;
+            }
+            .hamburger.active .bar:nth-child(2) { opacity: 0; }
+            .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+            .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+        }
+        .story-card img, .featured-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+        }
+        .featured-image {
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+        }
+        @media (max-width: 768px) {
+            .featured-image {
+                height: 300px;
+                background-attachment: scroll;
+            }
+            .story-card img {
+                height: 150px;
+            }
+        }
+        /* Popup Styling */
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+            z-index: 50;
+            justify-content: center;
+            align-items: center;
+        }
+        .popup-content {
+            background: #F5E8C7; /* Beige background */
+            border: 2px solid #2E5B34; /* Green border */
+            border-radius: 10px;
+            padding: 2rem;
+            max-width: 90%;
+            width: 500px;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .popup-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            color: #2E5B34;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        .popup-close:hover {
+            color: #D4A017; /* Mustard yellow on hover */
+        }
+        @media (max-width: 640px) {
+            .popup-content {
+                width: 90%;
+                padding: 1.5rem;
+            }
+        }
+        /* Submit Form Styling */
+        .submit-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .submit-form input, .submit-form textarea, .submit-form select, .submit-form .file-input-label {
+            padding: 0.5rem;
+            border: 1px solid #2E5B34;
+            border-radius: 5px;
+            background: #fff;
+        }
+        .submit-form .file-input-label {
+            cursor: pointer;
+            background: #D4A017;
+            color: white;
+            text-align: center;
+        }
+        .submit-form input[type="file"] {
+            display: none;
+        }
+        .submit-form button {
+            background: #D4A017;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .submit-form button:hover {
+            background: #b58900;
+        }
+        /* User Stories Section */
+        .user-stories {
+            padding: 2rem 0;
+            background: #fff;
+        }
+        .user-story-card {
+            background: #F5E8C7;
+            border: 2px solid #2E5B34;
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+        .user-story-card:hover {
+            transform: scale(1.02);
+        }
+        .user-story-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .user-story-card .menu-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #2E5B34;
+        }
+        .user-story-card .menu-dropdown {
+            display: none;
+            position: absolute;
+            top: 30px;
+            right: 10px;
+            background: #F5E8C7;
+            border: 1px solid #2E5B34;
+            border-radius: 5px;
+            padding: 0.5rem;
+            z-index: 10;
+        }
+        .user-story-card .menu-dropdown button {
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 0.25rem;
+            background: none;
+            border: none;
+            color: #2E5B34;
+            cursor: pointer;
+        }
+        .user-story-card .menu-dropdown button:hover {
+            color: #D4A017;
+        }
+        .user-story-card:hover .menu-dropdown {
+            display: block;
+        }
+        @media (max-width: 768px) {
+            .user-story-card img {
+                height: 120px;
+            }
+            .user-story-card {
+                padding: 0.75rem;
+            }
+            .user-story-card .menu-btn {
+                top: 5px;
+                right: 5px;
+            }
+            .user-story-card .menu-dropdown {
+                top: 25px;
+                right: 5px;
+            }
+        }
+        .no-stories-note {
+            text-align: center;
+            color: #666;
+            padding: 2rem;
+        }
+        .no-image-text {
+            text-align: center;
+            color: #666;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header Section -->
+    <header class="bg-[#2E5B34] wood-texture text-white py-4 sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="flex items-center space-x-2">
+                <h1 class="text-3xl font-bold text-white tracking-wide">WanderSync</h1>
+                <p class="text-sm italic hidden md:block">Explore India’s Wild Beauty, Step by Step</p>
+            </div>
+            <div class="hamburger md:hidden" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="nav-menu md:flex md:space-x-6" id="nav-menu">
+                <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-center w-full">
+                    <li><a href="index.html" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block">Home</a></li>
+                    <li><a href="destination.html" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block">Destinations</a></li>
+                    <li><a href="travel-stories.html" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block">Travel Stories</a></li>
+                    <li><a href="#" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block">About</a></li>
+                    <li><a href="#" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-[70vh] bg-cover bg-center" style="background-image: url('assets/stories-hero.jpg');">
+        <div class="absolute inset-0 hero-overlay flex items-center justify-center">
+            <div class="text-center text-white px-4">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4" id="hero-headline">Tales from the Trail: India’s Hidden Stories</h2>
+                <p class="text-lg md:text-xl mb-6">Journey through the heart of India with stories that capture its wild beauty and timeless charm.</p>
+                <a href="#stories-showcase" class="bg-[#D4A017] text-white px-6 py-3 rounded-full shadow-lg hvr-pulse-grow" onclick="event.preventDefault(); document.querySelector('#stories-showcase').scrollIntoView({ behavior: 'smooth' });">Dive into the Stories</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stories Showcase -->
+    <section id="stories-showcase" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-[#2E5B34] text-center mb-8" data-aos="fade-up">Stories Showcase</h3>
+            <div class="flex flex-wrap justify-center mb-8 space-x-2 space-y-2 md:space-y-0" id="filter-buttons">
+                <button class="wood-texture bg-[#2E5B34] text-white px-4 py-2 rounded-full hover:bg-[#D4A017] transition" data-filter="all">All</button>
+                <button class="wood-texture bg-[#2E5B34] text-white px-4 py-2 rounded-full hover:bg-[#D4A017] transition" data-filter="North">North</button>
+                <button class="wood-texture bg-[#2E5B34] text-white px-4 py-2 rounded-full hover:bg-[#D4A017] transition" data-filter="South">South</button>
+                <button class="wood-texture bg-[#2E5B34] text-white px-4 py-2 rounded-full hover:bg-[#D4A017] transition" data-filter="West">West</button>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="story-cards">
+                <!-- Fallback content if JSON fails -->
+                <p class="text-center text-gray-700 col-span-full" id="loading-message">Loading stories...</p>
+            </div>
+            <!-- Popup for Story Details -->
+            <div class="popup-overlay" id="story-popup">
+                <div class="popup-content">
+                    <span class="popup-close" id="popup-close">×</span>
+                    <h4 class="text-2xl font-semibold text-[#2E5B34] mb-4" id="popup-title"></h4>
+                    <p class="text-gray-700 mb-4" id="popup-excerpt"></p>
+                    <p class="text-sm text-gray-600 italic mb-4" id="popup-author"></p>
+                    <div class="mb-4">
+                        <h5 class="text-lg font-semibold text-[#2E5B34]">Recommendations:</h5>
+                        <ul class="list-disc pl-5 text-gray-700" id="popup-recommendations"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Narrative -->
+    <section class="py-12 bg-[#F5E8C7]">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl md:text-4xl font-bold text-[#2E5B34] text-center mb-8" data-aos="fade-up">Featured Narrative</h3>
+            <div class="flex flex-col md:flex-row gap-8" id="featured-narrative">
+                <div class="md:w-1/2 featured-image" data-aos="zoom-in" id="featured-image"></div>
+                <div class="md:w-1/2" data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="text-2xl md:text-3xl font-semibold text-[#2E5B34] mb-4" id="featured-title">Loading...</h4>
+                    <p class="text-gray-700 mb-4" id="featured-text">Please wait while we fetch the featured story.</p>
+                    <p class="text-sm text-gray-600 italic mb-4" id="featured-author"></p>
+                    <div class="mb-4">
+                        <h5 class="text-lg font-semibold text-[#2E5B34]">Recommendations:</h5>
+                        <ul class="list-disc pl-5 text-gray-700" id="featured-recommendations"></ul>
+                    </div>
+                    <a href="#" class="bg-[#D4A017] text-white px-6 py-2 rounded-full hvr-pulse-grow inline-block" id="featured-cta">Explore This Destination</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="py-8 bg-[#3C2F2F] wood-texture text-white text-center">
+        <div class="container mx-auto px-4">
+            <h3 class="text-2xl md:text-3xl font-bold mb-4" data-aos="fade-up">Have a Story to Tell?</h3>
+            <p class="text-lg mb-6" data-aos="fade-up" data-aos-delay="100">Share your Indian adventures with WanderSync or dive deeper into our destinations.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#" class="bg-[#D4A017] text-white px-6 py-3 rounded-full hvr-grow" data-aos="fade-up" data-aos-delay="200" id="submit-story-btn">Submit Your Story</a>
+                <a href="destination.html" class="bg-[#D4A017] text-white px-6 py-3 rounded-full hvr-grow" data-aos="fade-up" data-aos-delay="300">Explore Destinations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Submitted Stories Section -->
+    <section class="user-stories" id="user-stories">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-[#2E5B34] text-center mb-8" data-aos="fade-up">User Submitted Stories</h3>
+            <div class="flex flex-wrap justify-center mb-8 space-x-2 space-y-2 md:space-y-0" id="user-filter-buttons">
+                <button class="wood-texture bg-[#2E5B34] text-white px-4 py-2 rounded-full hover:bg-[#D4A017] transition" data-filter="all">All</button>
+                <button class="wood-texture bg-[#2E5B34] text-white px-4 py-2 rounded-full hover:bg-[#D4A017] transition" data-filter="North">North</button>
+                <button class="wood-texture bg-[#2E5B34] text-white px-4 py-2 rounded-full hover:bg-[#D4A017] transition" data-filter="South">South</button>
+                <button class="wood-texture bg-[#2E5B34] text-white px-4 py-2 rounded-full hover:bg-[#D4A017] transition" data-filter="West">West</button>
+                <button class="wood-texture bg-[#2E5B34] text-white px-4 py-2 rounded-full hover:bg-[#D4A017] transition" data-filter="East">East</button>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="user-story-cards">
+                <p class="no-stories-note" id="no-stories-note">No user stories submitted yet.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup for Submit Story -->
+    <div class="popup-overlay" id="submit-popup">
+        <div class="popup-content">
+            <span class="popup-close" id="submit-close">×</span>
+            <h4 class="text-2xl font-semibold text-[#2E5B34] mb-4">Submit Your Story</h4>
+            <form class="submit-form" id="submit-form">
+                <input type="text" placeholder="Story ID (Auto-generated)" readonly id="submit-id" class="bg-gray-200">
+                <input type="text" placeholder="Title" id="submit-title" required>
+                <textarea placeholder="Excerpt" id="submit-excerpt" rows="3" required></textarea>
+                <input type="text" placeholder="Author" id="submit-author" required>
+                <div class="file-input-label">Upload Image</div>
+                <input  type="file" id="submit-image" accept="image/*">
+                <select id="submit-region" required>
+                    <option value="">Select Region</option>
+                    <option value="North">North</option>
+                    <option value="South">South</option>
+                    <option value="West">West</option>
+                    <option value="East">East</option>
+                </select>
+                <button type="submit" id="submit-button">Submit Story</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-[#3C2F2F] text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="vine-divider mb-6"></div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-[#D4A017] transition">Home</a></li>
+                        <li><a href="destination.html" class="hover:text-[#D4A017] transition">Destinations</a></li>
+                        <li><a href="travel-stories.html" class="hover:text-[#D4A017] transition">Travel Stories</a></li>
+                        <li><a href="#" class="hover:text-[#D4A017] transition">About</a></li>
+                        <li><a href="#" class="hover:text-[#D4A017] transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="text-xl font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4 justify-center">
+                        <a href="#" class="hover:text-[#D4A017] transition hvr-icon-bounce"><img src="https://img.icons8.com/ios-filled/24/D4A017/facebook-new.png" alt="Facebook" class="hvr-icon"></a>
+                        <a href="#" class="hover:text-[#D4A017] transition hvr-icon-bounce"><img src="https://img.icons8.com/ios-filled/24/D4A017/instagram-new.png" alt="Instagram" class="hvr-icon"></a>
+                        <a href="#" class="hover:text-[#D4A017] transition hvr-icon-bounce"><img src="https://img.icons8.com/ios-filled/24/D4A017/twitter.png" alt="Twitter" class="hvr-icon"></a>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <h4 class="text-xl font-semibold mb-4">Newsletter</h4>
+                    <form class="flex flex-col space-y-2">
+                        <input type="email" placeholder="Your Email" class="p-2 rounded bg-[#F5E8C7] text-gray-800">
+                        <button type="submit" class="bg-[#D4A017] text-white p-2 rounded hover:bg-[#b58900] transition hvr-buzz">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <p class="text-center mt-6 text-sm" data-aos="fade-up" data-aos-delay="400">© 2025 WanderSync. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="travel-stories.js"></script>
+</body>
+</html>

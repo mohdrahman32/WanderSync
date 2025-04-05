@@ -1,0 +1,121 @@
+{
+  "stories": [
+    {
+      "id": 1,
+      "title": "Taj Mahal: A Monument of Eternal Love",
+      "excerpt": "In Agra, the Taj Mahal rises like a dream in marble, its symmetry glowing under the morning sun. A walk through its gardens reveals a timeless tale of love and legacy.",
+      "author": "By Neha Kapoor",
+      "image": "assets/taj-mahal.png",
+      "region": "North",
+      "theme": "Culture",
+      "destination": "Agra",
+      "recommendations": {
+        "hotel": "The Oberoi Amarvilas",
+        "hotel_link": "https://www.oberoihotels.com/hotels-in-agra-amarvilas-resort/",
+        "restaurant": "Daawat-E-Nawab",
+        "restaurant_link": "https://www.tripadvisor.in/Restaurant_Review-g297683-d3849473-Reviews-Daawat_E_Nawab-Agra_Agra_District_Uttar_Pradesh.html",
+        "spot": "Taj Mahal"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Varanasi: The Eternal City by the Ganges",
+      "excerpt": "Varanasi’s ghats hum with the chants of priests and the flicker of oil lamps. A boat ride at dawn unveils the spiritual heartbeat of India.",
+      "author": "By Ananya Roy",
+      "image": "assets/varanasi.avif",
+      "region": "North",
+      "theme": "Spirituality",
+      "destination": "Varanasi",
+      "recommendations": {
+        "hotel": "Taj Ganges",
+        "hotel_link": "https://www.tajhotels.com/en-in/hotels/taj-ganges-varanasi",
+        "restaurant": "Behind Yellow Doors Diner",
+        "restaurant_link": "https://byddiner.com/", 
+        "spot": "Dashashwamedh Ghat"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Kerala Backwaters: A Journey Through Paradise",
+      "excerpt": "Gliding through Kerala’s backwaters on a houseboat, palm-lined canals and serene villages unfold. The sunset over Alleppey is a painter’s masterpiece.",
+      "author": "By Priya Sharma",
+      "image": "assets/alleppey.avif",
+      "region": "South",
+      "theme": "Nature",
+      "destination": "Alleppey",
+      "recommendations": {
+        "hotel": "Kumarakom Lake Resort",
+        "hotel_link": "https://www.kumarakomlakeresort.in/",
+        "restaurant": "Cassia",
+        "restaurant_link": "https://cassia.co.in/", 
+        "spot": "Alleppey Backwaters"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Leh-Ladakh: The Roof of the World",
+      "excerpt": "In Leh-Ladakh, rugged monasteries perch atop barren mountains, and the wind carries whispers of ancient Buddhism. A ride through Pangong Lake’s blue expanse is unforgettable.",
+      "author": "By Arjun Patel",
+      "image": "assets/ladakh.jpg",
+      "region": "North",
+      "theme": "Adventure",
+      "destination": "Leh",
+      "recommendations": {
+        "hotel": "The Grand Dragon Ladakh",
+        "hotel_link": "https://www.thegranddragonladakh.com/",
+        "restaurant": "Tibetan Kitchen",
+        "restaurant_link": "https://www.tripadvisor.in/Restaurant_Review-g297625-d1197139-Reviews-The_Tibetan_Kitchen-Leh_Leh_District_Ladakh.html",
+        "spot": "Pangong Lake"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Jaipur: The Pink City’s Royal Splendor",
+      "excerpt": "Jaipur’s Amber Fort looms majestically over the city, its golden walls echoing tales of Rajput valor. The bustling bazaars brim with color and history.",
+      "author": "By Vikram Singh",
+      "image": "assets/jaipur.jpeg",
+      "region": "West",
+      "theme": "Culture",
+      "destination": "Jaipur",
+      "recommendations": {
+        "hotel": "Rambagh Palace",
+        "hotel_link": "https://www.tajhotels.com/en-in/hotels/rambagh-palace-jaipur",
+        "restaurant": "Suvarna Mahal",
+        "restaurant_link": "https://www.tajhotels.com/en-in/hotels/rambagh-palace-jaipur/restaurants/suvarna-mahal?Utm_source=Google&utm_medium=Local&utm_campaign=rambagh-palace-jaipur-suvarna-mahal", 
+        "spot": "Amber Fort"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Hyderabad: The Pearl City’s Timeless Charm",
+      "excerpt": "Hyderabad’s Golconda Fort stands as a testament to its regal past, while the bustling Laad Bazaar sparkles with pearls and tradition.",
+      "author": "By Priya Reddy",
+      "image": "assets/hyderabad.jpg",
+      "region": "South",
+      "theme": "Heritage",
+      "destination": "Hyderabad",
+      "recommendations": {
+        "hotel": "Taj Falaknuma Palace",
+        "hotel_link": "https://www.tajhotels.com/en-in/hotels/taj-falaknuma-palace-hyderabad",
+        "restaurant": "Jewel of Nizam",
+        "restaurant_link": "https://www.tripadvisor.in/Restaurant_Review-g297586-d2037437-Reviews-Jewel_Of_Nizam-Hyderabad_Hyderabad_District_Telangana.html",
+        "spot": "Golconda Fort"
+      }
+    }
+  ],
+  "featured": {
+    "title": "Kashmir: Paradise on Earth",
+    "full_text": "Srinagar, the summer capital of Jammu & Kashmir, unfolds like a dream where the Dal Lake mirrors the snow-capped Pir Panjal mountains. A shikara ride at dawn reveals a floating world—vendors selling saffron and flowers glide past houseboats carved with intricate cedar patterns, their reflections dancing on the water. The Mughal Gardens, Nishat and Shalimar, stand as testaments to an emperor’s love for nature, their terraced lawns and fountains framed by chinar trees ablaze in autumn hues. Beyond the lake, the old city whispers history through the wooden arches of Jama Masjid and the bustling lanes of Lal Chowk, where the aroma of wazwan—Kashmir’s multi-course feast—wafts from local eateries. A day trip to Gulmarg, just 50 kilometers away, transforms the scene into a winter wonderland, where the world’s second-highest gondola ride lifts you above pine forests to Apharwat Peak’s snowy expanse. Here, skiers carve paths through fresh powder, and the silence of the Himalayas feels eternal. Returning to Srinagar, the evening aarti at Shankaracharya Temple atop a hill offers a panoramic view of the valley, the city lights twinkling like stars against the darkening sky. Kashmir’s beauty isn’t just in its landscapes—it’s in the warmth of its people, the resilience of its culture, and the stories etched into every corner of this paradise on Earth.",
+    "author": "By Aisha Khan",
+    "image": "assets/kashmir.jpg",
+    "region": "North",
+    "destination": "Srinagar",
+    "recommendations": {
+      "hotel": "Taj Dal View",
+      "hotel_link": "https://www.tajhotels.com/en-in/hotels/taj-dal-view-srinagar",
+      "restaurant": "Mughal Darbar",
+      "restaurant_link": "https://mughaldarbar.in/",
+      "spot": "Dal Lake"
+    }
+  }
+}
