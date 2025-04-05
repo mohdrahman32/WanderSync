@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Kashmir’s beauty with WanderSync - explore serene valleys, majestic mountains, and timeless charm.">
+    <title>Explore Kashmir - WanderSync</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display and Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Hover.css CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        .wood-texture {
+            background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+            background-blend-mode: overlay;
+        }
+        .hero-overlay {
+            background: linear-gradient(rgba(46, 91, 52, 1), rgba(249, 249, 249, 0.5)); /* Gradient from forest green to mustard yellow */
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1; /* Ensure overlay is above any potential background */
+        }
+        .hero-content {
+            opacity: 0; /* Initial state for GSAP animation */
+        }
+        .vine-divider {
+            height: 2px;
+            background: url('https://www.transparenttextures.com/patterns/vine.png');
+        }
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background: #fff;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #2E5B34;
+                padding: 1rem;
+                flex-direction: column;
+                text-align: center;
+                z-index: 20;
+            }
+            .nav-menu.active {
+                display: flex;
+            }
+            .hamburger.active .bar:nth-child(2) { opacity: 0; }
+            .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+            .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+        }
+        .highlight-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .highlight-card img {
+                height: 150px;
+            }
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            border: 2px solid #2E5B34;
+        }
+        @media (max-width: 768px) {
+            .gallery img {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header Section -->
+    <header class="bg-[#2E5B34] wood-texture text-white py-4 sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="flex items-center space-x-2">
+                <h1 class="text-3xl font-bold text-white tracking-wide">WanderSync</h1>
+                <p class="text-sm italic hidden md:block">Explore India’s Wild Beauty, Step by Step</p>
+            </div>
+            <div class="hamburger md:hidden" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="nav-menu md:flex md:space-x-6" id="nav-menu">
+                <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-center w-full">
+                    <li><a href="index.html" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block">Home</a></li>
+                    <li><a href="destination.html" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block">Destinations</a></li>
+                    <li><a href="travel-stories.html" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block">Travel Stories</a></li>
+                    <li><a href="about.html" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block">About</a></li>
+                    <li><a href="contact.html" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-[70vh]">
+        <div class="absolute inset-0 hero-overlay">
+            <div class="text-center text-white px-4 hero-content">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Kashmir: Paradise on Earth</h2>
+                <p class="text-lg md:text-xl mb-6">Discover the serene valleys, majestic mountains, and timeless beauty of India’s crown jewel.</p>
+                <a href="#travel-recommendations" class="bg-[#D4A017] text-white px-6 py-3 rounded-full shadow-lg hvr-pulse-grow" onclick="event.preventDefault(); document.querySelector('#travel-recommendations').scrollIntoView({ behavior: 'smooth' });">Plan Your Trip</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold text-[#2E5B34] mb-6" data-aos="fade-up">Why Kashmir?</h3>
+            <p class="text-gray-700 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Known as the 'Paradise on Earth,' Kashmir mesmerizes with its lush valleys, pristine lakes, and Mughal gardens. From the tranquility of Srinagar’s Dal Lake to the adventure of Gulmarg’s ski slopes, this destination offers something for every traveler.</p>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="py-12 bg-[#F5E8C7]">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-[#2E5B34] text-center mb-8" data-aos="fade-up">Top Highlights of Kashmir</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="highlight-card bg-white rounded-lg overflow-hidden border-2 border-[#2E5B34] hvr-float" data-aos="fade-up">
+                    <img src="assets/dal-lake.avif" alt="Dal Lake">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold text-[#2E5B34]">Dal Lake</h4>
+                        <p class="text-sm text-gray-700 mt-2">Sail on a shikara through serene waters surrounded by floating gardens.</p>
+                    </div>
+                </div>
+                <div class="highlight-card bg-white rounded-lg overflow-hidden border-2 border-[#2E5B34] hvr-float" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/gulmarg.avif" alt="Gulmarg">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold text-[#2E5B34]">Gulmarg</h4>
+                        <p class="text-sm text-gray-700 mt-2">A winter wonderland with skiing and the world’s highest cable car.</p>
+                    </div>
+                </div>
+                <div class="highlight-card bg-white rounded-lg overflow-hidden border-2 border-[#2E5B34] hvr-float" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/shalimar-bag.jpg" alt="Shalimar Bagh">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold text-[#2E5B34]">Shalimar Bagh</h4>
+                        <p class="text-sm text-gray-700 mt-2">A Mughal garden with terraced lawns and stunning fountains.</p>
+                    </div>
+                </div>
+                <div class="highlight-card bg-white rounded-lg overflow-hidden border-2 border-[#2E5B34] hvr-float" data-aos="fade-up" data-aos-delay="300">
+                    <img src="assets/pahalgam.jpg" alt="Pahalgam">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold text-[#2E5B34]">Pahalgam</h4>
+                        <p class="text-sm text-gray-700 mt-2">A picturesque valley perfect for trekking and nature lovers.</p>
+                    </div>
+                </div>
+                <div class="highlight-card bg-white rounded-lg overflow-hidden border-2 border-[#2E5B34] hvr-float" data-aos="fade-up" data-aos-delay="400">
+                    <img src="assets/sonamarg.webp" alt="Sonamarg">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold text-[#2E5B34]">Sonamarg</h4>
+                        <p class="text-sm text-gray-700 mt-2">The 'Meadow of Gold' with golden meadows and glacier views.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Recommendations Section -->
+    <section id="travel-recommendations" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-[#2E5B34] text-center mb-8" data-aos="fade-up">Travel Recommendations</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Hotels -->
+                <div data-aos="fade-up">
+                    <h4 class="text-xl font-semibold text-[#2E5B34] mb-4">Hotels</h4>
+                    <ul class="list-disc pl-5 text-gray-700">
+                        <li><a href="https://www.thelalit.com/the-lalit-srinagar/" target="_blank" class="text-[#D4A017] hover:underline">The LaLiT Grand Palace Srinagar</a> - Luxurious stay with Dal Lake views.</li>
+                        <li><a href="https://www.vivanta.tajhotels.com/en-in/vivanta-kashmir/" target="_blank" class="text-[#D4A017] hover:underline">Vivanta Kashmir</a> - Rich amenities in a scenic setting.</li>
+                        <li><a href="https://www.radissonhotels.com/en-us/hotels/radisson-srinagar" target="_blank" class="text-[#D4A017] hover:underline">Radisson Srinagar</a> - Moderate comfort near city center.</li>
+                        <li><a href="https://www.goibibo.com/hotels/hotel-new-mamta-in-srinagar-6718392111131773951/" target="_blank" class="text-[#D4A017] hover:underline">Hotel New Mamta</a> - Budget-friendly with basic amenities.</li>
+                        <li><a href="https://www.houseboatbooking.com/" target="_blank" class="text-[#D4A017] hover:underline">Houseboats on Dal Lake</a> - Unique budget stay on water.</li>
+                    </ul>
+                </div>
+                <!-- Restaurants -->
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="text-xl font-semibold text-[#2E5B34] mb-4">Restaurants</h4>
+                    <ul class="list-disc pl-5 text-gray-700">
+                        <li><a href="https://www.mughaldarbar.co.in/" target="_blank" class="text-[#D4A017] hover:underline">Mughal Darbar</a> - Rich Kashmiri Wazwan cuisine.</li>
+                        <li><a href="https://www.thelalit.com/the-lalit-srinagar/dining/" target="_blank" class="text-[#D4A017] hover:underline">Chinar at The LaLiT</a> - Upscale dining with local flavors.</li>
+                        <li><a href="https://www.tripadvisor.in/Restaurant_Review-g297623-d10135266-Reviews-Shamyana_Restaurant-Srinagar_Srinagar_District_Kashmir_Jammu_and_Kashmir.html" target="_blank" class="text-[#D4A017] hover:underline">Shamyana Restaurant</a> - Moderate prices, good variety.</li>
+                        <li><a href="https://www.tripadvisor.in/Restaurant_Review-g297623-d1770879-Reviews-Krishna_Dhaba-Srinagar_Srinagar_District_Kashmir_Jammu_and_Kashmir.html" target="_blank" class="text-[#D4A017] hover:underline">Krishna Dhaba</a> - Budget-friendly local eats.</li>
+                        <li><a href="https://www.zomato.com/srinagar/ahdoos-dalgate" target="_blank" class="text-[#D4A017] hover:underline">Ahdoo’s</a> - Affordable Kashmiri specialties.</li>
+                    </ul>
+                </div>
+                <!-- Spots -->
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="text-xl font-semibold text-[#2E5B34] mb-4">Spots</h4>
+                    <ul class="list-disc pl-5 text-gray-700">
+                        <li>Dal Lake - Iconic shikara rides and serene beauty.</li>
+                        <li>Gulmarg - Skiing and breathtaking views.</li>
+                        <li>Shalimar Bagh - Historic Mughal garden.</li>
+                        <li>Pahalgam - Scenic valley for trekking.</li>
+                        <li>Sonamarg - Golden meadows and glaciers.</li>
+                        <li>Nishat Bagh - Another stunning Mughal garden.</li>
+                        <li>Shankaracharya Temple - Hilltop spiritual site.</li>
+                        <li>Betaab Valley - Lush greenery from Bollywood fame.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="py-12 bg-[#F5E8C7]">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-[#2E5B34] text-center mb-8" data-aos="fade-up">Kashmir in Pictures</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 gallery">
+                <img src="assets/dal-lake.avif" alt="Dal Lake" data-aos="fade-up">
+                <img src="assets/gulmarg.avif" alt="Gulmarg" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/shalimar-bag.jpg" alt="Shalimar Bagh" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/pahalgam.jpg" alt="Pahalgam" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/sonamarg.webp" alt="Sonamarg" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/nishat-bagh.jpg" alt="Nishat Bagh" data-aos="fade-up" data-aos-delay="500">
+                <img src="assets/shankaracharya.jpeg" alt="Shankaracharya Temple" data-aos="fade-up" data-aos-delay="600">
+                <img src="assets/betaab-valley.webp" alt="Betaab Valley" data-aos="fade-up" data-aos-delay="700">
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Tips Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-[#2E5B34] text-center mb-8" data-aos="fade-up">Travel Tips for Kashmir</h3>
+            <ul class="list-disc pl-5 text-gray-700 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                <li>Best Time to Visit: October to March for snow, April to June for blooms.</li>
+                <li>Pack Warm: Even summers can be chilly in higher altitudes.</li>
+                <li>Local Transport: Shikaras and taxis are common; book in advance.</li>
+                <li>Stay Connected: Prepaid SIMs may not work; rely on hotel Wi-Fi.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="py-8 bg-[#3C2F2F] wood-texture text-white text-center">
+        <div class="container mx-auto px-4">
+            <h3 class="text-2xl md:text-3xl font-bold mb-4" data-aos="fade-up">Ready to Explore Kashmir?</h3>
+            <p class="text-lg mb-6" data-aos="fade-up" data-aos-delay="100">Plan your journey or share your own Kashmir story with us!</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#travel-recommendations" class="bg-[#D4A017] text-white px-6 py-3 rounded-full hvr-grow" data-aos="fade-up" data-aos-delay="200" onclick="event.preventDefault(); document.querySelector('#travel-recommendations').scrollIntoView({ behavior: 'smooth' });">Plan Your Trip</a>
+                <a href="travel-stories.html#submit-story-btn" class="bg-[#D4A017] text-white px-6 py-3 rounded-full hvr-grow" data-aos="fade-up" data-aos-delay="300">Submit Your Story</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#3C2F2F] text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="vine-divider mb-6"></div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-[#D4A017] transition">Home</a></li>
+                        <li><a href="destination.html" class="hover:text-[#D4A017] transition">Destinations</a></li>
+                        <li><a href="travel-stories.html" class="hover:text-[#D4A017] transition">Travel Stories</a></li>
+                        <li><a href="about.html" class="hover:text-[#D4A017] transition">About</a></li>
+                        <li><a href="contact.html" class="hover:text-[#D4A017] transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="text-xl font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4 justify-center">
+                        <a href="#" class="hover:text-[#D4A017] transition hvr-icon-bounce"><img src="https://img.icons8.com/ios-filled/24/D4A017/facebook-new.png" alt="Facebook" class="hvr-icon"></a>
+                        <a href="#" class="hover:text-[#D4A017] transition hvr-icon-bounce"><img src="https://img.icons8.com/ios-filled/24/D4A017/instagram-new.png" alt="Instagram" class="hvr-icon"></a>
+                        <a href="#" class="hover:text-[#D4A017] transition hvr-icon-bounce"><img src="https://img.icons8.com/ios-filled/24/D4A017/twitter.png" alt="Twitter" class="hvr-icon"></a>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <h4 class="text-xl font-semibold mb-4">Newsletter</h4>
+                    <form class="flex flex-col space-y-2">
+                        <input type="email" placeholder="Your Email" class="p-2 rounded bg-[#F5E8C7] text-gray-800">
+                        <button type="submit" class="bg-[#D4A017] text-white p-2 rounded hover:bg-[#b58900] transition hvr-buzz">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <p class="text-center mt-6 text-sm" data-aos="fade-up" data-aos-delay="400">© 2025 WanderSync. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="kashmir-destination.js"></script>
+</body>
+</html>
