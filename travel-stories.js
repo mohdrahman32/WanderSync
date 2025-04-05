@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <li>Restaurant: <a href="${featured.recommendations.restaurant_link}" target="_blank" class="text-[#D4A017] hover:underline">${featured.recommendations.restaurant}</a></li>
                 <li>Spot: ${featured.recommendations.spot}</li>
             `;
-            document.getElementById('featured-cta').href = `#${featured.destination.toLowerCase()}`;
+            document.getElementById('featured-cta').href = `#${kashmir-AudioDestinationNode.html}`;
 
             // Filter Functionality
             const filterButtons = document.querySelectorAll('#filter-buttons button');
