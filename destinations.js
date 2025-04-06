@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error('Error fetching JSON:', error));
 });
 
-// Render State Cards
+// Render State Cards with Edge Animations
 function renderStateCards(states) {
     const stateCardsContainer = document.getElementById('state-cards');
     stateCardsContainer.innerHTML = '';
@@ -41,6 +41,20 @@ function renderStateCards(states) {
             <div class="dropdown-content" id="dropdown-${state.state.replace(/\s+/g, '-')}"></div>
         `;
         stateCardsContainer.appendChild(card);
+
+        // Add edge animation using GSAP
+        const tl = gsap.timeline({ repeat: -1, yoyo: true });
+        tl.to(card, {
+            borderColor: '#D4A017',
+            boxShadow: '0 0 15px rgba(212, 160, 23, 0.7)',
+            duration: 2,
+            ease: 'power1.inOut'
+        }).to(card, {
+            borderColor: '#2E5B34',
+            boxShadow: '0 0 5px rgba(46, 91, 52, 0.5)',
+            duration: 2,
+            ease: 'power1.inOut'
+        });
 
         const exploreBtn = card.querySelector('.explore-btn');
         exploreBtn.addEventListener('click', () => toggleDropdown(state, card, exploreBtn));
@@ -82,7 +96,7 @@ function getStateTeaser(stateName) {
     return teasers[stateName] || "A unique Indian adventure.";
 }
 
-// Toggle Dropdown with Tourist Places
+// Toggle Dropdown with Tourist Places and Main Page Button
 function toggleDropdown(state, card, exploreBtn) {
     const dropdown = card.querySelector('.dropdown-content');
     const isOpen = dropdown.style.display === 'block';
@@ -107,6 +121,7 @@ function toggleDropdown(state, card, exploreBtn) {
                             <button class="bg-[#D4A017] text-white px-3 py-1 rounded-full hvr-buzz explore-place-btn" data-place="${dest.name}" data-state="${state.state}">Explore</button>
                         </div>
                     `).join('')}
+                    <a href="${state.state.toLowerCase()}.html" class="main-page-btn" data-state="${state.state}">Visit Main Page</a>
                     <button class="collapse-btn mt-4">↑</button>
                 `;
                 dropdown.style.display = 'block';
