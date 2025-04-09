@@ -1,0 +1,152 @@
+{
+    "state": {
+      "name": "Chhattisgarh",
+      "hero_image": "state/chhattisgarh.avif",
+      "overview": {
+        "description": "Chhattisgarh, located in central India, is known for its lush forests, waterfalls, and rich tribal culture. Formed on November 1, 2000, it is a treasure trove of natural beauty with sites like Chitrakote Falls and the Barnawapara Wildlife Sanctuary.",
+        "key_facts": {
+          "capital": "Raipur",
+          "population": "29.8 million (approx.)",
+          "language": "Hindi, Chhattisgarhi",
+          "area": "135,194 sq km",
+          "established": "November 1, 2000"
+        }
+      },
+      "top_destinations": [
+        {
+          "name": "Chitrakote Falls",
+          "image": "place/chitrakotewaterfalls.avif",
+          "description": "Known as the 'Niagara of India', a stunning waterfall on the Indravati River.",
+          "explore_link": "../chitrakote.html",
+          "best_time": "July to October",
+          "travel_tips": "Visit during monsoon for full flow; carry rain gear.",
+          "entry_fee": "₹20"
+        },
+        {
+          "name": "Raipur",
+          "image": "place/raipur.webp",
+          "description": "The capital city with cultural sites like Mahant Ghasidas Museum and Dudhadhari Temple.",
+          "explore_link": "../raipur.html",
+          "best_time": "October to March",
+          "travel_tips": "Explore local markets; visit during festivals.",
+          "entry_fee": "Free (some sites ₹10-₹50)"
+        },
+        {
+          "name": "Barnawapara Wildlife Sanctuary",
+          "image": "place/barnawapara-wildlife-sanctuary.jpg",
+          "description": "A biodiversity hotspot with tigers, leopards, and diverse flora.",
+          "explore_link": "../barnawapara.html",
+          "best_time": "November to June",
+          "travel_tips": "Hire a guide; carry binoculars.",
+          "entry_fee": "₹100 (Indian); ₹500 (foreigners)"
+        }
+      ],
+      "accommodation": [
+        {
+          "name": "Hotel Babylon International",
+          "category": "Luxury",
+          "description": "Luxurious stay in the heart of Raipur.",
+          "price_range": "₹4,500+",
+          "book_link": "https://example.com/book/babylon"
+        },
+        {
+          "name": "Mayura Hotel",
+          "category": "Luxury",
+          "description": "Premium hotel near Chitrakote Falls.",
+          "price_range": "₹4,000+",
+          "book_link": "https://example.com/book/mayura"
+        },
+        {
+          "name": "Hotel Satkar",
+          "category": "Moderate",
+          "description": "Comfortable stay near Barnawapara Sanctuary.",
+          "price_range": "₹1,500-₹2,500",
+          "book_link": "https://example.com/book/satkar"
+        },
+        {
+          "name": "Hotel Piccadily",
+          "category": "Budget",
+          "description": "Affordable option in Raipur city.",
+          "price_range": "₹800-₹1,500",
+          "book_link": "https://example.com/book/piccadily"
+        }
+      ],
+      "culinary_delights": [
+        {
+          "name": "Chhappan Bhog",
+          "cuisine": "Chhattisgarhi",
+          "cost": "₹200-₹400",
+          "description": "Famous for local dishes like bafauri and khurma."
+        },
+        {
+          "name": "Tripti Restaurant",
+          "cuisine": "Indian",
+          "cost": "₹300-₹600",
+          "description": "Offers a variety of Indian cuisine."
+        },
+        {
+          "name": "Sagar Ratna",
+          "cuisine": "South Indian",
+          "cost": "₹150-₹300",
+          "description": "Known for dosas and idlis."
+        },
+        {
+          "name": "The Grand",
+          "cuisine": "Multi-cuisine",
+          "cost": "₹500-₹1,000",
+          "description": "Elegant dining with diverse options."
+        },
+        {
+          "name": "Aangan Restaurant",
+          "cuisine": "North Indian",
+          "cost": "₹400-₹800",
+          "description": "Popular for tandoori and curries."
+        },
+        {
+          "name": "Cafe Coffee Day",
+          "cuisine": "Cafe",
+          "cost": "₹200-₹500",
+          "description": "Cozy spot for coffee and snacks."
+        }
+      ],
+      "must_visit_spots": [
+        {
+          "name": "Chitrakote Falls",
+          "description": "A breathtaking waterfall known as the 'Niagara of India'.",
+          "tip": "Best viewed during monsoon; carry a camera."
+        },
+        {
+          "name": "Kanger Valley National Park",
+          "description": "A biodiversity hotspot with caves and wildlife.",
+          "tip": "Explore Kutumsar Caves with a guide."
+        },
+        {
+          "name": "Bastar",
+          "description": "A tribal region with rich culture and Danteshwari Temple.",
+          "tip": "Attend the Bastar Dussehra festival."
+        },
+        {
+          "name": "Sirpur",
+          "description": "An ancient town with Buddhist ruins and temples.",
+          "tip": "Visit early morning for a peaceful experience."
+        },
+        {
+          "name": "Mainpat",
+          "description": "A hill station with waterfalls and lush greenery.",
+          "tip": "Perfect for trekking and nature walks."
+        },
+        {
+          "name": "Amarkantak",
+          "description": "The origin of Narmada River with spiritual significance.",
+          "tip": "Explore nearby temples and waterfalls."
+        }
+      ],
+      "travel_essentials": {
+        "how_to_reach": "By road: Raipur is 250 km from Nagpur (NH6, 5-6 hrs). By train: Raipur Junction connects major cities. By air: Swami Vivekananda Airport (Raipur).",
+        "best_time": "October to March",
+        "local_transport": "Buses, auto-rickshaws, taxis",
+        "tips": "Carry light clothing; respect tribal customs.",
+        "nearby_destinations": "Chitrakote (300 km), Kanger Valley (250 km)"
+      }
+    }
+  }

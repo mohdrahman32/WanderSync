@@ -1,0 +1,152 @@
+{
+  "state": {
+    "name": "Telangana",
+    "hero_image": "state/telangana.avif",
+    "overview": {
+      "description": "Telangana, a state in southern India, is a blend of rich history, vibrant culture, and modern development. Once part of Andhra Pradesh, it became the 29th state of India on June 2, 2014. Known for its majestic forts, ancient temples, and the bustling IT hub of Hyderabad, Telangana offers a unique travel experience.",
+      "key_facts": {
+        "capital": "Hyderabad",
+        "population": "35.2 million (approx.)",
+        "language": "Telugu, Urdu",
+        "area": "112,077 sq km",
+        "established": "June 2, 2014"
+      }
+    },
+    "top_destinations": [
+      {
+        "name": "Hyderabad",
+        "image": "place/hyderabad.avif",
+        "description": "The capital city, famous for Charminar, Golconda Fort, and a thriving food scene.",
+        "explore_link": "../hyderabad.html",
+        "best_time": "October to February",
+        "travel_tips": "Visit early to avoid crowds; try local biryani.",
+        "entry_fee": "Free (some monuments may charge ₹20-₹50)"
+      },
+      {
+        "name": "Warangal",
+        "image": "place/warangal.avif",
+        "description": "Home to the historic Warangal Fort and thousand-pillar temple.",
+        "explore_link": "../warangal.html",
+        "best_time": "November to March",
+        "travel_tips": "Wear comfortable shoes; carry water for fort exploration.",
+        "entry_fee": "₹10-₹30 (varies by site)"
+      },
+      {
+        "name": "Nagarjuna Sagar",
+        "image": "place/nagarjuna-sagar.avif",
+        "description": "A scenic spot with a massive dam and Buddhist heritage.",
+        "explore_link": "../nagarjunasagar.html",
+        "best_time": "July to February",
+        "travel_tips": "Best visited by boat; carry sunscreen.",
+        "entry_fee": "₹20 (dam visit); ₹100+ (boat ride)"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "Taj Krishna",
+        "category": "Luxury",
+        "description": "Luxurious stay with modern amenities in the heart of Hyderabad.",
+        "price_range": "₹10,000+",
+        "book_link": "https://example.com/book/taj-krishna"
+      },
+      {
+        "name": "Novotel Hyderabad Convention Centre",
+        "category": "Luxury",
+        "description": "Premium hotel with extensive facilities near HICC.",
+        "price_range": "₹9,000+",
+        "book_link": "https://example.com/book/novotel-hicc"
+      },
+      {
+        "name": "Hotel Sitara Grand",
+        "category": "Moderate",
+        "description": "Comfortable stay with good service in Warangal.",
+        "price_range": "₹3,000-₹5,000",
+        "book_link": "https://example.com/book/sitara-grand"
+      },
+      {
+        "name": "Hotel Haritha",
+        "category": "Budget",
+        "description": "Affordable option near Nagarjuna Sagar Dam.",
+        "price_range": "₹1,000-₹2,000",
+        "book_link": "https://example.com/book/haritha"
+      }
+    ],
+    "culinary_delights": [
+      {
+        "name": "Bawarchi",
+        "cuisine": "Hyderabadi",
+        "cost": "₹500-₹1,000",
+        "description": "Renowned for authentic Hyderabadi biryani."
+      },
+      {
+        "name": "Jewel of Nizam",
+        "cuisine": "Multi-cuisine",
+        "cost": "₹1,500+",
+        "description": "Elegant dining with a royal touch."
+      },
+      {
+        "name": "Chutney's",
+        "cuisine": "South Indian",
+        "cost": "₹300-₹600",
+        "description": "Popular for dosas and idlis."
+      },
+      {
+        "name": "Paradise",
+        "cuisine": "Hyderabadi",
+        "cost": "₹400-₹800",
+        "description": "Famous for its legendary biryani and kebabs."
+      },
+      {
+        "name": "Ohri's Jiva Imperia",
+        "cuisine": "Multi-cuisine",
+        "cost": "₹1,200+",
+        "description": "Luxury dining with a blend of Indian and global flavors."
+      },
+      {
+        "name": "Cafe Niloufer",
+        "cuisine": "Bakery/Irani",
+        "cost": "₹200-₹500",
+        "description": "Iconic spot for Irani chai and Osmania biscuits."
+      }
+    ],
+    "must_visit_spots": [
+      {
+        "name": "Charminar",
+        "description": "Iconic monument and bustling market area.",
+        "tip": "Visit in the evening for a vibrant experience."
+      },
+      {
+        "name": "Golconda Fort",
+        "description": "Historic fort with stunning acoustics and views.",
+        "tip": "Wear comfortable shoes and carry water."
+      },
+      {
+        "name": "Ramoji Film City",
+        "description": "World’s largest film studio complex.",
+        "tip": "Book a guided tour in advance."
+      },
+      {
+        "name": "Qutb Shahi Tombs",
+        "description": "Majestic tombs of the Qutb Shahi dynasty.",
+        "tip": "Explore early morning for a peaceful visit."
+      },
+      {
+        "name": "Bhadrachalam Temple",
+        "description": "Sacred temple dedicated to Lord Rama.",
+        "tip": "Visit during festivals for a cultural experience."
+      },
+      {
+        "name": "Nehru Zoological Park",
+        "description": "Sprawling zoo with diverse wildlife.",
+        "tip": "Take the safari ride for a unique experience."
+      }
+    ],
+    "travel_essentials": {
+      "how_to_reach": "By road: Hyderabad is 600 km from Mumbai (NH65, 12-14 hrs). By train: Regular services to Hyderabad Deccan. By air: Rajiv Gandhi International Airport (15 km from city).",
+      "best_time": "October to February",
+      "local_transport": "Auto-rickshaws, cabs, Hyderabad Metro",
+      "tips": "Respect local customs, avoid peak summer heat.",
+      "nearby_destinations": "Warangal (150 km), Nagarjuna Sagar (160 km)"
+    }
+  }
+}

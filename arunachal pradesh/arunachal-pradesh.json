@@ -1,0 +1,152 @@
+{
+  "state": {
+    "name": "Arunachal Pradesh",
+    "hero_image": "state/arunachal-pradesh.avif",
+    "overview": {
+      "description": "Arunachal Pradesh, located in northeastern India, is a land of rugged mountains, dense forests, and diverse tribal cultures. Becoming a state on February 20, 1987, it is known for its pristine landscapes, monasteries, and biodiversity hotspots like Namdapha National Park.",
+      "key_facts": {
+        "capital": "Itanagar",
+        "population": "1.4 million (approx.)",
+        "language": "Many tribal languages, Hindi",
+        "area": "83,743 sq km",
+        "established": "February 20, 1987"
+      }
+    },
+    "top_destinations": [
+      {
+        "name": "Tawang",
+        "image": "place/tawang.avif",
+        "description": "Home to the stunning Tawang Monastery and breathtaking Himalayan views.",
+        "explore_link": "../tawang.html",
+        "best_time": "March to October",
+        "travel_tips": "Carry warm clothing; obtain Inner Line Permit.",
+        "entry_fee": "Free (monastery); ₹50 (some viewpoints)"
+      },
+      {
+        "name": "Ziro Valley",
+        "image": "place/zirovalley.avif",
+        "description": "A serene valley known for its paddy fields and Apatani tribal culture.",
+        "explore_link": "../ziro-valley.html",
+        "best_time": "September to November",
+        "travel_tips": "Attend the Ziro Festival; respect local customs.",
+        "entry_fee": "Free"
+      },
+      {
+        "name": "Namdapha National Park",
+        "image": "place/Namdapha-National-Park.jpg",
+        "description": "A biodiversity hotspot with tigers, elephants, and rare species.",
+        "explore_link": "../namdapha.html",
+        "best_time": "October to April",
+        "travel_tips": "Hire a guide; wear trekking gear.",
+        "entry_fee": "₹200 (Indian); ₹1000 (foreigners)"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "Hotel Tawang View",
+        "category": "Luxury",
+        "description": "Luxurious stay with panoramic views in Tawang.",
+        "price_range": "₹6,000+",
+        "book_link": "https://example.com/book/tawang-view"
+      },
+      {
+        "name": "Pine Grove Resort",
+        "category": "Luxury",
+        "description": "Premium resort nestled in Ziro Valley's greenery.",
+        "price_range": "₹5,500+",
+        "book_link": "https://example.com/book/pine-grove"
+      },
+      {
+        "name": "Hotel Blue Pine",
+        "category": "Moderate",
+        "description": "Comfortable stay near Namdapha National Park.",
+        "price_range": "₹2,000-₹3,500",
+        "book_link": "https://example.com/book/blue-pine"
+      },
+      {
+        "name": "Tourist Lodge Itanagar",
+        "category": "Budget",
+        "description": "Affordable option in the capital city.",
+        "price_range": "₹800-₹1,500",
+        "book_link": "https://example.com/book/tourist-lodge"
+      }
+    ],
+    "culinary_delights": [
+      {
+        "name": "Tawang Gompa Kitchen",
+        "cuisine": "Tibetan",
+        "cost": "₹300-₹600",
+        "description": "Authentic Tibetan dishes near Tawang Monastery."
+      },
+      {
+        "name": "Ziro Cafe",
+        "cuisine": "Local",
+        "cost": "₹400-₹800",
+        "description": "Offers tribal delicacies like apong and smoked meat."
+      },
+      {
+        "name": "Namdapha Canteen",
+        "cuisine": "Indian",
+        "cost": "₹200-₹500",
+        "description": "Simple yet tasty meals for trekkers."
+      },
+      {
+        "name": "Hotel Donyi Polo",
+        "cuisine": "Multi-cuisine",
+        "cost": "₹600-₹1,200",
+        "description": "Variety of dishes in Itanagar."
+      },
+      {
+        "name": "Local Thali House",
+        "cuisine": "Tribal",
+        "cost": "₹300-₹700",
+        "description": "Traditional tribal thali experience."
+      },
+      {
+        "name": "Sky Chef",
+        "cuisine": "Chinese",
+        "cost": "₹400-₹900",
+        "description": "Popular for Chinese cuisine in Itanagar."
+      }
+    ],
+    "must_visit_spots": [
+      {
+        "name": "Tawang Monastery",
+        "description": "One of the largest monasteries in India with rich Buddhist heritage.",
+        "tip": "Visit during Losar festival for cultural vibes."
+      },
+      {
+        "name": "Sela Pass",
+        "description": "A high-altitude pass with stunning snow views.",
+        "tip": "Drive cautiously; carry warm gear."
+      },
+      {
+        "name": "Bomdila",
+        "description": "A hill station with monasteries and apple orchards.",
+        "tip": "Explore local markets for handicrafts."
+      },
+      {
+        "name": "Mechuka Valley",
+        "description": "Remote valley with serene landscapes and Siang River.",
+        "tip": "Best for adventure seekers; plan ahead."
+      },
+      {
+        "name": "Parshuram Kund",
+        "description": "Sacred site for Hindu pilgrims with natural beauty.",
+        "tip": "Visit during Makar Sankranti for a spiritual experience."
+      },
+      {
+        "name": "Roing",
+        "description": "Gateway to the Mishmi Hills with historical sites.",
+        "tip": "Enjoy the Bhismaknagar Fort ruins."
+      }
+    ],
+    "travel_essentials": {
+      "how_to_reach": "By road: Itanagar is 400 km from Guwahati (NH27, 10-12 hrs). By air: Lilabari Airport (near Tezu, 200 km). Limited train connectivity via Harmuti.",
+      "best_time": "March to October",
+      "local_transport": "Taxis, jeeps, local buses",
+      "tips": "Obtain Inner Line Permit; carry warm clothing.",
+      "nearby_destinations": "Tawang (300 km), Ziro (100 km)"
+    }
+  }
+}

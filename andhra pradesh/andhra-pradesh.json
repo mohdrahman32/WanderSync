@@ -1,0 +1,152 @@
+{
+  "state": {
+    "name": "Andhra Pradesh",
+    "hero_image": "state/andhra-pradesh.avif",
+    "overview": {
+      "description": "Andhra Pradesh, a state in southern India, is renowned for its rich cultural heritage, stunning coastline, and ancient temples. Formed on November 1, 1956, it is known for its vibrant festivals, delicious cuisine, and the scenic beauty of places like Visakhapatnam and Tirupati.",
+      "key_facts": {
+        "capital": "Amaravati",
+        "population": "49.5 million (approx.)",
+        "language": "Telugu",
+        "area": "162,975 sq km",
+        "established": "November 1, 1956"
+      }
+    },
+    "top_destinations": [
+      {
+        "name": "Visakhapatnam",
+        "image": "place/vishakhapatnam.avif",
+        "description": "A port city known for its beaches, hills, and the famous Kailasagiri Park.",
+        "explore_link": "../visakhapatnam.html",
+        "best_time": "October to March",
+        "travel_tips": "Visit beaches early; enjoy local seafood.",
+        "entry_fee": "Free (some attractions ₹20-₹50)"
+      },
+      {
+        "name": "Tirupati",
+        "image": "place/tirupati.avif",
+        "description": "Home to the sacred Tirumala Venkateswara Temple, a major pilgrimage site.",
+        "explore_link": "../tirupati.html",
+        "best_time": "September to February",
+        "travel_tips": "Book darshan in advance; wear comfortable clothing.",
+        "entry_fee": "Free (special darshan ₹300+)"
+      },
+      {
+        "name": "Araku Valley",
+        "image": "place/arakuvalley.avif",
+        "description": "A scenic hill station with coffee plantations and tribal culture.",
+        "explore_link": "../araku-valley.html",
+        "best_time": "October to February",
+        "travel_tips": "Carry warm clothes; explore by train.",
+        "entry_fee": "₹20 (some viewpoints)"
+      }
+    ],
+    "accommodation": [
+      {
+        "name": "The Park Visakhapatnam",
+        "category": "Luxury",
+        "description": "Luxurious stay with sea views in Visakhapatnam.",
+        "price_range": "₹8,000+",
+        "book_link": "https://example.com/book/park-visakhapatnam"
+      },
+      {
+        "name": "Taj Tirupati",
+        "category": "Luxury",
+        "description": "Premium hotel near Tirumala Temple with modern amenities.",
+        "price_range": "₹7,500+",
+        "book_link": "https://example.com/book/taj-tirupati"
+      },
+      {
+        "name": "Haritha Valley Resort",
+        "category": "Moderate",
+        "description": "Comfortable stay amidst Araku Valley's greenery.",
+        "price_range": "₹2,500-₹4,000",
+        "book_link": "https://example.com/book/haritha-valley"
+      },
+      {
+        "name": "Hotel Sri Padmavathi",
+        "category": "Budget",
+        "description": "Affordable option near Tirupati Temple.",
+        "price_range": "₹1,000-₹2,000",
+        "book_link": "https://example.com/book/sri-padmavathi"
+      }
+    ],
+    "culinary_delights": [
+      {
+        "name": "Dwaraka Hotel",
+        "cuisine": "Andhra",
+        "cost": "₹400-₹800",
+        "description": "Famous for spicy Andhra meals and biryani."
+      },
+      {
+        "name": "Bheemli Sea View",
+        "cuisine": "Seafood",
+        "cost": "₹600-₹1,200",
+        "description": "Best spot for fresh seafood by the beach."
+      },
+      {
+        "name": "Minerva Coffee Shop",
+        "cuisine": "South Indian",
+        "cost": "₹200-₹500",
+        "description": "Known for authentic dosas and filter coffee."
+      },
+      {
+        "name": "The Peacock",
+        "cuisine": "Multi-cuisine",
+        "cost": "₹800-₹1,500",
+        "description": "Elegant dining with a variety of dishes."
+      },
+      {
+        "name": "Sri Venkateswara Grand",
+        "cuisine": "Andhra",
+        "cost": "₹500-₹1,000",
+        "description": "Popular for traditional Andhra thali."
+      },
+      {
+        "name": "Narayana Sadan",
+        "cuisine": "Vegetarian",
+        "cost": "₹300-₹600",
+        "description": "Pure veg meals near Tirupati Temple."
+      }
+    ],
+    "must_visit_spots": [
+      {
+        "name": "Tirumala Venkateswara Temple",
+        "description": "One of the holiest Hindu shrines in India.",
+        "tip": "Plan darshan early to avoid crowds."
+      },
+      {
+        "name": "Araku Tribal Museum",
+        "description": "Showcases the rich tribal heritage of the region.",
+        "tip": "Visit with a guide for better insight."
+      },
+      {
+        "name": "Visakhapatnam Beach",
+        "description": "Stunning coastline with golden sands.",
+        "tip": "Enjoy sunrise and water activities."
+      },
+      {
+        "name": "Borra Caves",
+        "description": "Natural limestone caves with unique formations.",
+        "tip": "Wear sturdy shoes and carry a torch."
+      },
+      {
+        "name": "Lambasingi",
+        "description": "Known as the 'Kashmir of Andhra', a cool hill station.",
+        "tip": "Best visited in winter for misty views."
+      },
+      {
+        "name": "Srisailam Temple",
+        "description": "Ancient temple dedicated to Lord Shiva.",
+        "tip": "Explore the nearby wildlife sanctuary."
+      }
+    ],
+    "travel_essentials": {
+      "how_to_reach": "By road: Visakhapatnam is 650 km from Hyderabad (NH16, 12-14 hrs). By train: Regular services to major cities. By air: Visakhapatnam Airport (10 km from city).",
+      "best_time": "October to March",
+      "local_transport": "Buses, auto-rickshaws, taxis",
+      "tips": "Carry light clothing; respect temple customs.",
+      "nearby_destinations": "Tirupati (600 km), Araku Valley (120 km)"
+    }
+  }
+}

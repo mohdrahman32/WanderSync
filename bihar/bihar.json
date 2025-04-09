@@ -1,0 +1,152 @@
+{
+    "state": {
+      "name": "Bihar",
+      "hero_image": "state/bihar.avif",
+      "overview": {
+        "description": "Bihar, located in eastern India, is a cradle of ancient history and spirituality, home to the birthplace of Buddhism and Jainism. Established as a state on January 26, 1950, it boasts historical sites like Bodh Gaya and Patna, the capital.",
+        "key_facts": {
+          "capital": "Patna",
+          "population": "104 million (approx.)",
+          "language": "Hindi, Bhojpuri",
+          "area": "94,163 sq km",
+          "established": "January 26, 1950"
+        }
+      },
+      "top_destinations": [
+        {
+          "name": "Bodh Gaya",
+          "image": "place/bodhgaya.avif",
+          "description": "A UNESCO site where Gautama Buddha attained enlightenment.",
+          "explore_link": "../bodh-gaya.html",
+          "best_time": "October to March",
+          "travel_tips": "Visit the Mahabodhi Temple; carry comfortable shoes.",
+          "entry_fee": "Free (some areas ₹20-₹50)"
+        },
+        {
+          "name": "Patna",
+          "image": "place/patna.jpg",
+          "description": "The capital city with historical sites like Golghar and Patna Museum.",
+          "explore_link": "../patna.html",
+          "best_time": "October to March",
+          "travel_tips": "Explore local markets; visit during Chhath Puja.",
+          "entry_fee": "Free (some sites ₹10-₹50)"
+        },
+        {
+          "name": "Nalanda",
+          "image": "place/nalanda.avif",
+          "description": "Home to the ancient Nalanda University ruins and a major Buddhist center.",
+          "explore_link": "../nalanda.html",
+          "best_time": "October to March",
+          "travel_tips": "Hire a guide; carry water and sunscreen.",
+          "entry_fee": "₹50 (Indian); ₹200 (foreigners)"
+        }
+      ],
+      "accommodation": [
+        {
+          "name": "Hotel Taj Darbar",
+          "category": "Luxury",
+          "description": "Luxurious stay near Bodh Gaya Temple.",
+          "price_range": "₹5,000+",
+          "book_link": "https://example.com/book/taj-darbar"
+        },
+        {
+          "name": "The Panache Hotel",
+          "category": "Luxury",
+          "description": "Premium hotel in Patna with modern amenities.",
+          "price_range": "₹4,500+",
+          "book_link": "https://example.com/book/panache"
+        },
+        {
+          "name": "Hotel Vijay",
+          "category": "Moderate",
+          "description": "Comfortable stay near Nalanda ruins.",
+          "price_range": "₹1,500-₹3,000",
+          "book_link": "https://example.com/book/vijay"
+        },
+        {
+          "name": "Hotel Gargee",
+          "category": "Budget",
+          "description": "Affordable option in Patna city.",
+          "price_range": "₹800-₹1,500",
+          "book_link": "https://example.com/book/gargee"
+        }
+      ],
+      "culinary_delights": [
+        {
+          "name": "Bhojnalaya",
+          "cuisine": "Bihari",
+          "cost": "₹200-₹400",
+          "description": "Famous for litti chokha and traditional meals."
+        },
+        {
+          "name": "The Salt",
+          "cuisine": "Multi-cuisine",
+          "cost": "₹500-₹1,000",
+          "description": "Variety of dishes with a modern twist."
+        },
+        {
+          "name": "Sinha Dhaba",
+          "cuisine": "Indian",
+          "cost": "₹150-₹300",
+          "description": "Popular for authentic roadside food."
+        },
+        {
+          "name": "Kwality Restaurant",
+          "cuisine": "North Indian",
+          "cost": "₹300-₹600",
+          "description": "Known for tandoori and curries."
+        },
+        {
+          "name": "Moti Mahal Delux",
+          "cuisine": "Indian",
+          "cost": "₹400-₹800",
+          "description": "Classic Indian dining experience."
+        },
+        {
+          "name": "Café Coffee Day",
+          "cuisine": "Cafe",
+          "cost": "₹200-₹500",
+          "description": "Cozy spot for coffee and snacks."
+        }
+      ],
+      "must_visit_spots": [
+        {
+          "name": "Mahabodhi Temple",
+          "description": "A UNESCO site where Buddha attained enlightenment.",
+          "tip": "Visit during Buddha Purnima for a spiritual experience."
+        },
+        {
+          "name": "Vishwa Shanti Stupa",
+          "description": "A peace pagoda offering serene views in Rajgir.",
+          "tip": "Climb early morning for a peaceful visit."
+        },
+        {
+          "name": "Golghar",
+          "description": "A historical granary with a panoramic view of Patna.",
+          "tip": "Enjoy the spiral staircase climb."
+        },
+        {
+          "name": "Vaishali",
+          "description": "An ancient city with Buddhist and Jain significance.",
+          "tip": "Visit the Ashokan Pillar and museum."
+        },
+        {
+          "name": "Gaya",
+          "description": "A major pilgrimage site for Hindus and Buddhists.",
+          "tip": "Explore Vishnupad Temple and perform pind daan."
+        },
+        {
+          "name": "Rajgir",
+          "description": "Known for hot springs and ancient ruins.",
+          "tip": "Take the ropeway to Shanti Stupa."
+        }
+      ],
+      "travel_essentials": {
+        "how_to_reach": "By road: Patna is 500 km from Kolkata (NH19, 10-12 hrs). By train: Patna Junction connects major cities. By air: Jay Prakash Narayan Airport (Patna).",
+        "best_time": "October to March",
+        "local_transport": "Buses, auto-rickshaws, taxis",
+        "tips": "Carry light clothing; respect religious sites.",
+        "nearby_destinations": "Bodh Gaya (100 km), Nalanda (90 km)"
+      }
+    }
+  }

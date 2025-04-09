@@ -121,7 +121,7 @@ function toggleDropdown(state, card, exploreBtn) {
                             <button class="bg-[#D4A017] text-white px-3 py-1 rounded-full hvr-buzz explore-place-btn" data-place="${dest.name}" data-state="${state.state}">Explore</button>
                         </div>
                     `).join('')}
-                    <a href="${state.state.toLowerCase()}.html" class="main-page-btn" data-state="${state.state}">Visit Main Page</a>
+                    <a href="${state.state.toLowerCase()}/${state.state.toLowerCase()}.html" class="main-page-btn" data-state="${state.state}">Visit Main Page</a>
                     <button class="collapse-btn mt-4">↑</button>
                 `;
                 dropdown.style.display = 'block';

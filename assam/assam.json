@@ -1,0 +1,152 @@
+{
+    "state": {
+      "name": "Assam",
+      "hero_image": "state/assam.avif",
+      "overview": {
+        "description": "Assam, located in northeastern India, is famous for its lush tea plantations, one-horned rhinoceros, and the mighty Brahmaputra River. Becoming a state on January 26, 1950, it is a gateway to the Northeast with a rich cultural heritage and natural beauty.",
+        "key_facts": {
+          "capital": "Dispur",
+          "population": "31.2 million (approx.)",
+          "language": "Assamese, Bodo",
+          "area": "78,438 sq km",
+          "established": "January 26, 1950"
+        }
+      },
+      "top_destinations": [
+        {
+          "name": "Kaziranga National Park",
+          "image": "place/kaziranganationalpark.avif",
+          "description": "A UNESCO site famous for the one-horned rhinoceros and elephant safaris.",
+          "explore_link": "../kaziranga.html",
+          "best_time": "November to April",
+          "travel_tips": "Book jeep safari in advance; carry binoculars.",
+          "entry_fee": "₹200 (Indian); ₹1000 (foreigners)"
+        },
+        {
+          "name": "Guwahati",
+          "image": "place/guwahati.avif",
+          "description": "The gateway city with the Kamakhya Temple and scenic Brahmaputra River.",
+          "explore_link": "../guwahati.html",
+          "best_time": "October to March",
+          "travel_tips": "Visit Kamakhya during Ambubachi Mela.",
+          "entry_fee": "Free (some temples ₹20-₹50)"
+        },
+        {
+          "name": "Majuli Island",
+          "image": "place/majuliisland.avif",
+          "description": "The world’s largest river island known for its satras and culture.",
+          "explore_link": "../majuli.html",
+          "best_time": "November to March",
+          "travel_tips": "Take a ferry; explore by bicycle.",
+          "entry_fee": "Free"
+        }
+      ],
+      "accommodation": [
+        {
+          "name": "Wild Grass Lodge",
+          "category": "Luxury",
+          "description": "Luxurious stay near Kaziranga National Park.",
+          "price_range": "₹7,000+",
+          "book_link": "https://example.com/book/wild-grass"
+        },
+        {
+          "name": "Vivanta Guwahati",
+          "category": "Luxury",
+          "description": "Premium hotel with river views in Guwahati.",
+          "price_range": "₹6,500+",
+          "book_link": "https://example.com/book/vivanta-guwahati"
+        },
+        {
+          "name": "Hotel Paradise",
+          "category": "Moderate",
+          "description": "Comfortable stay on Majuli Island.",
+          "price_range": "₹2,000-₹3,500",
+          "book_link": "https://example.com/book/paradise"
+        },
+        {
+          "name": "Hotel Prag Continental",
+          "category": "Budget",
+          "description": "Affordable option in Guwahati city.",
+          "price_range": "₹1,000-₹2,000",
+          "book_link": "https://example.com/book/prag-continental"
+        }
+      ],
+      "culinary_delights": [
+        {
+          "name": "Paradise Restaurant",
+          "cuisine": "Assamese",
+          "cost": "₹300-₹600",
+          "description": "Famous for traditional Assamese thali."
+        },
+        {
+          "name": "Khaugiri Restaurant",
+          "cuisine": "Seafood",
+          "cost": "₹500-₹1,000",
+          "description": "Best spot for fresh river fish dishes."
+        },
+        {
+          "name": "Momo Ghar",
+          "cuisine": "Northeast",
+          "cost": "₹200-₹400",
+          "description": "Popular for momos and local snacks."
+        },
+        {
+          "name": "Dynasty",
+          "cuisine": "Multi-cuisine",
+          "cost": "₹600-₹1,200",
+          "description": "Variety of Indian and Chinese dishes."
+        },
+        {
+          "name": "Bhoj Mela",
+          "cuisine": "Assamese",
+          "cost": "₹400-₹800",
+          "description": "Authentic Assamese cuisine experience."
+        },
+        {
+          "name": "Cafe B-You",
+          "cuisine": "Cafe",
+          "cost": "₹300-₹600",
+          "description": "Cozy spot for coffee and pastries."
+        }
+      ],
+      "must_visit_spots": [
+        {
+          "name": "Kamakhya Temple",
+          "description": "One of the most sacred Shakti Peethas in India.",
+          "tip": "Visit during Ambubachi Mela for a unique experience."
+        },
+        {
+          "name": "Manas National Park",
+          "description": "A UNESCO site with tigers, elephants, and diverse wildlife.",
+          "tip": "Opt for an elephant safari for a closer view."
+        },
+        {
+          "name": "Tezpur",
+          "description": "A historic town with scenic riverside and ruins.",
+          "tip": "Explore Agnigarh Hill for panoramic views."
+        },
+        {
+          "name": "Hajo",
+          "description": "A pilgrimage site for Hindus, Muslims, and Buddhists.",
+          "tip": "Visit Hayagriva Madhava Temple."
+        },
+        {
+          "name": "Sivasagar",
+          "description": "Known for its ancient Ahom monuments and temples.",
+          "tip": "Check out Rang Ghar, an amphitheater."
+        },
+        {
+          "name": "Jorhat",
+          "description": "Tea capital with lush estates and cultural heritage.",
+          "tip": "Tour a tea garden for an authentic experience."
+        }
+      ],
+      "travel_essentials": {
+        "how_to_reach": "By road: Guwahati is 100 km from Shillong (NH27, 3-4 hrs). By train: Guwahati Junction connects major cities. By air: Lokpriya Gopinath Bordoloi Airport (Guwahati).",
+        "best_time": "November to April",
+        "local_transport": "Buses, auto-rickshaws, taxis",
+        "tips": "Carry light rain gear; respect local festivals.",
+        "nearby_destinations": "Kaziranga (200 km), Majuli (350 km)"
+      }
+    }
+  }

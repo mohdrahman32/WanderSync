@@ -46,6 +46,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitImage = document.getElementById('submit-image');
     let userStories = JSON.parse(localStorage.getItem('userStories')) || [];
 
+    // Submit Story Button Functionality
+    if (submitStoryBtn) {
+        submitStoryBtn.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent default anchor behavior
+            document.getElementById('submit-id').value = userStories.length + 1;
+            document.getElementById('submit-image').value = ''; // Reset file input
+            document.querySelector('.file-input-label').textContent = 'Upload Image'; // Reset label
+            if (submitPopup) {
+                submitPopup.style.display = 'flex';
+                gsap.fromTo(submitPopup, { opacity: 0 }, { opacity: 1, duration: 0.5, ease: 'power2.out' });
+                gsap.fromTo('.popup-content', { scale: 0.8, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, ease: 'back.out(1.7)' });
+            } else {
+                console.error('Submit popup element not found');
+            }
+        });
+    } else {
+        console.error('Submit Story button not found');
+    }
+
     fetch('stories.json')
         .then(response => {
             if (!response.ok) throw new Error('JSON file not found');
@@ -120,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <li>Restaurant: <a href="${featured.recommendations.restaurant_link}" target="_blank" class="text-[#D4A017] hover:underline">${featured.recommendations.restaurant}</a></li>
                 <li>Spot: ${featured.recommendations.spot}</li>
             `;
-            document.getElementById('featured-cta').href = `#${kashmir-AudioDestinationNode.html}`;
+            document.getElementById('featured-cta').href = `kashmir-destination.html`; // Fixed typo in href
 
             // Filter Functionality
             const filterButtons = document.querySelectorAll('#filter-buttons button');
@@ -143,16 +162,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             // Submit Story Popup
-            submitStoryBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                document.getElementById('submit-id').value = userStories.length + 1;
-                document.getElementById('submit-image').value = ''; // Reset file input
-                document.querySelector('.file-input-label').textContent = 'Upload Image'; // Reset label
-                submitPopup.style.display = 'flex';
-                gsap.fromTo(submitPopup, { opacity: 0 }, { opacity: 1, duration: 0.5, ease: 'power2.out' });
-                gsap.fromTo('.popup-content', { scale: 0.8, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, ease: 'back.out(1.7)' });
-            });
-
             submitClose.addEventListener('click', () => {
                 gsap.to('.popup-content', { scale: 0.8, opacity: 0, duration: 0.3, ease: 'power2.in' });
                 gsap.to(submitPopup, { opacity: 0, duration: 0.3, ease: 'power2.in', onComplete: () => { submitPopup.style.display = 'none'; } });

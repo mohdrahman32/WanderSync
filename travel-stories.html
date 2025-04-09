@@ -282,7 +282,7 @@
             <div class="text-center text-white px-4">
                 <h2 class="text-4xl md:text-5xl font-bold mb-4" id="hero-headline">Tales from the Trail: India’s Hidden Stories</h2>
                 <p class="text-lg md:text-xl mb-6">Journey through the heart of India with stories that capture its wild beauty and timeless charm.</p>
-                <a href="#stories-showcase" class="bg-[#D4A017] text-white px-6 py-3 rounded-full shadow-lg hvr-pulse-grow" onclick="event.preventDefault(); document.querySelector('#stories-showcase').scrollIntoView({ behavior: 'smooth' });">Dive into the Stories</a>
+                <a href="#stories-showcase" class="bg-[#D4A017] text-white px-6 py-3 rounded-full shadow-lg hvr-pulse-grow" id="submit-story-btn">Submit Your Story</a>
             </div>
         </div>
     </section>
@@ -343,7 +343,6 @@
             <h3 class="text-2xl md:text-3xl font-bold mb-4" data-aos="fade-up">Have a Story to Tell?</h3>
             <p class="text-lg mb-6" data-aos="fade-up" data-aos-delay="100">Share your Indian adventures with WanderSync or dive deeper into our destinations.</p>
             <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="#" class="bg-[#D4A017] text-white px-6 py-3 rounded-full hvr-grow" data-aos="fade-up" data-aos-delay="200" id="submit-story-btn">Submit Your Story</a>
                 <a href="destination.html" class="bg-[#D4A017] text-white px-6 py-3 rounded-full hvr-grow" data-aos="fade-up" data-aos-delay="300">Explore Destinations</a>
             </div>
         </div>
@@ -377,7 +376,7 @@
                 <textarea placeholder="Excerpt" id="submit-excerpt" rows="3" required></textarea>
                 <input type="text" placeholder="Author" id="submit-author" required>
                 <div class="file-input-label">Upload Image</div>
-                <input  type="file" id="submit-image" accept="image/*">
+                <input type="file" id="submit-image" accept="image/*">
                 <select id="submit-region" required>
                     <option value="">Select Region</option>
                     <option value="North">North</option>
