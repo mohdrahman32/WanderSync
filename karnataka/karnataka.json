@@ -1,0 +1,152 @@
+{
+    "state": {
+      "name": "Karnataka",
+      "hero_image": "state/karnataka.avif",
+      "overview": {
+        "description": "Karnataka, located in southern India, is known for its ancient temples, coffee plantations, and coastal beaches. Established as a state on November 1, 1956, it features attractions like Mysuru and Hampi.",
+        "key_facts": {
+          "capital": "Bengaluru",
+          "population": "68.4 million (approx.)",
+          "language": "Kannada",
+          "area": "191,791 sq km",
+          "established": "November 1, 1956"
+        }
+      },
+      "top_destinations": [
+        {
+          "name": "Mysuru",
+          "image": "place/mysuru.avif",
+          "description": "Famous for the Mysore Palace and Dasara festival.",
+          "explore_link": "../mysuru.html",
+          "best_time": "October to March",
+          "travel_tips": "Visit during Dasara; explore the palace at night.",
+          "entry_fee": "₹40 (Palace); ₹200 (illuminated)"
+        },
+        {
+          "name": "Hampi",
+          "image": "place/hampi.avif",
+          "description": "A UNESCO site with ancient ruins and temples.",
+          "explore_link": "../hampi.html",
+          "best_time": "October to February",
+          "travel_tips": "Rent a bike; visit Virupaksha Temple.",
+          "entry_fee": "₹600 (foreigners); ₹40 (Indians)"
+        },
+        {
+          "name": "Coorg",
+          "image": "place/coorg.avif",
+          "description": "Known for coffee estates and scenic hills.",
+          "explore_link": "../coorg.html",
+          "best_time": "October to March",
+          "travel_tips": "Visit Abbey Falls; carry rain gear.",
+          "entry_fee": "Free (some sites ₹10-₹50)"
+        }
+      ],
+      "accommodation": [
+        {
+          "name": "The Leela Palace",
+          "category": "Luxury",
+          "description": "Luxurious stay in Bengaluru.",
+          "price_range": "₹10,000+",
+          "book_link": "https://example.com/book/leela-palace"
+        },
+        {
+          "name": "Taj Madikeri Resort",
+          "category": "Luxury",
+          "description": "Premium resort in Coorg.",
+          "price_range": "₹9,000+",
+          "book_link": "https://example.com/book/taj-madikeri"
+        },
+        {
+          "name": "Hotel Mayura Hoysala",
+          "category": "Moderate",
+          "description": "Comfortable stay in Mysuru.",
+          "price_range": "₹2,500-¥4,500",
+          "book_link": "https://example.com/book/mayura-hoysala"
+        },
+        {
+          "name": "Hotel Hosmat",
+          "category": "Budget",
+          "description": "Affordable option in Hampi.",
+          "price_range": "₹1,200-¥2,800",
+          "book_link": "https://example.com/book/hosmat"
+        }
+      ],
+      "culinary_delights": [
+        {
+          "name": "Mavalli Tiffin Rooms",
+          "cuisine": "South Indian",
+          "cost": "¥200-¥500",
+          "description": "Famous for dosas and filter coffee."
+        },
+        {
+          "name": "Kamat",
+          "cuisine": "Karnataka",
+          "cost": "¥300-¥700",
+          "description": "Known for authentic Karnataka cuisine."
+        },
+        {
+          "name": "The Only Place",
+          "cuisine": "Multi-cuisine",
+          "cost": "¥400-¥900",
+          "description": "Popular for continental and Indian dishes."
+        },
+        {
+          "name": "Cafe Coffee Day",
+          "cuisine": "Cafe",
+          "cost": "¥200-¥500",
+          "description": "Cozy spot for coffee and snacks."
+        },
+        {
+          "name": "Nagarjuna",
+          "cuisine": "South Indian",
+          "cost": "¥300-¥700",
+          "description": "Famous for seafood and Andhra-style meals."
+        },
+        {
+          "name": "Truffles",
+          "cuisine": "Continental",
+          "cost": "¥500-¥1,200",
+          "description": "Offers a variety of international cuisine."
+        }
+      ],
+      "must_visit_spots": [
+        {
+          "name": "Mysore Palace",
+          "description": "A historic palace with stunning architecture.",
+          "tip": "Visit during the Dasara festival."
+        },
+        {
+          "name": "Hampi Ruins",
+          "description": "Ancient ruins of the Vijayanagara Empire.",
+          "tip": "Explore the Vittala Temple complex."
+        },
+        {
+          "name": "Gokarna Beach",
+          "description": "A serene beach with spiritual significance.",
+          "tip": "Visit Om Beach for tranquility."
+        },
+        {
+          "name": "Bandipur National Park",
+          "description": "A wildlife sanctuary with tigers and elephants.",
+          "tip": "Book a safari for the best experience."
+        },
+        {
+          "name": "Chikmagalur",
+          "description": "Known for coffee plantations and Mullayanagiri peak.",
+          "tip": "Trek to Mullayanagiri for views."
+        },
+        {
+          "name": "Badami",
+          "description": "Famous for rock-cut caves and temples.",
+          "tip": "Visit the Bhootnath Temple at sunset."
+        }
+      ],
+      "travel_essentials": {
+        "how_to_reach": "By road: Bengaluru is 500 km from Chennai (NH48, 8-9 hrs). By train: Bengaluru City connects major cities. By air: Kempegowda Airport (Bengaluru).",
+        "best_time": "October to March",
+        "local_transport": "Buses, auto-rickshaws, taxis",
+        "tips": "Carry light clothing; book accommodations in advance.",
+        "nearby_destinations": "Mysuru (140 km), Hampi (340 km)"
+      }
+    }
+  }

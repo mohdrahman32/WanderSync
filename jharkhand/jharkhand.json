@@ -1,0 +1,152 @@
+{
+    "state": {
+      "name": "Jharkhand",
+      "hero_image": "state/jharkhand.avif",
+      "overview": {
+        "description": "Jharkhand, located in eastern India, is known for its rich tribal culture, dense forests, and waterfalls. Established as a state on November 15, 2000, it features attractions like Ranchi and Betla National Park.",
+        "key_facts": {
+          "capital": "Ranchi",
+          "population": "32.9 million (approx.)",
+          "language": "Hindi, Santhali",
+          "area": "79,714 sq km",
+          "established": "November 15, 2000"
+        }
+      },
+      "top_destinations": [
+        {
+          "name": "Ranchi",
+          "image": "place/ranchi-waterfalls.avif",
+          "description": "The capital known for waterfalls like Dassam and Hundru.",
+          "explore_link": "../ranchi.html",
+          "best_time": "October to March",
+          "travel_tips": "Visit Jagannath Temple; carry rain gear.",
+          "entry_fee": "Free (some sites ₹10-₹50)"
+        },
+        {
+          "name": "Betla National Park",
+          "image": "place/betla-national-park.avif",
+          "description": "A wildlife sanctuary with elephants and tigers.",
+          "explore_link": "../betla.html",
+          "best_time": "November to April",
+          "travel_tips": "Book a jeep safari; carry binoculars.",
+          "entry_fee": "₹50 (Indian); ₹500 (foreigners)"
+        },
+        {
+          "name": "Jamshedpur",
+          "image": "place/jamshedpur.jpg",
+          "description": "An industrial city with parks like Jubilee Park.",
+          "explore_link": "../jamshedpur.html",
+          "best_time": "October to March",
+          "travel_tips": "Explore Dalma Wildlife Sanctuary nearby.",
+          "entry_fee": "Free"
+        }
+      ],
+      "accommodation": [
+        {
+          "name": "The BNR Chanakya",
+          "category": "Luxury",
+          "description": "Luxurious stay in Ranchi.",
+          "price_range": "₹5,000+",
+          "book_link": "https://example.com/book/bnr-chanakya"
+        },
+        {
+          "name": "Van Vihar Resort",
+          "category": "Luxury",
+          "description": "Premium resort near Betla National Park.",
+          "price_range": "₹4,500+",
+          "book_link": "https://example.com/book/van-vihar"
+        },
+        {
+          "name": "Hotel Radisson Jamshedpur",
+          "category": "Moderate",
+          "description": "Comfortable stay in Jamshedpur.",
+          "price_range": "₹2,500-₹4,000",
+          "book_link": "https://example.com/book/radisson-jamshedpur"
+        },
+        {
+          "name": "Hotel Ashoka",
+          "category": "Budget",
+          "description": "Affordable option in Ranchi.",
+          "price_range": "₹1,000-¥2,500",
+          "book_link": "https://example.com/book/ashoka"
+        }
+      ],
+      "culinary_delights": [
+        {
+          "name": "Tadka",
+          "cuisine": "Indian",
+          "cost": "₹300-¥700",
+          "description": "Famous for North Indian and tribal dishes."
+        },
+        {
+          "name": "The Brew Estate",
+          "cuisine": "Multi-cuisine",
+          "cost": "¥400-¥900",
+          "description": "Offers a variety of food with a modern vibe."
+        },
+        {
+          "name": "Sanjha Chulha",
+          "cuisine": "Jharkhandi",
+          "cost": "¥200-¥500",
+          "description": "Known for local cuisine like litti chokha."
+        },
+        {
+          "name": "Cafe Coffee Day",
+          "cuisine": "Cafe",
+          "cost": "¥200-¥500",
+          "description": "Cozy spot for coffee and snacks."
+        },
+        {
+          "name": "Hotel Kanishka",
+          "cuisine": "Indian",
+          "cost": "¥300-¥700",
+          "description": "Popular for thalis and curries."
+        },
+        {
+          "name": "The Yellow Chilli",
+          "cuisine": "North Indian",
+          "cost": "¥500-¥1,200",
+          "description": "Famous for innovative Indian cuisine."
+        }
+      ],
+      "must_visit_spots": [
+        {
+          "name": "Dassam Falls",
+          "description": "A stunning waterfall surrounded by forests.",
+          "tip": "Visit after monsoon for the best flow."
+        },
+        {
+          "name": "Hundru Falls",
+          "description": "A picturesque waterfall near Ranchi.",
+          "tip": "Carry a camera for scenic shots."
+        },
+        {
+          "name": "Baijnath Temple",
+          "description": "An ancient Shiva temple with historical significance.",
+          "tip": "Visit during Maha Shivratri."
+        },
+        {
+          "name": "Netarhat",
+          "description": "Known as the 'Queen of Chotanagpur' for its sunrise views.",
+          "tip": "Stay overnight for the sunrise."
+        },
+          {
+          "name": "Dalma Wildlife Sanctuary",
+          "description": "Home to elephants and diverse flora.",
+          "tip": "Plan a guided tour for safety."
+        },
+        {
+          "name": "Jubilee Park",
+          "description": "A beautiful park in Jamshedpur with a musical fountain.",
+          "tip": "Visit in the evening for the light show."
+        }
+      ],
+      "travel_essentials": {
+        "how_to_reach": "By road: Ranchi is 1,200 km from Delhi (NH33, 20-22 hrs). By train: Ranchi Junction connects major cities. By air: Birsa Munda Airport (Ranchi).",
+        "best_time": "October to March",
+        "local_transport": "Buses, auto-rickshaws, taxis",
+        "tips": "Carry light clothing; respect tribal customs.",
+        "nearby_destinations": "Betla (150 km), Jamshedpur (130 km)"
+      }
+    }
+  }

@@ -1,0 +1,152 @@
+{
+    "state": {
+      "name": "Gujarat",
+      "hero_image": "state/gujarat.avif",
+      "overview": {
+        "description": "Gujarat, located on India's western coast, is known for its rich history, vibrant culture, and diverse landscapes, from the Rann of Kutch to the Gir Forest. Established as a state on May 1, 1960, it is a hub of trade and tourism.",
+        "key_facts": {
+          "capital": "Gandhinagar",
+          "population": "63.8 million (approx.)",
+          "language": "Gujarati, Hindi",
+          "area": "196,024 sq km",
+          "established": "May 1, 1960"
+        }
+      },
+      "top_destinations": [
+        {
+          "name": "Rann of Kutch",
+          "image": "place/rann_of_kutch.avif",
+          "description": "A vast salt desert hosting the annual Rann Utsav festival.",
+          "explore_link": "../rann-of-kutch.html",
+          "best_time": "November to February",
+          "travel_tips": "Attend Rann Utsav; carry warm clothing.",
+          "entry_fee": "₹100 (Indian); ₹300 (foreigners)"
+        },
+        {
+          "name": "Ahmedabad",
+          "image": "place/ahmedabad.avif",
+          "description": "A historic city with UNESCO-listed Sabarmati Ashram and vibrant markets.",
+          "explore_link": "../ahmedabad.html",
+          "best_time": "October to March",
+          "travel_tips": "Visit Sabarmati Ashram; explore local food stalls.",
+          "entry_fee": "Free (some sites ₹10-₹50)"
+        },
+        {
+          "name": "Gir National Park",
+          "image": "place/gir_national_park.avif",
+          "description": "The last refuge of the Asiatic lion with diverse wildlife.",
+          "explore_link": "../gir-national-park.html",
+          "best_time": "December to March",
+          "travel_tips": "Book a safari in advance; carry binoculars.",
+          "entry_fee": "₹600 (Indian); ₹4,000 (foreigners)"
+        }
+      ],
+      "accommodation": [
+        {
+          "name": "Taj Gateway Hotel",
+          "category": "Luxury",
+          "description": "Luxurious stay in Ahmedabad.",
+          "price_range": "₹6,000+",
+          "book_link": "https://example.com/book/taj-gateway"
+        },
+        {
+          "name": "The Fern Gir Forest Resort",
+          "category": "Luxury",
+          "description": "Premium resort near Gir National Park.",
+          "price_range": "₹5,500+",
+          "book_link": "https://example.com/book/fern-gir"
+        },
+        {
+          "name": "Hotel President",
+          "category": "Moderate",
+          "description": "Comfortable stay in Rann of Kutch area.",
+          "price_range": "₹2,000-₹3,500",
+          "book_link": "https://example.com/book/president"
+        },
+        {
+          "name": "Hotel Silver Cloud",
+          "category": "Budget",
+          "description": "Affordable option in Ahmedabad.",
+          "price_range": "₹1,000-₹2,000",
+          "book_link": "https://example.com/book/silver-cloud"
+        }
+      ],
+      "culinary_delights": [
+        {
+          "name": "Agashiye",
+          "cuisine": "Gujarati",
+          "cost": "₹400-₹800",
+          "description": "Famous for authentic Gujarati thali."
+        },
+        {
+          "name": "The Green House",
+          "cuisine": "Multi-cuisine",
+          "cost": "₹500-₹1,200",
+          "description": "Offers a variety of dishes with a scenic view."
+        },
+        {
+          "name": "Gopi Dining Hall",
+          "cuisine": "Gujarati",
+          "cost": "₹300-₹600",
+          "description": "Known for traditional Gujarati snacks."
+        },
+        {
+          "name": "Seasons Restaurant",
+          "cuisine": "Indian",
+          "cost": "₹400-₹900",
+          "description": "Popular for North Indian cuisine."
+        },
+        {
+          "name": "Curry Pot",
+          "cuisine": "Indian",
+          "cost": "₹300-₹700",
+          "description": "Offers a range of spicy dishes."
+        },
+        {
+          "name": "Cafe Coffee Day",
+          "cuisine": "Cafe",
+          "cost": "₹200-¥500",
+          "description": "Cozy spot for coffee and snacks."
+        }
+      ],
+      "must_visit_spots": [
+        {
+          "name": "Sabarmati Ashram",
+          "description": "A historic site where Mahatma Gandhi lived.",
+          "tip": "Visit the museum for a deeper insight."
+        },
+        {
+          "name": "Dwarka",
+          "description": "A sacred town with the Dwarkadhish Temple.",
+          "tip": "Visit during Janmashtami for a festive vibe."
+        },
+        {
+          "name": "Somnath Temple",
+          "description": "An ancient Shiva temple on the coast.",
+          "tip": "Attend the evening aarti ceremony."
+        },
+        {
+          "name": "Statue of Unity",
+          "description": "The world's tallest statue honoring Sardar Patel.",
+          "tip": "Book a boat ride for a closer view."
+        },
+        {
+          "name": "Bhuj",
+          "description": "A cultural hub near the Great Rann of Kutch.",
+          "tip": "Explore the Aina Mahal and local handicrafts."
+        },
+        {
+          "name": "Jamnagar",
+          "description": "Known for the Lakhota Lake and marine national park.",
+          "tip": "Visit the Bala Hanuman Temple for peace."
+        }
+      ],
+      "travel_essentials": {
+        "how_to_reach": "By road: Ahmedabad is 500 km from Mumbai (NH48, 8-10 hrs). By train: Ahmedabad Junction connects major cities. By air: Sardar Vallabhbhai Patel Airport (Ahmedabad).",
+        "best_time": "October to March",
+        "local_transport": "Buses, auto-rickshaws, taxis",
+        "tips": "Carry light clothing; respect religious sites.",
+        "nearby_destinations": "Rann of Kutch (300 km), Gir (400 km)"
+      }
+    }
+  }

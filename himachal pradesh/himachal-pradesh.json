@@ -1,0 +1,152 @@
+{
+    "state": {
+      "name": "Himachal Pradesh",
+      "hero_image": "state/himachal-pradesh.avif",
+      "overview": {
+        "description": "Himachal Pradesh, nestled in the Himalayas, is known for its snow-capped peaks, lush valleys, and adventure sports. Established as a state on January 25, 1971, it offers destinations like Shimla and Manali.",
+        "key_facts": {
+          "capital": "Shimla",
+          "population": "7.3 million (approx.)",
+          "language": "Hindi, Pahari",
+          "area": "55,673 sq km",
+          "established": "January 25, 1971"
+        }
+      },
+      "top_destinations": [
+        {
+          "name": "Shimla",
+          "image": "place/shimla.avif",
+          "description": "The 'Queen of Hills' with colonial architecture and Mall Road.",
+          "explore_link": "../shimla.html",
+          "best_time": "March to June",
+          "travel_tips": "Visit the Ridge; take the toy train.",
+          "entry_fee": "Free"
+        },
+        {
+          "name": "Manali",
+          "image": "place/manali.avif",
+          "description": "A paradise for adventure lovers with Hadimba Temple and Solang Valley.",
+          "explore_link": "../manali.html",
+          "best_time": "March to June",
+          "travel_tips": "Try paragliding; carry warm clothes.",
+          "entry_fee": "Free (some sites ₹20-₹50)"
+        },
+        {
+          "name": "Dharamshala",
+          "image": "place/dharamshala.avif",
+          "description": "Home to the Dalai Lama with stunning views of the Dhauladhar range.",
+          "explore_link": "../dharamshala.html",
+          "best_time": "March to June",
+          "travel_tips": "Visit McLeod Ganj; explore Tibetan culture.",
+          "entry_fee": "Free"
+        }
+      ],
+      "accommodation": [
+        {
+          "name": "The Oberoi Wildflower Hall",
+          "category": "Luxury",
+          "description": "Luxurious retreat in Shimla.",
+          "price_range": "₹12,000+",
+          "book_link": "https://example.com/book/oberoi-wildflower"
+        },
+        {
+          "name": "Manu Allaya Resort",
+          "category": "Luxury",
+          "description": "Premium resort in Manali.",
+          "price_range": "₹10,000+",
+          "book_link": "https://example.com/book/manu-allaya"
+        },
+        {
+          "name": "Hotel Holiday Heights",
+          "category": "Moderate",
+          "description": "Comfortable stay in Dharamshala.",
+          "price_range": "₹2,500-₹4,500",
+          "book_link": "https://example.com/book/holiday-heights"
+        },
+        {
+          "name": "Hotel Snow View",
+          "category": "Budget",
+          "description": "Affordable option in Manali.",
+          "price_range": "₹1,500-₹3,000",
+          "book_link": "https://example.com/book/snow-view"
+        }
+      ],
+      "culinary_delights": [
+        {
+          "name": "The Himalayan Cafe",
+          "cuisine": "Himachali",
+          "cost": "₹300-¥700",
+          "description": "Famous for local dishes like dham and siddu."
+        },
+        {
+          "name": "Chopsticks",
+          "cuisine": "Chinese",
+          "cost": "₹400-¥900",
+          "description": "Popular for Tibetan and Chinese cuisine."
+        },
+        {
+          "name": "Cafe Dal Lake",
+          "cuisine": "Cafe",
+          "cost": "¥200-¥500",
+          "description": "Cozy spot for coffee and snacks."
+        },
+        {
+          "name": "Shiva Restaurant",
+          "cuisine": "Indian",
+          "cost": "¥300-¥700",
+          "description": "Known for North Indian dishes."
+        },
+        {
+          "name": "Taste of India",
+          "cuisine": "Multi-cuisine",
+          "cost": "¥500-¥1,200",
+          "description": "Offers a variety of Indian and international food."
+        },
+        {
+          "name": "McLlo Restaurant",
+          "cuisine": "Continental",
+          "cost": "¥400-¥900",
+          "description": "Famous for continental and Himachali fusion."
+        }
+      ],
+      "must_visit_spots": [
+        {
+          "name": "Rohtang Pass",
+          "description": "A high mountain pass ideal for snow adventures.",
+          "tip": "Check weather conditions before visiting."
+        },
+        {
+          "name": "Kullu Valley",
+          "description": "Known for apple orchards and the Beas River.",
+          "tip": "Visit during the Dussehra festival."
+        },
+        {
+          "name": "McLeod Ganj",
+          "description": "A cultural hub with Tibetan monasteries.",
+          "tip": "Explore the Tsuglagkhang Complex."
+        },
+        {
+          "name": "Kasauli",
+          "description": "A quiet hill station with colonial charm.",
+          "tip": "Enjoy a walk on the Gilbert Trail."
+        },
+        {
+          "name": "Spiti Valley",
+          "description": "A remote valley with stunning landscapes.",
+          "tip": "Plan a road trip during summer months."
+        },
+        {
+          "name": "Kinnaur",
+          "description": "Known for orchards and the Kinnaur Kailash peak.",
+          "tip": "Visit Sangla Valley for scenic beauty."
+        }
+      ],
+      "travel_essentials": {
+        "how_to_reach": "By road: Shimla is 350 km from Delhi (NH5, 7-8 hrs). By train: Kalka to Shimla toy train. By air: Jubbarhatti Airport (Shimla).",
+        "best_time": "March to June",
+        "local_transport": "Buses, taxis, rented cars",
+        "tips": "Carry warm clothing; book in advance during peak season.",
+        "nearby_destinations": "Manali (250 km), Dharamshala (200 km)"
+      }
+    }
+  }

@@ -1,0 +1,152 @@
+{
+    "state": {
+      "name": "Kerala",
+      "hero_image": "state/kerala.avif",
+      "overview": {
+        "description": "Kerala, located on India's southwestern coast, is known for its backwaters, spice plantations, and Ayurvedic heritage. Established as a state on November 1, 1956, it features attractions like Kochi and Munnar.",
+        "key_facts": {
+          "capital": "Thiruvananthapuram",
+          "population": "34.5 million (approx.)",
+          "language": "Malayalam",
+          "area": "38,863 sq km",
+          "established": "November 1, 1956"
+        }
+      },
+      "top_destinations": [
+        {
+          "name": "Kochi",
+          "image": "place/kochi.avif",
+          "description": "A historic port city with Chinese fishing nets and Fort Kochi.",
+          "explore_link": "../kochi.html",
+          "best_time": "October to March",
+          "travel_tips": "Explore Mattancherry Palace; try a backwater cruise.",
+          "entry_fee": "Free (some sites ₹10-₹50)"
+        },
+        {
+          "name": "Munnar",
+          "image": "place/munnar.avif",
+          "description": "A hill station known for tea plantations and Eravikulam National Park.",
+          "explore_link": "../munnar.html",
+          "best_time": "October to March",
+          "travel_tips": "Visit tea estates; carry warm clothes.",
+          "entry_fee": "₹20 (park entry)"
+        },
+        {
+          "name": "Alleppey",
+          "image": "place/alleppey.avif",
+          "description": "Famous for its backwaters and houseboat experiences.",
+          "explore_link": "../alleppey.html",
+          "best_time": "October to March",
+          "travel_tips": "Book a houseboat in advance; visit the beach.",
+          "entry_fee": "Free (houseboat varies)"
+        }
+      ],
+      "accommodation": [
+        {
+          "name": "The Leela Kovalam",
+          "category": "Luxury",
+          "description": "Luxurious stay in Kovalam.",
+          "price_range": "₹12,000+",
+          "book_link": "https://example.com/book/leela-kovalam"
+        },
+        {
+          "name": "Taj Bekal Resort",
+          "category": "Luxury",
+          "description": "Premium resort in Bekal.",
+          "price_range": "₹10,000+",
+          "book_link": "https://example.com/book/taj-bekal"
+        },
+        {
+          "name": "Hotel Abad Atrium",
+          "category": "Moderate",
+          "description": "Comfortable stay in Kochi.",
+          "price_range": "₹2,500-¥4,500",
+          "book_link": "https://example.com/book/abad-atrium"
+        },
+        {
+          "name": "Hotel Hill View",
+          "category": "Budget",
+          "description": "Affordable option in Munnar.",
+          "price_range": "¥1,200-¥2,800",
+          "book_link": "https://example.com/book/hill-view"
+        }
+      ],
+      "culinary_delights": [
+        {
+          "name": "Grand Pavilion",
+          "cuisine": "Kerala",
+          "cost": "¥300-¥700",
+          "description": "Famous for seafood and sadhya."
+        },
+        {
+          "name": "Dhe Puttu",
+          "cuisine": "South Indian",
+          "cost": "¥200-¥500",
+          "description": "Known for puttu and kadala curry."
+        },
+        {
+          "name": "Café Coffee Day",
+          "cuisine": "Cafe",
+          "cost": "¥200-¥500",
+          "description": "Cozy spot for coffee and snacks."
+        },
+        {
+          "name": "Hotel Salkara",
+          "cuisine": "Seafood",
+          "cost": "¥400-¥900",
+          "description": "Popular for fresh seafood dishes."
+        },
+        {
+          "name": "Aryaas",
+          "cuisine": "South Indian",
+          "cost": "¥300-¥700",
+          "description": "Famous for vegetarian meals."
+        },
+        {
+          "name": "The Rice Boat",
+          "cuisine": "Multi-cuisine",
+          "cost": "¥500-¥1,200",
+          "description": "Offers a variety of Kerala specialties."
+        }
+      ],
+      "must_visit_spots": [
+        {
+          "name": "Backwaters of Alleppey",
+          "description": "Serene waterways ideal for houseboat cruises.",
+          "tip": "Book a sunset cruise for the best experience."
+        },
+        {
+          "name": "Tea Plantations of Munnar",
+          "description": "Lush green hills with tea gardens.",
+          "tip": "Visit a tea factory for a tour."
+        },
+        {
+          "name": "Fort Kochi",
+          "description": "A historic area with colonial charm.",
+          "tip": "Explore the Jewish Synagogue."
+        },
+        {
+          "name": "Varkala Beach",
+          "description": "A cliff-lined beach with spiritual significance.",
+          "tip": "Visit the Janardhana Swami Temple."
+        },
+        {
+          "name": "Periyar Wildlife Sanctuary",
+          "description": "Home to tigers, elephants, and a scenic lake.",
+          "tip": "Take a boat ride for wildlife spotting."
+        },
+        {
+          "name": "Wayanad",
+          "description": "Known for waterfalls and spice plantations.",
+          "tip": "Trek to Edakkal Caves."
+        }
+      ],
+      "travel_essentials": {
+        "how_to_reach": "By road: Kochi is 600 km from Bengaluru (NH544, 12-14 hrs). By train: Ernakulam Junction connects major cities. By air: Cochin International Airport (Kochi).",
+        "best_time": "October to March",
+        "local_transport": "Buses, auto-rickshaws, houseboats",
+        "tips": "Carry light clothing; book houseboats in advance.",
+        "nearby_destinations": "Munnar (130 km), Alleppey (60 km)"
+      }
+    }
+  }
