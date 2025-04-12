@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderSync - Contact Us</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display (Headings) and Montserrat (Body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Hover.css CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            width: 100vw;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .wood-texture {
+            background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+            background-blend-mode: overlay;
+        }
+        .bark-texture {
+            background-image: url('https://www.transparenttextures.com/patterns/bark.png');
+            background-blend-mode: overlay;
+        }
+        .hero-overlay {
+            background: rgba(46, 91, 52, 0.5);
+        }
+        .vine-divider {
+            height: 2px;
+            background: url('https://www.transparenttextures.com/patterns/vine.png');
+        }
+        /* Header and Navigation */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background: #fff;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+        .nav-menu {
+            display: flex;
+        }
+        /* Contact Form Styling and Animations */
+        .contact-form {
+            background: #2E5B34;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 2px solid #D4A017;
+            border-radius: 5px;
+            background: #F5E8C7;
+            color: #2E5B34;
+            font-size: 1rem;
+            opacity: 0;
+            transform: scale(0.9);
+            animation: fadeInScale 0.8s ease-out forwards;
+        }
+        .contact-form input:nth-child(1) { animation-delay: 0.2s; }
+        .contact-form input:nth-child(2) { animation-delay: 0.4s; }
+        .contact-form textarea { animation-delay: 0.6s; }
+        .contact-form button {
+            background: #D4A017;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: scale(0.9);
+            animation: fadeInScale 0.8s ease-out forwards 0.8s;
+        }
+        .contact-form button:hover {
+            background: #b58900;
+            box-shadow: 0 0 10px #D4A017;
+            transform: scale(1.05);
+        }
+        @keyframes fadeInScale {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        /* Contact Info Styling and Animations */
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideIn 0.6s ease-out forwards;
+        }
+        .contact-info-item:nth-child(1) { animation-delay: 0.2s; }
+        .contact-info-item:nth-child(2) { animation-delay: 0.4s; }
+        .contact-info-item:nth-child(3) { animation-delay: 0.6s; }
+        .contact-info-item img {
+            margin-right: 0.5rem;
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s ease;
+        }
+        .contact-info-item a,
+        .contact-info-item div a {
+            color: #2E5B34;
+            transition: color 0.3s ease;
+        }
+        .contact-info-item a:hover,
+        .contact-info-item div a:hover {
+            color: #D4A017;
+        }
+        .contact-info-item div a img {
+            transition: all 0.3s ease;
+        }
+        .contact-info-item div a:hover img {
+            transform: scale(1.2) rotate(10deg);
+            border: 2px solid #D4A017;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #D4A017;
+        }
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Support FAQs Styling and Animations */
+        .faq-item {
+            background: #F5E8C7;
+            padding: 1rem;
+            border-left: 4px solid #2E5B34;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        .faq-item:nth-child(1) { animation-delay: 0.2s; }
+        .faq-item:nth-child(2) { animation-delay: 0.4s; }
+        .faq-item:nth-child(3) { animation-delay: 0.6s; }
+        .faq-item h4 {
+            font-size: 1.1rem;
+            color: #2E5B34;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        .faq-item h4:hover {
+            color: #D4A017;
+        }
+        .faq-item p {
+            margin: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, opacity 0.3s ease-out;
+            opacity: 0;
+            color: #555;
+        }
+        .faq-item.active p {
+            max-height: 200px; /* Adjust based on content */
+            opacity: 1;
+            margin-top: 0.5rem;
+        }
+        .faq-item::before {
+            content: '+';
+            float: right;
+            font-size: 1.2rem;
+            color: #2E5B34;
+            transition: transform 0.3s ease;
+        }
+        .faq-item.active::before {
+            content: '−';
+            transform: rotate(180deg);
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Travel Assistance Button Scroll */
+        .travel-assistance a {
+            transition: transform 0.3s ease;
+        }
+        .travel-assistance a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #D4A017;
+        }
+        /* Hero Section Background Image */
+        .hero-section {
+            min-height: 40vh;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .hero-overlay {
+            min-height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Custom Container */
+        .custom-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            width: 100%;
+        }
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #2E5B34;
+                padding: 1rem;
+                flex-direction: column;
+                text-align: center;
+                z-index: 20;
+            }
+            .nav-menu.active {
+                display: flex;
+            }
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+            header h1 {
+                font-size: 1.5rem;
+            }
+            header p {
+                display: none;
+            }
+            .contact-form {
+                padding: 1rem;
+            }
+            .contact-form input,
+            .contact-form textarea {
+                font-size: 0.9rem;
+                padding: 0.5rem;
+                animation-duration: 0.6s;
+            }
+            .contact-form button {
+                font-size: 0.9rem;
+                padding: 0.5rem 1rem;
+                animation-duration: 0.6s;
+            }
+            .contact-info-item img {
+                width: 16px;
+                height: 16px;
+            }
+            .contact-info-item {
+                animation-duration: 0.5s;
+            }
+            .faq-item {
+                padding: 0.75rem;
+                font-size: 0.9rem;
+                animation-duration: 0.6s;
+            }
+            .faq-item h4 {
+                font-size: 1rem;
+            }
+            .hero-section {
+                min-height: 30vh;
+            }
+            .hero-overlay {
+                min-height: 30vh;
+            }
+            .custom-container {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            section {
+                width: 100vw;
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .hero-section {
+                min-height: 45vh;
+            }
+            .hero-overlay {
+                min-height: 45vh;
+            }
+        }
+        @media (min-width: 1025px) {
+            .hero-section {
+                min-height: 50vh;
+            }
+            .hero-overlay {
+                min-height: 50vh;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header Section -->
+    <header class="bg-[#2E5B34] wood-texture text-white py-4 sticky top-0 z-10">
+        <div class="custom-container flex justify-between items-center px-4">
+            <div class="flex items-center space-x-2">
+                <img src="https://img.icons8.com/ios-filled/30/ffffff/leaf.png" alt="Leaf Icon" class="mr-2">
+                <h1 class="text-3xl font-bold text-white tracking-wide">WanderSync</h1>
+                <p class="text-sm italic hidden md:block">Explore India’s Wild Beauty, Step by Step</p>
+            </div>
+            <div class="hamburger md:hidden" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="nav-menu md:flex md:space-x-6" id="nav-menu">
+                <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-center w-full">
+                    <li><a href="index.html" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block">Home</a></li>
+                    <li><a href="destination.html" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block">Destinations</a></li>
+                    <li><a href="travel-stories.html" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block">Travel Stories</a></li>
+                    <li><a href="about.html" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block">About</a></li>
+                    <li><a href="contact.html" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section relative" style="background-image: url('assets/contact-hero.jpg');">
+        <div class="absolute inset-0 hero-overlay flex items-center justify-center">
+            <div class="text-center text-white px-4">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up">Get in Touch</h2>
+                <p class="text-lg md:text-xl mb-6 flex items-center justify-center" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://img.icons8.com/ios-filled/20/ffffff/leaf.png" alt="Leaf Icon" class="mr-2"> We’re here to help you plan your adventure
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-12 bg-white" id="contact-form">
+        <div class="custom-container px-4">
+            <h3 class="text-3xl font-bold text-[#2E5B34] text-center mb-8 flex items-center" data-aos="fade-up">
+                <img src="https://img.icons8.com/ios-filled/30/2E5B34/pencil.png" alt="Pencil Icon" class="mr-2"> Send Us a Message
+            </h3>
+            <div class="contact-form bark-texture max-w-lg mx-auto" data-aos="fade-up" data-aos-delay="100">
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="hvr-grow">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="py-12 bg-[#F5E8C7]">
+        <div class="custom-container px-4">
+            <h3 class="text-3xl font-bold text-[#2E5B34] text-center mb-8" data-aos="fade-up">Contact Information</h3>
+            <div class="max-w-md mx-auto text-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="contact-info-item">
+                    <img src="https://img.icons8.com/ios-filled/20/2E5B34/leaf.png" alt="Leaf Icon">
+                    <a href="mailto:support@wandersync.com" class="text-[#2E5B34] hover:text-[#D4A017] transition">support@wandersync.com</a>
+                </div>
+                <div class="contact-info-item">
+                    <img src="https://img.icons8.com/ios-filled/20/2E5B34/marker.png" alt="Location Icon">
+                    <a href="tel:+911234567890" class="text-[#2E5B34] hover:text-[#D4A017] transition">+91 123 456 7890</a>
+                </div>
+                <div class="contact-info-item">
+                    <img src="https://img.icons8.com/ios-filled/20/2E5B34/leaf.png" alt="Leaf Icon">
+                    <div class="flex space-x-2 justify-center">
+                        <a href="https://facebook.com/wandersync" class="text-[#2E5B34] hover:text-[#D4A017] transition"><img src="https://img.icons8.com/ios-filled/20/D4A017/facebook-new.png" alt="Facebook"></a>
+                        <a href="https://instagram.com/wandersync" class="text-[#2E5B34] hover:text-[#D4A017] transition"><img src="https://img.icons8.com/ios-filled/20/D4A017/instagram-new.png" alt="Instagram"></a>
+                        <a href="https://x.com/wandersync" class="text-[#2E5B34] hover:text-[#D4A017] transition"><img src="https://img.icons8.com/ios-filled/20/D4A017/x.png" alt="X"></a>
+                        <a href="https://linkedin.com/company/wandersync" class="text-[#2E5B34] hover:text-[#D4A017] transition"><img src="https://img.icons8.com/ios-filled/20/D4A017/linkedin.png" alt="LinkedIn"></a>
+                        <a href="https://youtube.com/@wandersync" class="text-[#2E5B34] hover:text-[#D4A017] transition"><img src="https://img.icons8.com/ios-filled/20/D4A017/youtube-play.png" alt="YouTube"></a>
+                        <a href="https://pinterest.com/wandersync" class="text-[#2E5B34] hover:text-[#D4A017] transition"><img src="https://img.icons8.com/ios-filled/20/D4A017/pinterest.png" alt="Pinterest"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support FAQs Section -->
+    <section class="py-12 bg-white">
+        <div class="custom-container px-4">
+            <h3 class="text-3xl font-bold text-[#2E5B34] text-center mb-8 flex items-center hvr-grow" data-aos="fade-up">
+                <img src="https://img.icons8.com/ios-filled/30/2E5B34/question-mark.png" alt="Question Mark Icon" class="mr-2"> Support FAQs
+            </h3>
+            <div class="max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                <div class="faq-item">
+                    <h4 class="hvr-buzz">How do I book a trip?</h4>
+                    <p>Visit our Destinations page, select your location, and follow the booking links provided.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 class="hvr-buzz">What if I need to cancel?</h4>
+                    <p>Please contact us via email or phone with your booking details for assistance.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 class="hvr-buzz">How can I submit a travel story?</h4>
+                    <p>Go to the Travel Stories page and use the 'Submit Your Story' link.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Assistance Section -->
+    <section class="py-12 bg-[#2E5B34] wood-texture text-white text-center">
+        <div class="custom-container px-4">
+            <h3 class="text-3xl font-bold mb-4 flex items-center" data-aos="fade-up">
+                <img src="https://img.icons8.com/ios-filled/30/ffffff/map-marker.png" alt="Map Marker Icon" class="mr-2"> Need Personalized Travel Assistance?
+            </h3>
+            <p class="text-lg mb-6" data-aos="fade-up" data-aos-delay="100">Our team is ready to tailor your journey. Reach out today!</p>
+            <a href="#contact-form" class="bg-[#D4A017] text-white px-6 py-3 rounded-full shadow-lg hvr-pulse-grow travel-assistance" data-aos="fade-up" data-aos-delay="200">Contact Us Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#3C2F2F] text-white py-8">
+        <div class="custom-container px-4">
+            <div class="vine-divider mb-6"></div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-[#D4A017] transition">Home</a></li>
+                        <li><a href="destination.html" class="hover:text-[#D4A017] transition">Destinations</a></li>
+                        <li><a href="travel-stories.html" class="hover:text-[#D4A017] transition">Travel Stories</a></li>
+                        <li><a href="about.html" class="hover:text-[#D4A017] transition">About</a></li>
+                        <li><a href="contact.html" class="hover:text-[#D4A017] transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://facebook.com/wandersync" class="hover:text-[#D4A017] transition hvr-icon-bounce"><img src="https://img.icons8.com/ios-filled/24/D4A017/facebook-new.png" alt="Facebook" class="hvr-icon"></a>
+                        <a href="https://instagram.com/wandersync" class="hover:text-[#D4A017] transition hvr-icon-bounce"><img src="https://img.icons8.com/ios-filled/24/D4A017/instagram-new.png" alt="Instagram" class="hvr-icon"></a>
+                        <a href="https://x.com/wandersync" class="hover:text-[#D4A017] transition hvr-icon-bounce"><img src="https://img.icons8.com/ios-filled/24/D4A017/x.png" alt="X" class="hvr-icon"></a>
+                        <a href="https://linkedin.com/company/wandersync" class="hover:text-[#D4A017] transition hvr-icon-bounce"><img src="https://img.icons8.com/ios-filled/24/D4A017/linkedin.png" alt="LinkedIn" class="hvr-icon"></a>
+                        <a href="https://youtube.com/@wandersync" class="hover:text-[#D4A017] transition hvr-icon-bounce"><img src="https://img.icons8.com/ios-filled/24/D4A017/youtube-play.png" alt="YouTube" class="hvr-icon"></a>
+                        <a href="https://pinterest.com/wandersync" class="hover:text-[#D4A017] transition hvr-icon-bounce"><img src="https://img.icons8.com/ios-filled/24/D4A017/pinterest.png" alt="Pinterest" class="hvr-icon"></a>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <h4 class="text-xl font-semibold mb-4 flex items-center">
+                        <img src="https://img.icons8.com/?size=100&id=HEQ2MY1chq7i&format=png&color=000000" alt="Newsletter Icon" class="mr-2"> Newsletter
+                    </h4>
+                    <form class="flex flex-col space-y-2">
+                        <input type="email" placeholder="Your Email" class="p-2 rounded bg-[#F5E8C7] text-gray-800">
+                        <button type="submit" class="bg-[#D4A017] text-white p-2 rounded hover:bg-[#b58900] transition hvr-buzz">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <p class="text-center mt-6 text-sm" data-aos="fade-up" data-aos-delay="400">© 2025 WanderSync. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-quad',
+            once: true
+        });
+
+        // Hamburger Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // FAQ Accordion Functionality
+        document.querySelectorAll('.faq-item h4').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+
+        // Smooth Scroll to Contact Form
+        document.querySelector('.travel-assistance').addEventListener('click', (e) => {
+            e.preventDefault();
+            const contactForm = document.getElementById('contact-form');
+            smoothScroll(contactForm);
+        });
+
+        function smoothScroll(target, duration = 1000) {
+            const start = window.pageYOffset;
+            const targetPosition = target.getBoundingClientRect().top + start;
+            const distance = targetPosition - start;
+            let startTime = null;
+
+            function animation(currentTime) {
+                if (!startTime) startTime = currentTime;
+                const timeElapsed = currentTime - startTime;
+                const progress = Math.min(timeElapsed / duration, 1);
+                const ease = easeInOutQuad(progress); // Custom easing function
+                window.scrollTo(0, start + distance * ease);
+                if (timeElapsed < duration) requestAnimationFrame(animation);
+            }
+
+            function easeInOutQuad(t) {
+                return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+            }
+
+            requestAnimationFrame(animation);
+        }
+    </script>
+</body>
+</html>

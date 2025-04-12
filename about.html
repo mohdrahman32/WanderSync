@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderSync - About Us</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display (Headings) and Montserrat (Body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Hover.css CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            width: 100vw;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        .wood-texture {
+            background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+            background-blend-mode: overlay;
+        }
+        .bark-texture {
+            background-image: url('https://www.transparenttextures.com/patterns/bark.png');
+            background-blend-mode: overlay;
+        }
+        .hero-overlay {
+            background: rgba(46, 91, 52, 0.5);
+        }
+        .vine-divider {
+            height: 2px;
+            background: url('https://www.transparenttextures.com/patterns/vine.png');
+        }
+        /* Header and Navigation */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background: #fff;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+        .nav-menu {
+            display: flex;
+        }
+        /* Hero Section */
+        .hero-section {
+            min-height: 40vh;
+            background-size:cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .hero-overlay {
+            min-height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Story Section */
+        .story-image {
+            max-width: 33.33%;
+            float: left;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+        }
+        /* Travel Highlights Section */
+        .highlight-card {
+            transition: all 0.3s ease;
+        }
+        .highlight-card:hover {
+            transform: translateY(-5px);
+        }
+        /* Values Section */
+        .value-card {
+            transition: all 0.3s ease;
+        }
+        /* Custom Container */
+        .custom-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            width: 100%;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #2E5B34;
+                padding: 1rem;
+                flex-direction: column;
+                text-align: center;
+                z-index: 20;
+            }
+            .nav-menu.active {
+                display: flex;
+            }
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+            header h1 {
+                font-size: 1.5rem;
+            }
+            header p {
+                display: none;
+            }
+            .hero-section, .hero-overlay {
+                min-height: 30vh;
+            }
+            .story-image {
+                float: none;
+                width: 100%;
+                margin-right: 0;
+            }
+            .highlight-card, .value-card {
+                width: 100%;
+            }
+        }
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .hero-section, .hero-overlay {
+                min-height: 45vh;
+            }
+            .highlight-card, .value-card {
+                width: 48%;
+            }
+        }
+        @media (min-width: 1025px) {
+            .hero-section, .hero-overlay {
+                min-height: 50vh;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header Section -->
+    <header class="bg-[#2E5B34] wood-texture text-white py-4 sticky top-0 z-10">
+        <div class="custom-container flex justify-between items-center px-4">
+            <div class="flex items-center space-x-2" data-aos="fade-up" data-aos-delay="200">
+                <h1 class="text-3xl font-bold text-white tracking-wide">WanderSync</h1>
+                <p class="text-sm italic hidden md:block">Explore India’s Wild Beauty, Step by Step</p>
+            </div>
+            <div class="hamburger md:hidden" id="hamburger">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            </div>
+            <nav class="nav-menu md:flex md:space-x-6" id="nav-menu">
+                <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-center w-full">
+                    <li><a href="index.html" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block" data-aos="fade-up" data-aos-delay="400">Home</a></li>
+                    <li><a href="destination.html" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block" data-aos="fade-up" data-aos-delay="500">Destinations</a></li>
+                    <li><a href="travel-stories.html" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block" data-aos="fade-up" data-aos-delay="600">Travel Stories</a></li>
+                    <li><a href="about.html" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block" data-aos="fade-up" data-aos-delay="700">About</a></li>
+                    <li><a href="contact.html" class="hvr-grow px-3 py-2 rounded-full text-white hover:text-[#D4A017] transition block" data-aos="fade-up" data-aos-delay="800">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background-image: url('assets/about.png');">
+        <div class="hero-overlay">
+            <div class="text-center text-white px-4">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up" data-aos-delay="200">Our Story</h2>
+                <p class="text-lg md:text-xl mb-6 flex items-center justify-center" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://img.icons8.com/ios-filled/20/ffffff/leaf.png" alt="Leaf Icon" class="mr-2"> Discover the journey behind WanderSync
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-12 bg-white">
+        <div class="custom-container px-4 max-w-4xl mx-auto">
+            <h3 class="text-3xl font-bold text-[#2E5B34] mb-4 flex items-center hvr-grow" data-aos="fade-right" data-aos-delay="200">
+                <img src="https://img.icons8.com/?size=100&id=jD6t-ciF8Wat&format=png&color=000000" alt="Tree Icon" class="mr-2"> Our Story
+            </h3>
+            <div class="vine-divider mb-6"></div>
+            <p class="text-gray-700 mb-4" data-aos="fade-up" data-aos-delay="400">Founded in 2023, WanderSync was born from a passion for exploring India’s wild landscapes. Our mission is to connect travelers with nature’s beauty, step by step.</p>
+            <img src="https://img.icons8.com/?size=100&id=z-JBA_KtSkxG&format=png&color=000000" alt="Team Photo" class="story-image w-1/3 mr-4 mb-4" data-aos="fade-up" data-aos-delay="600">
+            <p class="text-gray-700" data-aos="fade-up" data-aos-delay="800">Led by a team of avid adventurers, we strive to promote sustainable tourism while sharing authentic travel stories. With every journey, we aim to leave a positive impact on both travelers and the environment.</p>
+        </div>
+    </section>
+
+    <!-- Travel Highlights Section -->
+    <section class="py-12 bg-[#F5E8C7]">
+        <div class="custom-container px-4">
+            <h3 class="text-3xl font-bold text-[#2E5B34] text-center mb-8" data-aos="fade-up">Travel Highlights</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="highlight-card bg-white bark-texture p-4 rounded-lg shadow-md border-l-4 border-[#2E5B34] hvr-float" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="place/rishikesh.avif" alt="Highlight 1" class="w-full h-48 object-cover rounded-t-lg">
+                    <h4 class="text-xl font-bold text-[#2E5B34] mt-2 flex items-center">
+                        <img src="https://img.icons8.com/ios-filled/20/2E5B34/marker.png" alt="Marker Icon" class="mr-2"> Rishikesh Retreat
+                    </h4>
+                    <p class="text-gray-600 mt-2">Experience yoga and rafting in the Himalayan foothills.</p>
+                    <a href="destination.html" class="text-[#D4A017] mt-2 inline-flex items-center hvr-icon-bounce">
+                        Learn More <img src="https://img.icons8.com/ios-filled/15/D4A017/forward.png" alt="Arrow" class="ml-1 hvr-icon">
+                    </a>
+                </div>
+                <div class="highlight-card bg-white bark-texture p-4 rounded-lg shadow-md border-l-4 border-[#2E5B34] hvr-float" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="place/munnar.avif" alt="Highlight 2" class="w-full h-48 object-cover rounded-t-lg">
+                    <h4 class="text-xl font-bold text-[#2E5B34] mt-2 flex items-center">
+                        <img src="https://img.icons8.com/ios-filled/20/2E5B34/marker.png" alt="Marker Icon" class="mr-2"> Kerala Backwaters
+                    </h4>
+                    <p class="text-gray-600 mt-2">Sail through serene waterways and lush greenery.</p>
+                    <a href="destination.html" class="text-[#D4A017] mt-2 inline-flex items-center hvr-icon-bounce">
+                        Learn More <img src="https://img.icons8.com/ios-filled/15/D4A017/forward.png" alt="Arrow" class="ml-1 hvr-icon">
+                    </a>
+                </div>
+                <div class="highlight-card bg-white bark-texture p-4 rounded-lg shadow-md border-l-4 border-[#2E5B34] hvr-float" data-aos="zoom-in" data-aos-delay="600">
+                    <img src="place/leh.avif" alt="Highlight 3" class="w-full h-48 object-cover rounded-t-lg">
+                    <h4 class="text-xl font-bold text-[#2E5B34] mt-2 flex items-center">
+                        <img src="https://img.icons8.com/ios-filled/20/2E5B34/marker.png" alt="Marker Icon" class="mr-2"> Ladakh Adventure
+                    </h4>
+                    <p class="text-gray-600 mt-2">Conquer rugged terrains and stunning monasteries.</p>
+                    <a href="destination.html" class="text-[#D4A017] mt-2 inline-flex items-center hvr-icon-bounce">
+                        Learn More <img src="https://img.icons8.com/ios-filled/15/D4A017/forward.png" alt="Arrow" class="ml-1 hvr-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="py-12 bg-white">
+        <div class="custom-container px-4">
+            <h3 class="text-3xl font-bold text-[#2E5B34] text-center mb-8" data-aos="fade-up">Our Values</h3>
+            <div class="flex flex-wrap justify-around">
+                <div class="w-1/3 p-6 bg-[#F5E8C7] rounded-lg shadow-md value-card hvr-pulse" data-aos="flip-up" data-aos-delay="200">
+                    <img src="https://img.icons8.com/ios-filled/30/2E5B34/compass.png" alt="Compass" class="mb-2">
+                    <h4 class="text-[#2E5B34] font-semibold">Exploration</h4>
+                    <p class="text-gray-600">Guiding you to new horizons with every step.</p>
+                </div>
+                <div class="w-1/3 p-6 bg-[#F5E8C7] rounded-lg shadow-md value-card hvr-pulse" data-aos="flip-up" data-aos-delay="400">
+                    <img src="https://img.icons8.com/ios-filled/30/2E5B34/leaf.png" alt="Leaf" class="mb-2">
+                    <h4 class="text-[#2E5B34] font-semibold">Sustainability</h4>
+                    <p class="text-gray-600">Preserving nature for future generations.</p>
+                </div>
+                <div class="w-1/3 p-6 bg-[#F5E8C7] rounded-lg shadow-md value-card hvr-pulse" data-aos="flip-up" data-aos-delay="600">
+                    <img src="https://img.icons8.com/ios-filled/30/2E5B34/camera.png" alt="Camera" class="mb-2">
+                    <h4 class="text-[#2E5B34] font-semibold">Adventure</h4>
+                    <p class="text-gray-600">Capturing the thrill of the wild.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-12 bg-[#2E5B34] wood-texture text-white text-center">
+        <div class="custom-container px-4">
+            <h3 class="text-3xl font-bold mb-4" data-aos="fade-up" data-aos-delay="200">Ready to Explore?</h3>
+            <p class="text-lg mb-6" data-aos="fade-up" data-aos-delay="400">Join us on a journey through India’s wild beauty.</p>
+            <a href="destination.html" class="bg-[#D4A017] text-white px-6 py-3 rounded-full shadow-lg hvr-pulse-grow flex items-center justify-center" data-aos="fade-up" data-aos-delay="600">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/map-marker.png" alt="Map Icon" class="mr-2"> Discover Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#3C2F2F] text-white py-8">
+        <div class="custom-container px-4">
+            <div class="vine-divider mb-6"></div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-[#D4A017] transition">Home</a></li>
+                        <li><a href="destination.html" class="hover:text-[#D4A017] transition">Destinations</a></li>
+                        <li><a href="travel-stories.html" class="hover:text-[#D4A017] transition">Travel Stories</a></li>
+                        <li><a href="about.html" class="hover:text-[#D4A017] transition">About</a></li>
+                        <li><a href="contact.html" class="hover:text-[#D4A017] transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://facebook.com/wandersync" class="hover:text-[#D4A017] transition hvr-icon-bounce"><img src="https://img.icons8.com/ios-filled/24/D4A017/facebook-new.png" alt="Facebook" class="hvr-icon"></a>
+                        <a href="https://instagram.com/wandersync" class="hover:text-[#D4A017] transition hvr-icon-bounce"><img src="https://img.icons8.com/ios-filled/24/D4A017/instagram-new.png" alt="Instagram" class="hvr-icon"></a>
+                        <a href="https://x.com/wandersync" class="hover:text-[#D4A017] transition hvr-icon-bounce"><img src="https://img.icons8.com/ios-filled/24/D4A017/x.png" alt="X" class="hvr-icon"></a>
+                        <a href="https://linkedin.com/company/wandersync" class="hover:text-[#D4A017] transition hvr-icon-bounce"><img src="https://img.icons8.com/ios-filled/24/D4A017/linkedin.png" alt="LinkedIn" class="hvr-icon"></a>
+                        <a href="https://youtube.com/@wandersync" class="hover:text-[#D4A017] transition hvr-icon-bounce"><img src="https://img.icons8.com/ios-filled/24/D4A017/youtube-play.png" alt="YouTube" class="hvr-icon"></a>
+                        <a href="https://pinterest.com/wandersync" class="hover:text-[#D4A017] transition hvr-icon-bounce"><img src="https://img.icons8.com/ios-filled/24/D4A017/pinterest.png" alt="Pinterest" class="hvr-icon"></a>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="600">
+                    <h4 class="text-xl font-semibold mb-4">Newsletter</h4>
+                    <form class="flex flex-col space-y-2">
+                        <input type="email" placeholder="Your Email" class="p-2 rounded bg-[#F5E8C7] text-gray-800">
+                        <button type="submit" class="bg-[#D4A017] text-white p-2 rounded hover:bg-[#b58900] transition hvr-buzz">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <p class="text-center mt-6 text-sm" data-aos="fade-up" data-aos-delay="800">© 2025 WanderSync. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-quad',
+            once: true
+        });
+
+        // Hamburger Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
