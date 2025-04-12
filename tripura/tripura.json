@@ -1,0 +1,152 @@
+{
+    "state": {
+      "name": "Tripura",
+      "hero_image": "state/tripura.avif",
+      "overview": {
+        "description": "Tripura, located in northeastern India, is known for its lush hills, tribal culture, and historical sites. Established as a state on January 21, 1972, it features attractions like Agartala and Udaipur.",
+        "key_facts": {
+          "capital": "Agartala",
+          "population": "4 million (approx.)",
+          "language": "Bengali, Kokborok",
+          "area": "10,491 sq km",
+          "established": "January 21, 1972"
+        }
+      },
+      "top_destinations": [
+        {
+          "name": "Agartala",
+          "image": "place/agartala.jpg",
+          "description": "The capital with Ujjayanta Palace and Neermahal.",
+          "explore_link": "../agartala.html",
+          "best_time": "October to April",
+          "travel_tips": "Visit Ujjayanta Palace; explore markets.",
+          "entry_fee": "₹20 (Ujjayanta)"
+        },
+        {
+          "name": "Udaipur",
+          "image": "place/tripura-sundari-temple.avif",
+          "description": "Known for Tripura Sundari Temple and lakes.",
+          "explore_link": "../udaipur-tripura.html",
+          "best_time": "October to March",
+          "travel_tips": "Visit the temple; enjoy boat rides.",
+          "entry_fee": "Free"
+        },
+        {
+          "name": "Jampui Hills",
+          "image": "place/jampui-hills.avif",
+          "description": "A scenic hill station with orange orchards.",
+          "explore_link": "../jampui-hills.html",
+          "best_time": "November to April",
+          "travel_tips": "Trek to viewpoints; carry warm clothes.",
+          "entry_fee": "Free"
+        }
+      ],
+      "accommodation": [
+        {
+          "name": "Hotel Polo Towers",
+          "category": "Luxury",
+          "description": "Luxurious stay in Agartala.",
+          "price_range": "₹4,000+",
+          "book_link": "https://example.com/book/polo-towers"
+        },
+        {
+          "name": "Hotel Sonar Tori",
+          "category": "Luxury",
+          "description": "Premium hotel in Agartala.",
+          "price_range": "¥3,500+",
+          "book_link": "https://example.com/book/sonar-tori"
+        },
+        {
+          "name": "Hotel Welcome Palace",
+          "category": "Moderate",
+          "description": "Comfortable stay in Udaipur.",
+          "price_range": "¥1,500-¥2,500",
+          "book_link": "https://example.com/book/welcome-palace"
+        },
+        {
+          "name": "Jampui Hill Guest House",
+          "category": "Budget",
+          "description": "Affordable option in Jampui Hills.",
+          "price_range": "¥800-¥2,000",
+          "book_link": "https://example.com/book/jampui-guest"
+        }
+      ],
+      "culinary_delights": [
+        {
+          "name": "Rooftop Restaurant",
+          "cuisine": "Tripuri",
+          "cost": "¥200-¥500",
+          "description": "Famous for Tripuri cuisine like Mui Borok."
+        },
+        {
+          "name": "Heritage Restaurant",
+          "cuisine": "Bengali",
+          "cost": "¥150-¥400",
+          "description": "Known for fish curry and rice."
+        },
+        {
+          "name": "Café Coffee Day",
+          "cuisine": "Cafe",
+          "cost": "¥200-¥500",
+          "description": "Cozy spot for coffee and snacks."
+        },
+        {
+          "name": "Bawmoh Restaurant",
+          "cuisine": "Indian",
+          "cost": "¥300-¥700",
+          "description": "Popular for Indian and local fusion."
+        },
+        {
+          "name": "Street Food at Agartala Market",
+          "cuisine": "Street Food",
+          "cost": "¥100-¥300",
+          "description": "Famous for phuchka and jhal muri."
+        },
+        {
+          "name": "Hotel Bonanza",
+          "cuisine": "Multi-cuisine",
+          "cost": "¥400-¥900",
+          "description": "Offers a variety of cuisines."
+        }
+      ],
+      "must_visit_spots": [
+        {
+          "name": "Ujjayanta Palace",
+          "description": "A historic palace in Agartala.",
+          "tip": "Visit the museum inside."
+        },
+        {
+          "name": "Neermahal",
+          "description": "A water palace on Rudrasagar Lake.",
+          "tip": "Take a boat ride."
+        },
+        {
+          "name": "Tripura Sundari Temple",
+          "description": "A sacred temple in Udaipur.",
+          "tip": "Visit during festivals."
+        },
+        {
+          "name": "Dumboor Lake",
+          "description": "A scenic lake with islands.",
+          "tip": "Enjoy boating."
+        },
+        {
+          "name": "Unakoti",
+          "description": "An ancient rock-cut site.",
+          "tip": "Explore early morning."
+        },
+        {
+          "name": "Sepahijala Wildlife Sanctuary",
+          "description": "Home to diverse flora and fauna.",
+          "tip": "Spot the spectacled monkey."
+        }
+      ],
+      "travel_essentials": {
+        "how_to_reach": "By road: Agartala is 500 km from Guwahati (NH8, 12-14 hrs). By train: Agartala Railway Station. By air: Maharaja Bir Bikram Airport.",
+        "best_time": "October to April",
+        "local_transport": "Buses, taxis, auto-rickshaws",
+        "tips": "Carry light clothing; avoid monsoon.",
+        "nearby_destinations": "Udaipur (55 km), Jampui Hills (150 km)"
+      }
+    }
+  }

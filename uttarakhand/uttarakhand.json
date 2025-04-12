@@ -1,0 +1,152 @@
+{
+    "state": {
+      "name": "Uttarakhand",
+      "hero_image": "state/uttarakhand.avif",
+      "overview": {
+        "description": "Uttarakhand, located in northern India, is known for its Himalayan peaks, pilgrimage sites, and natural beauty. Established as a state on November 9, 2000, it features attractions like Rishikesh and Nainital.",
+        "key_facts": {
+          "capital": "Dehradun",
+          "population": "11 million (approx.)",
+          "language": "Hindi, Garhwali",
+          "area": "53,483 sq km",
+          "established": "November 9, 2000"
+        }
+      },
+      "top_destinations": [
+        {
+          "name": "Rishikesh",
+          "image": "place/rishikesh.avif",
+          "description": "The yoga capital with Ganges River and Laxman Jhula.",
+          "explore_link": "../rishikesh.html",
+          "best_time": "September to June",
+          "travel_tips": "Try river rafting; visit ashrams.",
+          "entry_fee": "Free"
+        },
+        {
+          "name": "Nainital",
+          "image": "place/nainital.avif",
+          "description": "A hill station with Naini Lake and snow views.",
+          "explore_link": "../nainital.html",
+          "best_time": "March to June, October to February",
+          "travel_tips": "Boat on Naini Lake; carry warm clothes.",
+          "entry_fee": "Free"
+        },
+        {
+          "name": "Mussoorie",
+          "image": "place/mussoorie.avif",
+          "description": "The Queen of Hills with scenic trails.",
+          "explore_link": "../mussoorie.html",
+          "best_time": "March to June, October to February",
+          "travel_tips": "Visit Gun Hill; enjoy cable car ride.",
+          "entry_fee": "₹50 (Gun Hill)"
+        }
+      ],
+      "accommodation": [
+        {
+          "name": "The Lalit",
+          "category": "Luxury",
+          "description": "Luxurious stay in Dehradun.",
+          "price_range": "₹6,000+",
+          "book_link": "https://example.com/book/lalit"
+        },
+        {
+          "name": "Welcomhotel",
+          "category": "Luxury",
+          "description": "Premium hotel in Mussoorie.",
+          "price_range": "¥5,500+",
+          "book_link": "https://example.com/book/welcomhotel"
+        },
+        {
+          "name": "Hotel Madhuban",
+          "category": "Moderate",
+          "description": "Comfortable stay in Dehradun.",
+          "price_range": "¥2,000-¥3,500",
+          "book_link": "https://example.com/book/madhuban"
+        },
+        {
+          "name": "Rishikesh Guest House",
+          "category": "Budget",
+          "description": "Affordable option in Rishikesh.",
+          "price_range": "¥1,000-¥2,500",
+          "book_link": "https://example.com/book/rishikesh-guest"
+        }
+      ],
+      "culinary_delights": [
+        {
+          "name": "Little Buddha Café",
+          "cuisine": "Indian",
+          "cost": "¥300-¥700",
+          "description": "Famous for Tibetan and Indian food."
+        },
+        {
+          "name": "Bistro Nirvana",
+          "cuisine": "North Indian",
+          "cost": "¥200-¥500",
+          "description": "Known for parathas and thali."
+        },
+        {
+          "name": "Café Coffee Day",
+          "cuisine": "Cafe",
+          "cost": "¥200-¥500",
+          "description": "Cozy spot for coffee and snacks."
+        },
+        {
+          "name": "The Green Hotel",
+          "cuisine": "Indian",
+          "cost": "¥400-¥900",
+          "description": "Popular for local and continental fusion."
+        },
+        {
+          "name": "Street Food at Mall Road",
+          "cuisine": "Street Food",
+          "cost": "¥100-¥300",
+          "description": "Famous for momos and maggi."
+        },
+        {
+          "name": "Chopsticks",
+          "cuisine": "Multi-cuisine",
+          "cost": "¥500-¥1,200",
+          "description": "Offers a variety of cuisines."
+        }
+      ],
+      "must_visit_spots": [
+        {
+          "name": "Jim Corbett National Park",
+          "description": "A wildlife sanctuary with tiger safaris.",
+          "tip": "Book a jeep safari in advance."
+        },
+        {
+          "name": "Kedarnath Temple",
+          "description": "A sacred Hindu shrine in the Himalayas.",
+          "tip": "Trek or take a pony ride."
+        },
+        {
+          "name": "Valley of Flowers",
+          "description": "A UNESCO site with vibrant flora.",
+          "tip": "Visit during monsoon for blooms."
+        },
+        {
+          "name": "Har Ki Pauri",
+          "description": "A famous ghat in Haridwar for Ganga Aarti.",
+          "tip": "Attend the evening aarti."
+        },
+        {
+          "name": "Auli",
+          "description": "A skiing destination with Himalayan views.",
+          "tip": "Visit in winter for skiing."
+        },
+        {
+          "name": "Badrinath Temple",
+          "description": "A major pilgrimage site.",
+          "tip": "Respect temple rituals."
+        }
+      ],
+      "travel_essentials": {
+        "how_to_reach": "By road: Dehradun is 250 km from Delhi (NH7, 6-7 hrs). By train: Dehradun Railway Station. By air: Jolly Grant Airport.",
+        "best_time": "March to June, October to February",
+        "local_transport": "Buses, taxis, shared jeeps",
+        "tips": "Carry warm clothing; avoid monsoon treks.",
+        "nearby_destinations": "Rishikesh (45 km), Mussoorie (35 km)"
+      }
+    }
+  }

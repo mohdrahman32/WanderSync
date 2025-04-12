@@ -1,0 +1,152 @@
+{
+    "state": {
+      "name": "Manipur",
+      "hero_image": "state/manipur.avif",
+      "overview": {
+        "description": "Manipur, located in northeastern India, is known for its lush landscapes, tribal culture, and Loktak Lake. Established as a state on January 21, 1972, it features attractions like Imphal and Loktak.",
+        "key_facts": {
+          "capital": "Imphal",
+          "population": "3.1 million (approx.)",
+          "language": "Meitei (Manipuri)",
+          "area": "22,327 sq km",
+          "established": "January 21, 1972"
+        }
+      },
+      "top_destinations": [
+        {
+          "name": "Imphal",
+          "image": "place/imphal.avif",
+          "description": "The capital with Kangla Fort and Ima Market.",
+          "explore_link": "../imphal.html",
+          "best_time": "October to April",
+          "travel_tips": "Visit Kangla Fort; explore local markets.",
+          "entry_fee": "Free (some sites ₹10-₹20)"
+        },
+        {
+          "name": "Loktak Lake",
+          "image": "place/loktak-lake.avif",
+          "description": "The largest freshwater lake with floating islands.",
+          "explore_link": "../loktak.html",
+          "best_time": "October to March",
+          "travel_tips": "Take a boat ride; visit Sendra Island.",
+          "entry_fee": "₹50 (boat ride)"
+        },
+        {
+          "name": "Ukhrul",
+          "image": "place/ukhrul.webp",
+          "description": "A hill station known for its natural beauty and tribes.",
+          "explore_link": "../ukhrul.html",
+          "best_time": "October to April",
+          "travel_tips": "Visit Shirui Kashung Peak; carry warm clothes.",
+          "entry_fee": "Free"
+        }
+      ],
+      "accommodation": [
+        {
+          "name": "Classic Grande",
+          "category": "Luxury",
+          "description": "Luxurious stay in Imphal.",
+          "price_range": "₹5,000+",
+          "book_link": "https://example.com/book/classic-grande"
+        },
+        {
+          "name": "Hotel Nirmala",
+          "category": "Luxury",
+          "description": "Premium hotel near Loktak Lake.",
+          "price_range": "₹4,500+",
+          "book_link": "https://example.com/book/nirmala"
+        },
+        {
+          "name": "Hotel Imphal",
+          "category": "Moderate",
+          "description": "Comfortable stay in Imphal.",
+          "price_range": "₹2,000-¥3,500",
+          "book_link": "https://example.com/book/hotel-imphal"
+        },
+        {
+          "name": "Hotel Valley View",
+          "category": "Budget",
+          "description": "Affordable option in Ukhrul.",
+          "price_range": "¥1,000-¥2,500",
+          "book_link": "https://example.com/book/valley-view"
+        }
+      ],
+      "culinary_delights": [
+        {
+          "name": "Luxmi Kitchen",
+          "cuisine": "Manipuri",
+          "cost": "¥200-¥500",
+          "description": "Famous for local Manipuri dishes."
+        },
+        {
+          "name": "Singju Corner",
+          "cuisine": "Manipuri",
+          "cost": "¥150-¥400",
+          "description": "Known for singju and ngari."
+        },
+        {
+          "name": "Café Coffee Day",
+          "cuisine": "Cafe",
+          "cost": "¥200-¥500",
+          "description": "Cozy spot for coffee and snacks."
+        },
+        {
+          "name": "Polo Kitchen",
+          "cuisine": "Indian",
+          "cost": "¥300-¥700",
+          "description": "Popular for Indian and Manipuri fusion."
+        },
+        {
+          "name": "Ima Keithel Food Stalls",
+          "cuisine": "Street Food",
+          "cost": "¥100-¥300",
+          "description": "Famous for authentic street food."
+        },
+        {
+          "name": "Hotel Sarita",
+          "cuisine": "North Indian",
+          "cost": "¥400-¥900",
+          "description": "Offers a variety of North Indian specialties."
+        }
+      ],
+      "must_visit_spots": [
+        {
+          "name": "Kangla Fort",
+          "description": "A historic site with cultural significance.",
+          "tip": "Visit early morning for tranquility."
+        },
+        {
+          "name": "Loktak Lake and Sendra Island",
+          "description": "Unique lake with floating phumdis.",
+          "tip": "Take a boat ride at sunrise."
+        },
+        {
+          "name": "Shirui Kashung Peak",
+          "description": "A scenic hill with rare Shirui lilies.",
+          "tip": "Trek during flowering season (May-June)."
+        },
+        {
+          "name": "Keibul Lamjao National Park",
+          "description": "Home to the endangered Sangai deer.",
+          "tip": "Book a guided tour."
+        },
+        {
+          "name": "Moreh",
+          "description": "A border town with Indo-Myanmar markets.",
+          "tip": "Explore local crafts and trade."
+        },
+        {
+          "name": "Thangjing Hill",
+          "description": "A sacred hill with panoramic views.",
+          "tip": "Visit during the Thangjing Festival."
+        }
+      ],
+      "travel_essentials": {
+        "how_to_reach": "By road: Imphal is 600 km from Guwahati (NH2, 12-14 hrs). By train: Nearest railhead Dimapur (215 km). By air: Imphal International Airport.",
+        "best_time": "October to April",
+        "local_transport": "Buses, auto-rickshaws, taxis",
+        "tips": "Carry warm clothing; check travel advisories.",
+        "nearby_destinations": "Ukhrul (80 km), Loktak (50 km)"
+      }
+    }
+  }

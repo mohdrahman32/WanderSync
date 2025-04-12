@@ -1,0 +1,152 @@
+{
+    "state": {
+      "name": "Mizoram",
+      "hero_image": "state/mizoram.avif",
+      "overview": {
+        "description": "Mizoram, located in northeastern India, is known for its hilly terrain, lush forests, and vibrant tribal culture. Established as a state on February 20, 1987, it features attractions like Aizawl and Tam Dil.",
+        "key_facts": {
+          "capital": "Aizawl",
+          "population": "1.2 million (approx.)",
+          "language": "Mizo",
+          "area": "21,081 sq km",
+          "established": "February 20, 1987"
+        }
+      },
+      "top_destinations": [
+        {
+          "name": "Aizawl",
+          "image": "place/aizawl.avif",
+          "description": "The capital with Durtlang Hills and local markets.",
+          "explore_link": "../aizawl.html",
+          "best_time": "October to April",
+          "travel_tips": "Visit Bara Bazar; explore the hills.",
+          "entry_fee": "Free"
+        },
+        {
+          "name": "Tam Dil",
+          "image": "place/tamdil-lake.avif",
+          "description": "A serene lake surrounded by forests.",
+          "explore_link": "../tam-dil.html",
+          "best_time": "October to March",
+          "travel_tips": "Take a boat ride; carry picnic supplies.",
+          "entry_fee": "₹20"
+        },
+        {
+          "name": "Champhai",
+          "image": "place/champhai.avif",
+          "description": "A scenic town near the Myanmar border.",
+          "explore_link": "../champhai.html",
+          "best_time": "October to April",
+          "travel_tips": "Visit Murlen National Park; carry warm clothes.",
+          "entry_fee": "Free"
+        }
+      ],
+      "accommodation": [
+        {
+          "name": "Hotel Ritz",
+          "category": "Luxury",
+          "description": "Luxurious stay in Aizawl.",
+          "price_range": "₹4,000+",
+          "book_link": "https://example.com/book/ritz"
+        },
+        {
+          "name": "Hotel Floria",
+          "category": "Luxury",
+          "description": "Premium hotel near Tam Dil.",
+          "price_range": "¥3,500+",
+          "book_link": "https://example.com/book/floria"
+        },
+        {
+          "name": "Hotel Chief",
+          "category": "Moderate",
+          "description": "Comfortable stay in Aizawl.",
+          "price_range": "¥1,500-¥3,000",
+          "book_link": "https://example.com/book/chief"
+        },
+        {
+          "name": "Champhai Guest House",
+          "category": "Budget",
+          "description": "Affordable option in Champhai.",
+          "price_range": "¥800-¥2,000",
+          "book_link": "https://example.com/book/champhai-guest"
+        }
+      ],
+      "culinary_delights": [
+        {
+          "name": "David's Kitchen",
+          "cuisine": "Mizo",
+          "cost": "¥200-¥500",
+          "description": "Famous for local Mizo dishes."
+        },
+        {
+          "name": "Baibawl Restaurant",
+          "cuisine": "Mizo",
+          "cost": "¥150-¥400",
+          "description": "Known for bai and smoked meat."
+        },
+        {
+          "name": "Café Coffee Day",
+          "cuisine": "Cafe",
+          "cost": "¥200-¥500",
+          "description": "Cozy spot for coffee and snacks."
+        },
+        {
+          "name": "Skyline Restaurant",
+          "cuisine": "Indian",
+          "cost": "¥300-¥700",
+          "description": "Popular for Indian and local fusion."
+        },
+        {
+          "name": "Street Food at Bara Bazar",
+          "cuisine": "Street Food",
+          "cost": "¥100-¥300",
+          "description": "Famous for authentic street food."
+        },
+        {
+          "name": "Hotel Regency",
+          "cuisine": "Multi-cuisine",
+          "cost": "¥400-¥900",
+          "description": "Offers a variety of cuisines."
+        }
+      ],
+      "must_visit_spots": [
+        {
+          "name": "Durtlang Hills",
+          "description": "Offers panoramic views of Aizawl.",
+          "tip": "Visit early morning for clear skies."
+        },
+        {
+          "name": "Tam Dil Lake",
+          "description": "A peaceful lake for boating and picnics.",
+          "tip": "Take a boat ride at sunrise."
+        },
+        {
+          "name": "Murlen National Park",
+          "description": "Home to diverse flora and fauna.",
+          "tip": "Trek with a guide."
+        },
+        {
+          "name": "Phawngpui Peak",
+          "description": "The highest peak in Mizoram.",
+          "tip": "Climb during dry season."
+        },
+        {
+          "name": "Vantawng Falls",
+          "description": "A stunning waterfall in Serchhip.",
+          "tip": "Visit after rainfall."
+        },
+        {
+          "name": "Hmuifang Tlang",
+          "description": "A scenic hill with trekking trails.",
+          "tip": "Explore local villages nearby."
+        }
+      ],
+      "travel_essentials": {
+        "how_to_reach": "By road: Aizawl is 450 km from Guwahati (NH306, 10-12 hrs). By train: Nearest railhead Silchar (180 km). By air: Lengpui Airport (Aizawl).",
+        "best_time": "October to April",
+        "local_transport": "Buses, taxis, shared jeeps",
+        "tips": "Carry warm clothing; check travel advisories.",
+        "nearby_destinations": "Champhai (180 km), Tam Dil (70 km)"
+      }
+    }
+  }

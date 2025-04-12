@@ -1,0 +1,152 @@
+{
+    "state": {
+      "name": "Nagaland",
+      "hero_image": "state/nagaland.avif",
+      "overview": {
+        "description": "Nagaland, located in northeastern India, is known for its tribal heritage, hilly terrain, and vibrant Hornbill Festival. Established as a state on December 1, 1963, it features attractions like Kohima and Dimapur.",
+        "key_facts": {
+          "capital": "Kohima",
+          "population": "2.2 million (approx.)",
+          "language": "English, Nagamese",
+          "area": "16,579 sq km",
+          "established": "December 1, 1963"
+        }
+      },
+      "top_destinations": [
+        {
+          "name": "Kohima",
+          "image": "place/kohima.avif",
+          "description": "The capital with World War II Cemetery and Kisama Heritage Village.",
+          "explore_link": "../kohima.html",
+          "best_time": "October to April",
+          "travel_tips": "Visit during Hornbill Festival; explore the museum.",
+          "entry_fee": "Free (some sites ₹10-₹50)"
+        },
+        {
+          "name": "Dimapur",
+          "image": "place/dimapur.jpg",
+          "description": "Known for its historical ruins and markets.",
+          "explore_link": "../dimapur.html",
+          "best_time": "October to March",
+          "travel_tips": "Visit Kachari Ruins; shop at local markets.",
+          "entry_fee": "Free"
+        },
+        {
+          "name": "Mokokchung",
+          "image": "place/mokokchung.avif",
+          "description": "A cultural hub with scenic hills and villages.",
+          "explore_link": "../mokokchung.html",
+          "best_time": "October to April",
+          "travel_tips": "Explore Longkhum village; carry warm clothes.",
+          "entry_fee": "Free"
+        }
+      ],
+      "accommodation": [
+        {
+          "name": "Hotel Japfu",
+          "category": "Luxury",
+          "description": "Luxurious stay in Kohima.",
+          "price_range": "₹4,500+",
+          "book_link": "https://example.com/book/japfu"
+        },
+        {
+          "name": "Hotel Saramati",
+          "category": "Luxury",
+          "description": "Premium hotel in Dimapur.",
+          "price_range": "¥4,000+",
+          "book_link": "https://example.com/book/saramati"
+        },
+        {
+          "name": "Hotel Acacia",
+          "category": "Moderate",
+          "description": "Comfortable stay in Kohima.",
+          "price_range": "¥1,500-¥3,000",
+          "book_link": "https://example.com/book/acacia"
+        },
+        {
+          "name": "Mokokchung Guest House",
+          "category": "Budget",
+          "description": "Affordable option in Mokokchung.",
+          "price_range": "¥800-¥2,000",
+          "book_link": "https://example.com/book/mokokchung-guest"
+        }
+      ],
+      "culinary_delights": [
+        {
+          "name": "Hornbill Restaurant",
+          "cuisine": "Naga",
+          "cost": "¥200-¥500",
+          "description": "Famous for Naga cuisine."
+        },
+        {
+          "name": "Smoked Meat Stall",
+          "cuisine": "Naga",
+          "cost": "¥150-¥400",
+          "description": "Known for smoked pork and bamboo shoot."
+        },
+        {
+          "name": "Café Coffee Day",
+          "cuisine": "Cafe",
+          "cost": "¥200-¥500",
+          "description": "Cozy spot for coffee and snacks."
+        },
+        {
+          "name": "De Oriental Grand",
+          "cuisine": "Indian",
+          "cost": "¥300-¥700",
+          "description": "Popular for Indian and local fusion."
+        },
+        {
+          "name": "Street Food at Kohima Market",
+          "cuisine": "Street Food",
+          "cost": "¥100-¥300",
+          "description": "Famous for authentic street food."
+        },
+        {
+          "name": "Hotel Vivor",
+          "cuisine": "Multi-cuisine",
+          "cost": "¥400-¥900",
+          "description": "Offers a variety of cuisines."
+        }
+      ],
+      "must_visit_spots": [
+        {
+          "name": "Kisama Heritage Village",
+          "description": "Host of the Hornbill Festival.",
+          "tip": "Visit during December for the festival."
+        },
+        {
+          "name": "Kohima War Cemetery",
+          "description": "A memorial for World War II soldiers.",
+          "tip": "Pay respects with a quiet visit."
+        },
+        {
+          "name": "Dzükou Valley",
+          "description": "A scenic valley with wildflowers.",
+          "tip": "Trek during monsoon for lush greenery."
+        },
+        {
+          "name": "Intanki National Park",
+          "description": "Home to diverse wildlife.",
+          "tip": "Book a guided safari."
+        },
+        {
+          "name": "Tseminyu",
+          "description": "A cultural village with stone monoliths.",
+          "tip": "Explore local traditions."
+        },
+        {
+          "name": "Japfü Peak",
+          "description": "A trekking spot with stunning views.",
+          "tip": "Climb during clear weather."
+        }
+      ],
+      "travel_essentials": {
+        "how_to_reach": "By road: Kohima is 270 km from Guwahati (NH29, 6-7 hrs). By train: Nearest railhead Dimapur (70 km). By air: Dimapur Airport.",
+        "best_time": "October to April",
+        "local_transport": "Buses, taxis, shared jeeps",
+        "tips": "Carry warm clothing; book during Hornbill Festival.",
+        "nearby_destinations": "Dimapur (70 km), Mokokchung (200 km)"
+      }
+    }
+  }

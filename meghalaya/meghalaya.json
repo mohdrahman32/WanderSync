@@ -1,0 +1,152 @@
+{
+    "state": {
+      "name": "Meghalaya",
+      "hero_image": "state/meghalaya.avif",
+      "overview": {
+        "description": "Meghalaya, located in northeastern India, is known for its living root bridges, waterfalls, and misty hills. Established as a state on January 21, 1972, it features attractions like Shillong and Cherrapunji.",
+        "key_facts": {
+          "capital": "Shillong",
+          "population": "3.3 million (approx.)",
+          "language": "Khasi, Garo, English",
+          "area": "22,429 sq km",
+          "established": "January 21, 1972"
+        }
+      },
+      "top_destinations": [
+        {
+          "name": "Shillong",
+          "image": "place/shillong.avif",
+          "description": "The Scotland of the East with Ward's Lake and Shillong Peak.",
+          "explore_link": "../shillong.html",
+          "best_time": "October to April",
+          "travel_tips": "Visit Elephant Falls; explore local markets.",
+          "entry_fee": "Free (some sites ₹10-₹20)"
+        },
+        {
+          "name": "Cherrapunji",
+          "image": "place/cherrapunji.avif",
+          "description": "Known for living root bridges and heavy rainfall.",
+          "explore_link": "../cherrapunji.html",
+          "best_time": "October to March",
+          "travel_tips": "Trek to Double Decker Bridge; carry rain gear.",
+          "entry_fee": "₹50 (bridge access)"
+        },
+        {
+          "name": "Mawlynnong",
+          "image": "place/mawlynnong.avif",
+          "description": "Asia's cleanest village with a living root bridge.",
+          "explore_link": "../mawlynnong.html",
+          "best_time": "October to April",
+          "travel_tips": "Visit the Sky View Point; respect local customs.",
+          "entry_fee": "Free"
+        }
+      ],
+      "accommodation": [
+        {
+          "name": "Ri Kynjai",
+          "category": "Luxury",
+          "description": "Luxurious stay in Shillong.",
+          "price_range": "₹6,000+",
+          "book_link": "https://example.com/book/ri-kynjai"
+        },
+        {
+          "name": "Cherrapunjee Holiday Resort",
+          "category": "Luxury",
+          "description": "Premium resort in Cherrapunji.",
+          "price_range": "¥5,000+",
+          "book_link": "https://example.com/book/cherrapunjee-resort"
+        },
+        {
+          "name": "Hotel Centre Point",
+          "category": "Moderate",
+          "description": "Comfortable stay in Shillong.",
+          "price_range": "¥2,000-¥3,500",
+          "book_link": "https://example.com/book/centre-point"
+        },
+        {
+          "name": "Mawlynnong Guest House",
+          "category": "Budget",
+          "description": "Affordable option in Mawlynnong.",
+          "price_range": "¥1,000-¥2,500",
+          "book_link": "https://example.com/book/mawlynnong-guest"
+        }
+      ],
+      "culinary_delights": [
+        {
+          "name": "City Hut Dhaba",
+          "cuisine": "Khasi",
+          "cost": "¥200-¥500",
+          "description": "Famous for local Khasi dishes."
+        },
+        {
+          "name": "Jadoh Stall",
+          "cuisine": "Khasi",
+          "cost": "¥150-¥400",
+          "description": "Known for jadoh (rice and meat)."
+        },
+        {
+          "name": "Café Coffee Day",
+          "cuisine": "Cafe",
+          "cost": "¥200-¥500",
+          "description": "Cozy spot for coffee and snacks."
+        },
+        {
+          "name": "Lamee Restaurant",
+          "cuisine": "Indian",
+          "cost": "¥300-¥700",
+          "description": "Popular for Indian and local fusion."
+        },
+        {
+          "name": "Street Food at Police Bazaar",
+          "cuisine": "Street Food",
+          "cost": "¥100-¥300",
+          "description": "Famous for authentic street food."
+        },
+        {
+          "name": "Cloud 9",
+          "cuisine": "Multi-cuisine",
+          "cost": "¥400-¥900",
+          "description": "Offers a variety of cuisines."
+        }
+      ],
+      "must_visit_spots": [
+        {
+          "name": "Living Root Bridges",
+          "description": "Natural bridges made by tree roots.",
+          "tip": "Trek with a guide during dry season."
+        },
+        {
+          "name": "Elephant Falls",
+          "description": "A scenic waterfall near Shillong.",
+          "tip": "Visit after rainfall for best views."
+        },
+        {
+          "name": "Mawsmai Cave",
+          "description": "A limestone cave in Cherrapunji.",
+          "tip": "Wear sturdy shoes for exploration."
+        },
+        {
+          "name": "Dawki River",
+          "description": "Crystal-clear waters with boating.",
+          "tip": "Visit in winter for calm waters."
+        },
+        {
+          "name": "Shillong Peak",
+          "description": "Offers panoramic views of the city.",
+          "tip": "Go early morning for clear skies."
+        },
+        {
+          "name": "Nohkalikai Falls",
+          "description": "One of the tallest waterfalls in India.",
+          "tip": "Capture the view during monsoon."
+        }
+      ],
+      "travel_essentials": {
+        "how_to_reach": "By road: Shillong is 100 km from Guwahati (NH6, 3-4 hrs). By train: Nearest railhead Guwahati (100 km). By air: Shillong Airport (Umroi).",
+        "best_time": "October to April",
+        "local_transport": "Buses, taxis, shared jeeps",
+        "tips": "Carry rain gear; book accommodations in advance.",
+        "nearby_destinations": "Cherrapunji (50 km), Mawlynnong (90 km)"
+      }
+    }
+  }

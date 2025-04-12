@@ -1,0 +1,152 @@
+{
+    "state": {
+      "name": "Sikkim",
+      "hero_image": "state/sikkim.avif",
+      "overview": {
+        "description": "Sikkim, located in northeastern India, is known for its Himalayan landscapes, monasteries, and biodiversity. Established as a state on May 16, 1975, it features attractions like Gangtok and Pelling.",
+        "key_facts": {
+          "capital": "Gangtok",
+          "population": "0.7 million (approx.)",
+          "language": "Nepali, Sikkimese",
+          "area": "7,096 sq km",
+          "established": "May 16, 1975"
+        }
+      },
+      "top_destinations": [
+        {
+          "name": "Gangtok",
+          "image": "place/gangtok.avif",
+          "description": "The capital with Enchey Monastery and MG Marg.",
+          "explore_link": "../gangtok.html",
+          "best_time": "March to May, October to December",
+          "travel_tips": "Visit monasteries; shop at MG Marg.",
+          "entry_fee": "Free"
+        },
+        {
+          "name": "Pelling",
+          "image": "place/pelling.avif",
+          "description": "Known for Pemayangtse Monastery and Kanchenjunga views.",
+          "explore_link": "../pelling.html",
+          "best_time": "March to June, October to December",
+          "travel_tips": "Trek to Khecheopalri Lake; carry warm clothes.",
+          "entry_fee": "Free"
+        },
+        {
+          "name": "Nathula Pass",
+          "image": "place/nathula-pass.avif",
+          "description": "A high-altitude pass near the Indo-China border.",
+          "explore_link": "../nathula-pass.html",
+          "best_time": "May to October",
+          "travel_tips": "Requires permit; dress warmly.",
+          "entry_fee": "₹200 (permit fees)"
+        }
+      ],
+      "accommodation": [
+        {
+          "name": "Mayfair Spa Resort",
+          "category": "Luxury",
+          "description": "Luxurious stay in Gangtok.",
+          "price_range": "₹6,000+",
+          "book_link": "https://example.com/book/mayfair-spa"
+        },
+        {
+          "name": "The Elgin Mount Pandim",
+          "category": "Luxury",
+          "description": "Premium hotel in Pelling.",
+          "price_range": "¥5,000+",
+          "book_link": "https://example.com/book/elgin-mount"
+        },
+        {
+          "name": "Hotel Sonam Delek",
+          "category": "Moderate",
+          "description": "Comfortable stay in Gangtok.",
+          "price_range": "¥2,000-¥3,500",
+          "book_link": "https://example.com/book/sonam-delek"
+        },
+        {
+          "name": "Pelling Guest House",
+          "category": "Budget",
+          "description": "Affordable option in Pelling.",
+          "price_range": "¥1,000-¥2,500",
+          "book_link": "https://example.com/book/pelling-guest"
+        }
+      ],
+      "culinary_delights": [
+        {
+          "name": "Taste of Tibet",
+          "cuisine": "Sikkimese",
+          "cost": "¥200-¥500",
+          "description": "Famous for momos and thukpa."
+        },
+        {
+          "name": "Roll House",
+          "cuisine": "Sikkimese",
+          "cost": "¥150-¥400",
+          "description": "Known for Tibetan rolls."
+        },
+        {
+          "name": "Café Coffee Day",
+          "cuisine": "Cafe",
+          "cost": "¥200-¥500",
+          "description": "Cozy spot for coffee and snacks."
+        },
+        {
+          "name": "Guru Kinley",
+          "cuisine": "Indian",
+          "cost": "¥300-¥700",
+          "description": "Popular for Indian and local fusion."
+        },
+        {
+          "name": "Street Food at MG Marg",
+          "cuisine": "Street Food",
+          "cost": "¥100-¥300",
+          "description": "Famous for chaat and noodles."
+        },
+        {
+          "name": "Hotel Tibet",
+          "cuisine": "Multi-cuisine",
+          "cost": "¥400-¥900",
+          "description": "Offers a variety of cuisines."
+        }
+      ],
+      "must_visit_spots": [
+        {
+          "name": "Enchey Monastery",
+          "description": "A serene Buddhist monastery in Gangtok.",
+          "tip": "Visit during festivals."
+        },
+        {
+          "name": "Pemayangtse Monastery",
+          "description": "A historic monastery in Pelling.",
+          "tip": "Explore the upper floors."
+        },
+        {
+          "name": "Tsomgo Lake",
+          "description": "A glacial lake with stunning views.",
+          "tip": "Visit in clear weather."
+        },
+        {
+          "name": "Kanchenjunga Falls",
+          "description": "A picturesque waterfall.",
+          "tip": "Carry a raincoat."
+        },
+        {
+          "name": "Yuksom",
+          "description": "The first capital of Sikkim.",
+          "tip": "Trek to nearby trails."
+        },
+        {
+          "name": "Rumtek Monastery",
+          "description": "A major Buddhist site near Gangtok.",
+          "tip": "Respect the silence."
+        }
+      ],
+      "travel_essentials": {
+        "how_to_reach": "By road: Gangtok is 120 km from Siliguri (NH10, 4-5 hrs). By train: Nearest railhead New Jalpaiguri (125 km). By air: Bagdogra Airport.",
+        "best_time": "March to May, October to December",
+        "local_transport": "Buses, taxis, shared jeeps",
+        "tips": "Carry warm clothing; obtain permits for restricted areas.",
+        "nearby_destinations": "Pelling (120 km), Nathula (50 km)"
+      }
+    }
+  }

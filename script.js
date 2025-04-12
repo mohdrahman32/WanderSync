@@ -5,58 +5,60 @@ AOS.init({
     once: true
 });
 
-// GSAP Animations
+// Welcome Animation (Netflix-style letter-by-letter reveal)
 document.addEventListener('DOMContentLoaded', () => {
-    // Welcome Fade Effect
     const welcomeOverlay = document.getElementById('welcome-overlay');
-    gsap.to(welcomeOverlay, {
-        opacity: 0,
-        duration: 1.5,
-        ease: 'power2.in',
-        delay: 1,
-        onComplete: () => {
+    const welcomeText = document.getElementById('welcome-text');
+    const text = 'WanderSync';
+    let html = '';
+
+    // Split text into individual letters and add spans
+    for (let i = 0; i < text.length; i++) {
+        html += `<span class="welcome-letter" style="animation-delay: ${i * 0.1}s">${text[i]}</span>`;
+    }
+    welcomeText.innerHTML = html;
+
+    // Trigger fade-out after all letters are visible (delay based on total animation time)
+    setTimeout(() => {
+        welcomeOverlay.classList.add('fade-out');
+        setTimeout(() => {
             welcomeOverlay.style.display = 'none';
-        }
-    });
+        }, 1500); // Match the 1.5s fade-out duration
+    }, text.length * 100 + 1000); // Total delay: 1s initial + 0.1s per letter
 
-    // Hero Section Animation
-    gsap.from('#hero-headline', {
-        y: -50,
-        opacity: 0,
-        duration: 1,
-        ease: 'power2.out',
-        delay: 1.5
-    });
-    gsap.from('.hero-overlay p', {
-        y: 20,
-        opacity: 0,
-        duration: 1,
-        delay: 1.8,
-        ease: 'power2.out'
-    });
-    gsap.from('.hero-overlay a', {
-        scale: 0.8,
-        opacity: 0,
-        duration: 0.8,
-        delay: 2.1,
-        ease: 'back.out(1.7)'
-    });
+    // Hero Section Animation (without GSAP)
+    const headline = document.getElementById('hero-headline');
+    const heroParagraph = document.querySelector('.hero-overlay p');
+    const heroLink = document.querySelector('.hero-overlay a');
 
-    // Header Logo Animation
-    gsap.from('header h1', {
-        x: -100,
-        opacity: 0,
-        duration: 1,
-        ease: 'power2.out',
-        delay: 1.5
-    });
-    gsap.from('header p', {
-        x: 100,
-        opacity: 0,
-        duration: 1,
-        delay: 1.7,
-        ease: 'power2.out'
-    });
+    setTimeout(() => {
+        headline.style.opacity = '1';
+        headline.style.transform = 'translateY(0)';
+    }, 1500);
+
+    setTimeout(() => {
+        heroParagraph.style.opacity = '1';
+        heroParagraph.style.transform = 'translateY(0)';
+    }, 1800);
+
+    setTimeout(() => {
+        heroLink.style.opacity = '1';
+        heroLink.style.transform = 'scale(1)';
+    }, 2100);
+
+    // Header Logo Animation (without GSAP)
+    const headerLogo = document.querySelector('header h1');
+    const headerSubtext = document.querySelector('header p');
+
+    setTimeout(() => {
+        headerLogo.style.opacity = '1';
+        headerLogo.style.transform = 'translateX(0)';
+    }, 1500);
+
+    setTimeout(() => {
+        headerSubtext.style.opacity = '1';
+        headerSubtext.style.transform = 'translateX(0)';
+    }, 1700);
 
     // Hamburger Menu Toggle
     const hamburger = document.getElementById('hamburger');
@@ -66,17 +68,22 @@ document.addEventListener('DOMContentLoaded', () => {
         navMenu.classList.toggle('active');
 
         if (navMenu.classList.contains('active')) {
-            gsap.fromTo('.nav-menu ul li', 
-                { y: -20, opacity: 0 },
-                { y: 0, opacity: 1, duration: 0.5, stagger: 0.1, ease: 'power2.out' }
-            );
+            let delay = 0;
+            navMenu.querySelectorAll('li').forEach(item => {
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }, delay);
+                delay += 100;
+            });
         } else {
-            gsap.to('.nav-menu ul li', {
-                y: -20,
-                opacity: 0,
-                duration: 0.3,
-                stagger: 0.05,
-                ease: 'power2.in'
+            let delay = 0;
+            navMenu.querySelectorAll('li').forEach(item => {
+                setTimeout(() => {
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateY(-20px)';
+                }, delay);
+                delay += 50;
             });
         }
     });
@@ -90,21 +97,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const href = link.getAttribute('href');
 
             loadingOverlay.style.display = 'flex';
-            gsap.fromTo(loadingOverlay, 
-                { opacity: 0 }, 
-                { opacity: 1, duration: 0.5, ease: 'power2.out' }
-            );
+            loadingOverlay.style.opacity = '1';
 
             setTimeout(() => {
-                gsap.to(loadingOverlay, {
-                    opacity: 0,
-                    duration: 0.5,
-                    ease: 'power2.in',
-                    onComplete: () => {
-                        loadingOverlay.style.display = 'none';
-                        window.location.href = href;
-                    }
-                });
+                loadingOverlay.style.opacity = '0';
+                setTimeout(() => {
+                    loadingOverlay.style.display = 'none';
+                    window.location.href = href;
+                }, 500);
             }, 3000);
         });
     });

@@ -1,0 +1,152 @@
+{
+    "state": {
+      "name": "Punjab",
+      "hero_image": "state/punjab.avif",
+      "overview": {
+        "description": "Punjab, located in northern India, is known for its rich culture, fertile plains, and Sikh heritage. Established as a state on November 1, 1966, it features attractions like Amritsar and Chandigarh.",
+        "key_facts": {
+          "capital": "Chandigarh",
+          "population": "30 million (approx.)",
+          "language": "Punjabi",
+          "area": "50,362 sq km",
+          "established": "November 1, 1966"
+        }
+      },
+      "top_destinations": [
+        {
+          "name": "Amritsar",
+          "image": "place/golden-temple.avif",
+          "description": "Home to the Golden Temple and Wagah Border.",
+          "explore_link": "../amritsar.html",
+          "best_time": "October to March",
+          "travel_tips": "Visit Golden Temple; attend Wagah ceremony.",
+          "entry_fee": "Free"
+        },
+        {
+          "name": "Chandigarh",
+          "image": "place/chandigarh.avif",
+          "description": "A planned city with Rock Garden and Sukhna Lake.",
+          "explore_link": "../chandigarh.html",
+          "best_time": "August to March",
+          "travel_tips": "Explore Rock Garden; enjoy boating.",
+          "entry_fee": "₹30 (Rock Garden)"
+        },
+        {
+          "name": "Anandpur Sahib",
+          "image": "place/anandpur-sahib.jpg",
+          "description": "A holy city with historical significance.",
+          "explore_link": "../anandpur-sahib.html",
+          "best_time": "October to March",
+          "travel_tips": "Visit during Hola Mohalla; respect traditions.",
+          "entry_fee": "Free"
+        }
+      ],
+      "accommodation": [
+        {
+          "name": "Taj Swarna",
+          "category": "Luxury",
+          "description": "Luxurious stay in Amritsar.",
+          "price_range": "₹6,000+",
+          "book_link": "https://example.com/book/taj-swarna"
+        },
+        {
+          "name": "The Lalit",
+          "category": "Luxury",
+          "description": "Premium hotel in Chandigarh.",
+          "price_range": "¥5,500+",
+          "book_link": "https://example.com/book/lalit"
+        },
+        {
+          "name": "Hotel Mount View",
+          "category": "Moderate",
+          "description": "Comfortable stay in Amritsar.",
+          "price_range": "¥2,000-¥3,500",
+          "book_link": "https://example.com/book/mount-view"
+        },
+        {
+          "name": "Anandpur Guest House",
+          "category": "Budget",
+          "description": "Affordable option in Anandpur Sahib.",
+          "price_range": "¥1,000-¥2,500",
+          "book_link": "https://example.com/book/anandpur-guest"
+        }
+      ],
+      "culinary_delights": [
+        {
+          "name": "Kesar Da Dhaba",
+          "cuisine": "Punjabi",
+          "cost": "¥200-¥500",
+          "description": "Famous for authentic Punjabi food."
+        },
+        {
+          "name": "Bharawan Da Dhaba",
+          "cuisine": "Punjabi",
+          "cost": "¥150-¥400",
+          "description": "Known for sarson da saag and makki di roti."
+        },
+        {
+          "name": "Café Coffee Day",
+          "cuisine": "Cafe",
+          "cost": "¥200-¥500",
+          "description": "Cozy spot for coffee and snacks."
+        },
+        {
+          "name": "Pavilion",
+          "cuisine": "Indian",
+          "cost": "¥300-¥700",
+          "description": "Popular for Indian and Punjabi fusion."
+        },
+        {
+          "name": "Street Food at Amritsar Market",
+          "cuisine": "Street Food",
+          "cost": "¥100-¥300",
+          "description": "Famous for chaat and lassi."
+        },
+        {
+          "name": "JW Marriott",
+          "cuisine": "Multi-cuisine",
+          "cost": "¥400-¥900",
+          "description": "Offers a variety of cuisines."
+        }
+      ],
+      "must_visit_spots": [
+        {
+          "name": "Golden Temple",
+          "description": "A sacred Sikh shrine in Amritsar.",
+          "tip": "Cover head and remove shoes."
+        },
+        {
+          "name": "Wagah Border",
+          "description": "Famous for the beating retreat ceremony.",
+          "tip": "Arrive early for a good view."
+        },
+        {
+          "name": "Rock Garden",
+          "description": "An art park made of waste materials.",
+          "tip": "Explore all sections."
+        },
+        {
+          "name": "Sukhna Lake",
+          "description": "A peaceful lake for boating.",
+          "tip": "Visit during sunset."
+        },
+        {
+          "name": "Jallianwala Bagh",
+          "description": "A historical site commemorating a massacre.",
+          "tip": "Learn about the history."
+        },
+        {
+          "name": "Anandpur Sahib Fort",
+          "description": "A historical fort with cultural significance.",
+          "tip": "Visit during festivals."
+        }
+      ],
+      "travel_essentials": {
+        "how_to_reach": "By road: Amritsar is 450 km from Delhi (NH44, 8-9 hrs). By train: Amritsar Junction. By air: Sri Guru Ram Dass Jee Airport.",
+        "best_time": "October to March",
+        "local_transport": "Buses, taxis, auto-rickshaws",
+        "tips": "Carry warm clothing; avoid summer heat.",
+        "nearby_destinations": "Chandigarh (250 km), Anandpur Sahib (80 km)"
+      }
+    }
+  }

@@ -1,0 +1,152 @@
+{
+    "state": {
+      "name": "Odisha",
+      "hero_image": "state/odisha.avif",
+      "overview": {
+        "description": "Odisha, located on India’s eastern coast, is known for its rich history, temples, and beaches. Established as a state on April 1, 1936, it features attractions like Bhubaneswar and Puri.",
+        "key_facts": {
+          "capital": "Bhubaneswar",
+          "population": "46 million (approx.)",
+          "language": "Odia",
+          "area": "155,707 sq km",
+          "established": "April 1, 1936"
+        }
+      },
+      "top_destinations": [
+        {
+          "name": "Bhubaneswar",
+          "image": "place/bhubaneswar.avif",
+          "description": "The temple city with Lingaraj Temple and Udayagiri Caves.",
+          "explore_link": "../bhubaneswar.html",
+          "best_time": "October to March",
+          "travel_tips": "Visit Lingaraj Temple; explore caves.",
+          "entry_fee": "Free (some sites ₹20-₹50)"
+        },
+        {
+          "name": "Puri",
+          "image": "place/puri.avif",
+          "description": "Famous for Jagannath Temple and the Sun Temple at Konark.",
+          "explore_link": "../puri.html",
+          "best_time": "October to February",
+          "travel_tips": "Attend Rath Yatra; visit beaches.",
+          "entry_fee": "Free (Konark ₹30)"
+        },
+        {
+          "name": "Chilika Lake",
+          "image": "place/chilika-lake.avif",
+          "description": "Asia’s largest brackish water lagoon with bird sanctuary.",
+          "explore_link": "../chilika.html",
+          "best_time": "November to February",
+          "travel_tips": "Take a boat ride; carry binoculars.",
+          "entry_fee": "₹20 (boat ride)"
+        }
+      ],
+      "accommodation": [
+        {
+          "name": "Mayfair Lagoon",
+          "category": "Luxury",
+          "description": "Luxurious stay in Bhubaneswar.",
+          "price_range": "₹5,000+",
+          "book_link": "https://example.com/book/mayfair-lagoon"
+        },
+        {
+          "name": "The Chariot Resort",
+          "category": "Luxury",
+          "description": "Premium resort in Puri.",
+          "price_range": "¥4,500+",
+          "book_link": "https://example.com/book/chariot-resort"
+        },
+        {
+          "name": "Hotel Swosti",
+          "category": "Moderate",
+          "description": "Comfortable stay in Bhubaneswar.",
+          "price_range": "¥2,000-¥3,500",
+          "book_link": "https://example.com/book/swosti"
+        },
+        {
+          "name": "Puri Sea View Guest House",
+          "category": "Budget",
+          "description": "Affordable option in Puri.",
+          "price_range": "¥1,000-¥2,500",
+          "book_link": "https://example.com/book/puri-sea-view"
+        }
+      ],
+      "culinary_delights": [
+        {
+          "name": "Dalma Restaurant",
+          "cuisine": "Odia",
+          "cost": "¥200-¥500",
+          "description": "Famous for Odia thali and dalma."
+        },
+        {
+          "name": "Chhapan Bhog",
+          "cuisine": "Odia",
+          "cost": "¥150-¥400",
+          "description": "Known for traditional sweets."
+        },
+        {
+          "name": "Café Coffee Day",
+          "cuisine": "Cafe",
+          "cost": "¥200-¥500",
+          "description": "Cozy spot for coffee and snacks."
+        },
+        {
+          "name": "Taste of Odisha",
+          "cuisine": "Indian",
+          "cost": "¥300-¥700",
+          "description": "Popular for Indian and Odia fusion."
+        },
+        {
+          "name": "Street Food at Cuttack",
+          "cuisine": "Street Food",
+          "cost": "¥100-¥300",
+          "description": "Famous for dahibara and aloo dum."
+        },
+        {
+          "name": "Hotel Kalinga",
+          "cuisine": "Multi-cuisine",
+          "cost": "¥400-¥900",
+          "description": "Offers a variety of cuisines."
+        }
+      ],
+      "must_visit_spots": [
+        {
+          "name": "Lingaraj Temple",
+          "description": "A historic temple in Bhubaneswar.",
+          "tip": "Visit early morning for peace."
+        },
+        {
+          "name": "Konark Sun Temple",
+          "description": "UNESCO site with stunning architecture.",
+          "tip": "Explore during sunrise."
+        },
+        {
+          "name": "Puri Beach",
+          "description": "A serene beach for relaxation.",
+          "tip": "Visit during low tide."
+        },
+        {
+          "name": "Chilika Wildlife Sanctuary",
+          "description": "Home to migratory birds.",
+          "tip": "Take a boat tour."
+        },
+        {
+          "name": "Udayagiri and Khandagiri Caves",
+          "description": "Ancient rock-cut caves.",
+          "tip": "Wear comfortable shoes."
+        },
+        {
+          "name": "Dhauli Peace Pagoda",
+          "description": "A Buddhist site with historical significance.",
+          "tip": "Visit for meditation."
+        }
+      ],
+      "travel_essentials": {
+        "how_to_reach": "By road: Bhubaneswar is 400 km from Kolkata (NH16, 7-8 hrs). By train: Bhubaneswar Railway Station. By air: Biju Patnaik Airport.",
+        "best_time": "October to March",
+        "local_transport": "Buses, taxis, auto-rickshaws",
+        "tips": "Carry light clothing; avoid monsoon.",
+        "nearby_destinations": "Puri (60 km), Konark (35 km)"
+      }
+    }
+  }

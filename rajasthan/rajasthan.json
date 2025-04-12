@@ -1,0 +1,152 @@
+{
+    "state": {
+      "name": "Rajasthan",
+      "hero_image": "state/rajasthan.avif",
+      "overview": {
+        "description": "Rajasthan, located in northwestern India, is known for its deserts, forts, and vibrant culture. Established as a state on March 30, 1949, it features attractions like Jaipur and Jodhpur.",
+        "key_facts": {
+          "capital": "Jaipur",
+          "population": "80 million (approx.)",
+          "language": "Rajasthani, Hindi",
+          "area": "342,239 sq km",
+          "established": "March 30, 1949"
+        }
+      },
+      "top_destinations": [
+        {
+          "name": "Jaipur",
+          "image": "place/jaipur.avif",
+          "description": "The Pink City with Amber Fort and Hawa Mahal.",
+          "explore_link": "../jaipur.html",
+          "best_time": "October to March",
+          "travel_tips": "Visit Amber Fort; shop at Johari Bazaar.",
+          "entry_fee": "₹50 (Amber Fort)"
+        },
+        {
+          "name": "Jodhpur",
+          "image": "place/jodhpur.jpeg",
+          "description": "The Blue City with Mehrangarh Fort.",
+          "explore_link": "../jodhpur.html",
+          "best_time": "October to March",
+          "travel_tips": "Explore Umaid Bhawan; try local cuisine.",
+          "entry_fee": "₹70 (Mehrangarh)"
+        },
+        {
+          "name": "Udaipur",
+          "image": "place/udaipur.avif",
+          "description": "The City of Lakes with Lake Pichola.",
+          "explore_link": "../udaipur.html",
+          "best_time": "October to March",
+          "travel_tips": "Take a boat ride; visit City Palace.",
+          "entry_fee": "₹30 (City Palace)"
+        }
+      ],
+      "accommodation": [
+        {
+          "name": "Rambagh Palace",
+          "category": "Luxury",
+          "description": "Luxurious stay in Jaipur.",
+          "price_range": "₹10,000+",
+          "book_link": "https://example.com/book/rambagh-palace"
+        },
+        {
+          "name": "Taj Umaid Bhawan",
+          "category": "Luxury",
+          "description": "Premium palace hotel in Jodhpur.",
+          "price_range": "¥9,000+",
+          "book_link": "https://example.com/book/umaid-bhawan"
+        },
+        {
+          "name": "Hotel Clarks",
+          "category": "Moderate",
+          "description": "Comfortable stay in Udaipur.",
+          "price_range": "¥2,500-¥4,000",
+          "book_link": "https://example.com/book/clarks"
+        },
+        {
+          "name": "Udaipur Guest House",
+          "category": "Budget",
+          "description": "Affordable option in Udaipur.",
+          "price_range": "¥1,200-¥2,800",
+          "book_link": "https://example.com/book/udaipur-guest"
+        }
+      ],
+      "culinary_delights": [
+        {
+          "name": "Chokhi Dhani",
+          "cuisine": "Rajasthani",
+          "cost": "¥300-¥700",
+          "description": "Famous for Rajasthani thali."
+        },
+        {
+          "name": "Natraj Dining Hall",
+          "cuisine": "Rajasthani",
+          "cost": "¥200-¥500",
+          "description": "Known for dal baati churma."
+        },
+        {
+          "name": "Café Coffee Day",
+          "cuisine": "Cafe",
+          "cost": "¥200-¥500",
+          "description": "Cozy spot for coffee and snacks."
+        },
+        {
+          "name": "The Leela",
+          "cuisine": "Indian",
+          "cost": "¥400-¥900",
+          "description": "Popular for Indian and Rajasthani fusion."
+        },
+        {
+          "name": "Street Food at Johari Bazaar",
+          "cuisine": "Street Food",
+          "cost": "¥100-¥300",
+          "description": "Famous for kachori and mirchi vada."
+        },
+        {
+          "name": "Hotel Pushkar Palace",
+          "cuisine": "Multi-cuisine",
+          "cost": "¥500-¥1,000",
+          "description": "Offers a variety of cuisines."
+        }
+      ],
+      "must_visit_spots": [
+        {
+          "name": "Amber Fort",
+          "description": "A majestic fort near Jaipur.",
+          "tip": "Take an elephant ride."
+        },
+        {
+          "name": "Mehrangarh Fort",
+          "description": "A historic fort overlooking Jodhpur.",
+          "tip": "Visit the museum inside."
+        },
+        {
+          "name": "Lake Pichola",
+          "description": "A scenic lake with boat rides.",
+          "tip": "Visit during sunset."
+        },
+        {
+          "name": "Jaisalmer Fort",
+          "description": "A living fort in the desert.",
+          "tip": "Explore local shops."
+        },
+        {
+          "name": "Hawa Mahal",
+          "description": "Iconic palace with intricate architecture.",
+          "tip": "Photograph from outside."
+        },
+        {
+          "name": "Ranthambore National Park",
+          "description": "Famous for tiger safaris.",
+          "tip": "Book a jeep safari."
+        }
+      ],
+      "travel_essentials": {
+        "how_to_reach": "By road: Jaipur is 260 km from Delhi (NH48, 5-6 hrs). By train: Jaipur Junction. By air: Jaipur International Airport.",
+        "best_time": "October to March",
+        "local_transport": "Buses, taxis, auto-rickshaws",
+        "tips": "Carry light clothing; avoid summer heat.",
+        "nearby_destinations": "Jodhpur (330 km), Udaipur (400 km)"
+      }
+    }
+  }

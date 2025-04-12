@@ -35,7 +35,7 @@
             height: 2px;
             background: url('https://www.transparenttextures.com/patterns/vine.png');
         }
-        /* Welcome Fade Effect */
+        /* Welcome Overlay */
         .welcome-overlay {
             position: fixed;
             top: 0;
@@ -49,9 +49,33 @@
             align-items: center;
             justify-content: center;
             color: #F5E8C7;
-            font-size: 2rem;
             font-family: 'Playfair Display', serif;
             pointer-events: none;
+            overflow: hidden;
+        }
+        .welcome-text {
+            font-size: 4rem;
+            letter-spacing: 2px;
+            white-space: nowrap;
+        }
+        .welcome-letter {
+            display: inline-block;
+            opacity: 0;
+            animation: fadeIn 0.1s forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        /* Fade Out Animation for Welcome Overlay */
+        .welcome-overlay.fade-out {
+            animation: fadeOut 1.5s ease-in forwards;
+        }
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+            }
         }
         /* Loading Circle */
         .loading-overlay {
@@ -203,6 +227,10 @@
                 font-size: 0.9rem;
                 padding: 0.25rem;
             }
+            /* Welcome Overlay */
+            .welcome-text {
+                font-size: 2.5rem; /* Adjusted for mobile */
+            }
             /* Remove Side Gap */
             .custom-container {
                 padding-left: 0;
@@ -218,7 +246,9 @@
 </head>
 <body class="bg-gray-100 text-gray-800">
     <!-- Welcome Overlay -->
-    <div class="welcome-overlay" id="welcome-overlay">Welcome to WanderSync</div>
+    <div class="welcome-overlay" id="welcome-overlay">
+        <div class="welcome-text" id="welcome-text"></div>
+    </div>
     <!-- Loading Overlay -->
     <div class="loading-overlay" id="loading-overlay">
         <div class="loading-circle"></div>
@@ -362,7 +392,6 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>

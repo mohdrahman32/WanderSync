@@ -1,0 +1,152 @@
+{
+    "state": {
+      "name": "Tamil Nadu",
+      "hero_image": "state/tamil-nadu.avif",
+      "overview": {
+        "description": "Tamil Nadu, located in southern India, is known for its ancient temples, Dravidian architecture, and coastal beauty. Established as a state on January 26, 1950, it features attractions like Chennai and Madurai.",
+        "key_facts": {
+          "capital": "Chennai",
+          "population": "80 million (approx.)",
+          "language": "Tamil",
+          "area": "130,058 sq km",
+          "established": "January 26, 1950"
+        }
+      },
+      "top_destinations": [
+        {
+          "name": "Chennai",
+          "image": "place/chennai.avif",
+          "description": "The coastal capital with Marina Beach and Fort St. George.",
+          "explore_link": "../chennai.html",
+          "best_time": "November to February",
+          "travel_tips": "Visit Kapaleeshwarar Temple; enjoy local filter coffee.",
+          "entry_fee": "Free"
+        },
+        {
+          "name": "Madurai",
+          "image": "place/madurai.avif",
+          "description": "Home to the Meenakshi Temple and vibrant markets.",
+          "explore_link": "../madurai.html",
+          "best_time": "October to March",
+          "travel_tips": "Attend the temple festival; explore Thirumalai Nayakkar Mahal.",
+          "entry_fee": "₹50 (Meenakshi Temple)"
+        },
+        {
+          "name": "Ooty",
+          "image": "place/ooty.avif",
+          "description": "A hill station with tea gardens and Ooty Lake.",
+          "explore_link": "../ooty.html",
+          "best_time": "October to June",
+          "travel_tips": "Take the toy train; carry warm clothes.",
+          "entry_fee": "Free"
+        }
+      ],
+      "accommodation": [
+        {
+          "name": "Taj Coromandel",
+          "category": "Luxury",
+          "description": "Luxurious stay in Chennai.",
+          "price_range": "₹7,000+",
+          "book_link": "https://example.com/book/taj-coromandel"
+        },
+        {
+          "name": "The Leela Palace",
+          "category": "Luxury",
+          "description": "Premium hotel in Chennai.",
+          "price_range": "¥6,000+",
+          "book_link": "https://example.com/book/leela-palace"
+        },
+        {
+          "name": "Hotel Sangam",
+          "category": "Moderate",
+          "description": "Comfortable stay in Madurai.",
+          "price_range": "¥2,000-¥3,500",
+          "book_link": "https://example.com/book/sangam"
+        },
+        {
+          "name": "Ooty Guest House",
+          "category": "Budget",
+          "description": "Affordable option in Ooty.",
+          "price_range": "¥1,000-¥2,500",
+          "book_link": "https://example.com/book/ooty-guest"
+        }
+      ],
+      "culinary_delights": [
+        {
+          "name": "Saravana Bhavan",
+          "cuisine": "South Indian",
+          "cost": "¥200-¥500",
+          "description": "Famous for dosa and idli."
+        },
+        {
+          "name": "Murugan Idli Shop",
+          "cuisine": "South Indian",
+          "cost": "¥150-¥400",
+          "description": "Known for authentic idli and vada."
+        },
+        {
+          "name": "Café Coffee Day",
+          "cuisine": "Cafe",
+          "cost": "¥200-¥500",
+          "description": "Cozy spot for coffee and snacks."
+        },
+        {
+          "name": "The Residency",
+          "cuisine": "Indian",
+          "cost": "¥400-¥900",
+          "description": "Popular for Chettinad cuisine."
+        },
+        {
+          "name": "Street Food at Pondy Bazaar",
+          "cuisine": "Street Food",
+          "cost": "¥100-¥300",
+          "description": "Famous for bajji and sundal."
+        },
+        {
+          "name": "Hilton Chennai",
+          "cuisine": "Multi-cuisine",
+          "cost": "¥500-¥1,200",
+          "description": "Offers a variety of cuisines."
+        }
+      ],
+      "must_visit_spots": [
+        {
+          "name": "Meenakshi Temple",
+          "description": "A historic temple in Madurai.",
+          "tip": "Visit the thousand pillar hall."
+        },
+        {
+          "name": "Marina Beach",
+          "description": "The second longest urban beach in the world.",
+          "tip": "Enjoy the evening breeze."
+        },
+        {
+          "name": "Ooty Botanical Gardens",
+          "description": "A scenic garden with rare plants.",
+          "tip": "Visit during flower show season."
+        },
+        {
+          "name": "Rameswaram Temple",
+          "description": "A sacred pilgrimage site.",
+          "tip": "Take a dip in the 22 theerthams."
+        },
+        {
+          "name": "Kanyakumari",
+          "description": "Where three seas meet.",
+          "tip": "Watch the sunrise and sunset."
+        },
+        {
+          "name": "Mahabalipuram",
+          "description": "Known for rock-cut temples and shore temple.",
+          "tip": "Explore the Pancha Rathas."
+        }
+      ],
+      "travel_essentials": {
+        "how_to_reach": "By road: Chennai is 2,000 km from Delhi (NH48, 30-32 hrs). By train: Chennai Central. By air: Chennai International Airport.",
+        "best_time": "November to February",
+        "local_transport": "Buses, taxis, auto-rickshaws",
+        "tips": "Carry light clothing; avoid peak summer.",
+        "nearby_destinations": "Madurai (450 km), Ooty (550 km)"
+      }
+    }
+  }

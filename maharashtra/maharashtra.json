@@ -1,0 +1,152 @@
+{
+    "state": {
+      "name": "Maharashtra",
+      "hero_image": "state/maharashtra.avif",
+      "overview": {
+        "description": "Maharashtra, located in western India, is known for its bustling cities, historic forts, and scenic beaches. Established as a state on May 1, 1960, it features attractions like Mumbai and Pune.",
+        "key_facts": {
+          "capital": "Mumbai",
+          "population": "126.6 million (approx.)",
+          "language": "Marathi",
+          "area": "307,713 sq km",
+          "established": "May 1, 1960"
+        }
+      },
+      "top_destinations": [
+        {
+          "name": "Mumbai",
+          "image": "place/mumbai.avif",
+          "description": "The financial capital with Gateway of India and Marine Drive.",
+          "explore_link": "../mumbai.html",
+          "best_time": "November to February",
+          "travel_tips": "Visit Elephanta Caves; avoid peak monsoon.",
+          "entry_fee": "Free (some sites ₹10-₹40)"
+        },
+        {
+          "name": "Pune",
+          "image": "place/pune.avif",
+          "description": "Known for its forts like Shaniwar Wada and cultural heritage.",
+          "explore_link": "../pune.html",
+          "best_time": "October to March",
+          "travel_tips": "Explore Aga Khan Palace; visit during winter.",
+          "entry_fee": "₹5 (Shaniwar Wada)"
+        },
+        {
+          "name": "Mahabaleshwar",
+          "image": "place/mahabaleshwar.avif",
+          "description": "A hill station with strawberry farms and scenic views.",
+          "explore_link": "../mahabaleshwar.html",
+          "best_time": "October to March",
+          "travel_tips": "Visit Venna Lake; carry warm clothes.",
+          "entry_fee": "Free (some points ₹10-₹50)"
+        }
+      ],
+      "accommodation": [
+        {
+          "name": "The Taj Mahal Palace",
+          "category": "Luxury",
+          "description": "Luxurious stay in Mumbai.",
+          "price_range": "₹15,000+",
+          "book_link": "https://example.com/book/taj-mahal"
+        },
+        {
+          "name": "The Oberoi, Mumbai",
+          "category": "Luxury",
+          "description": "Premium hotel in Mumbai.",
+          "price_range": "₹12,000+",
+          "book_link": "https://example.com/book/oberoi-mumbai"
+        },
+        {
+          "name": "Hotel Shreyas",
+          "category": "Moderate",
+          "description": "Comfortable stay in Pune.",
+          "price_range": "₹2,500-¥4,500",
+          "book_link": "https://example.com/book/shreyas"
+        },
+        {
+          "name": "Hotel Panorama",
+          "category": "Budget",
+          "description": "Affordable option in Mahabaleshwar.",
+          "price_range": "¥1,500-¥3,000",
+          "book_link": "https://example.com/book/panorama"
+        }
+      ],
+      "culinary_delights": [
+        {
+          "name": "Leopold Cafe",
+          "cuisine": "Multi-cuisine",
+          "cost": "¥300-¥700",
+          "description": "Famous for its vibrant ambiance and food."
+        },
+        {
+          "name": "Kailas Parbat",
+          "cuisine": "Indian",
+          "cost": "¥200-¥500",
+          "description": "Known for sweets and chaat."
+        },
+        {
+          "name": "Café Coffee Day",
+          "cuisine": "Cafe",
+          "cost": "¥200-¥500",
+          "description": "Cozy spot for coffee and snacks."
+        },
+        {
+          "name": "Shiv Sagar",
+          "cuisine": "Maharashtrian",
+          "cost": "¥400-¥900",
+          "description": "Popular for vada pav and misal pav."
+        },
+        {
+          "name": "Trishna",
+          "cuisine": "Seafood",
+          "cost": "¥500-¥1,200",
+          "description": "Famous for authentic seafood dishes."
+        },
+        {
+          "name": "Peshawri",
+          "cuisine": "North Indian",
+          "cost": "¥700-¥1,500",
+          "description": "Offers a variety of North Indian specialties."
+        }
+      ],
+      "must_visit_spots": [
+        {
+          "name": "Gateway of India",
+          "description": "An iconic monument overlooking the Arabian Sea.",
+          "tip": "Visit early morning to avoid crowds."
+        },
+        {
+          "name": "Ajanta and Ellora Caves",
+          "description": "UNESCO sites with ancient rock-cut caves.",
+          "tip": "Allocate a full day for exploration."
+        },
+        {
+          "name": "Lonavala",
+          "description": "A hill station with waterfalls and forts.",
+          "tip": "Visit during monsoon for lush greenery."
+        },
+        {
+          "name": "Tadoba National Park",
+          "description": "A tiger reserve with diverse wildlife.",
+          "tip": "Book a safari for the best experience."
+        },
+        {
+          "name": "Shaniwar Wada",
+          "description": "A historic fort in Pune with light shows.",
+          "tip": "Attend the evening sound and light show."
+        },
+        {
+          "name": "Elephanta Caves",
+          "description": "Rock-cut caves with Hindu and Buddhist sculptures.",
+          "tip": "Take a ferry from Gateway of India."
+        }
+      ],
+      "travel_essentials": {
+        "how_to_reach": "By road: Mumbai is 1,400 km from Delhi (NH48, 24-26 hrs). By train: Mumbai Central connects major cities. By air: Chhatrapati Shivaji Maharaj Airport (Mumbai).",
+        "best_time": "November to February",
+        "local_transport": "Buses, auto-rickshaws, taxis, local trains",
+        "tips": "Carry light clothing; book accommodations in advance.",
+        "nearby_destinations": "Pune (150 km), Lonavala (80 km)"
+      }
+    }
+  }

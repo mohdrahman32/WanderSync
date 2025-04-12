@@ -1,0 +1,152 @@
+{
+    "state": {
+      "name": "Uttar Pradesh",
+      "hero_image": "state/uttar-pradesh.avif",
+      "overview": {
+        "description": "Uttar Pradesh, located in northern India, is known for its historical landmarks, religious sites, and cultural heritage. Established as a state on January 24, 1950, it features attractions like Varanasi and Agra.",
+        "key_facts": {
+          "capital": "Lucknow",
+          "population": "220 million (approx.)",
+          "language": "Hindi",
+          "area": "243,286 sq km",
+          "established": "January 24, 1950"
+        }
+      },
+      "top_destinations": [
+        {
+          "name": "Varanasi",
+          "image": "place/varanasi.avif",
+          "description": "The spiritual city with Ganges ghats and Kashi Vishwanath Temple.",
+          "explore_link": "../varanasi.html",
+          "best_time": "October to March",
+          "travel_tips": "Take a Ganga Aarti; wear comfortable shoes.",
+          "entry_fee": "Free (some temples ₹10-₹50)"
+        },
+        {
+          "name": "Agra",
+          "image": "place/taj-mahal.avif",
+          "description": "Home to the Taj Mahal and Agra Fort.",
+          "explore_link": "../agra.html",
+          "best_time": "October to March",
+          "travel_tips": "Visit Taj at sunrise; book tickets online.",
+          "entry_fee": "₹50 (Taj Mahal)"
+        },
+        {
+          "name": "Lucknow",
+          "image": "place/lucknow.avif",
+          "description": "Known for Bara Imambara and Nawabi culture.",
+          "explore_link": "../lucknow.html",
+          "best_time": "October to March",
+          "travel_tips": "Try local kebabs; visit Chota Imambara.",
+          "entry_fee": "₹25 (Bara Imambara)"
+        }
+      ],
+      "accommodation": [
+        {
+          "name": "Taj View Hotel",
+          "category": "Luxury",
+          "description": "Luxurious stay in Agra.",
+          "price_range": "₹7,000+",
+          "book_link": "https://example.com/book/taj-view"
+        },
+        {
+          "name": "Radisson Hotel",
+          "category": "Luxury",
+          "description": "Premium hotel in Varanasi.",
+          "price_range": "¥6,000+",
+          "book_link": "https://example.com/book/radisson"
+        },
+        {
+          "name": "Hotel Clarks Avadh",
+          "category": "Moderate",
+          "description": "Comfortable stay in Lucknow.",
+          "price_range": "¥2,000-¥3,500",
+          "book_link": "https://example.com/book/clarks-avadh"
+        },
+        {
+          "name": "Varanasi Guest House",
+          "category": "Budget",
+          "description": "Affordable option in Varanasi.",
+          "price_range": "¥1,000-¥2,500",
+          "book_link": "https://example.com/book/varanasi-guest"
+        }
+      ],
+      "culinary_delights": [
+        {
+          "name": "Netaji Restaurant",
+          "cuisine": "Awadhi",
+          "cost": "¥300-¥700",
+          "description": "Famous for biryani and kebabs."
+        },
+        {
+          "name": "Shankara Vegis",
+          "cuisine": "North Indian",
+          "cost": "¥200-¥500",
+          "description": "Known for vegetarian thali."
+        },
+        {
+          "name": "Café Coffee Day",
+          "cuisine": "Cafe",
+          "cost": "¥200-¥500",
+          "description": "Cozy spot for coffee and snacks."
+        },
+        {
+          "name": "Dasaprakash",
+          "cuisine": "Indian",
+          "cost": "¥400-¥900",
+          "description": "Popular for South Indian and North Indian fusion."
+        },
+        {
+          "name": "Street Food at Chowk",
+          "cuisine": "Street Food",
+          "cost": "¥100-¥300",
+          "description": "Famous for chaat and samosas."
+        },
+        {
+          "name": "The Oberoi",
+          "cuisine": "Multi-cuisine",
+          "cost": "¥500-¥1,200",
+          "description": "Offers a variety of cuisines."
+        }
+      ],
+      "must_visit_spots": [
+        {
+          "name": "Taj Mahal",
+          "description": "A UNESCO World Heritage Site in Agra.",
+          "tip": "Visit at sunrise for fewer crowds."
+        },
+        {
+          "name": "Kashi Vishwanath Temple",
+          "description": "A sacred Hindu temple in Varanasi.",
+          "tip": "Respect temple customs."
+        },
+        {
+          "name": "Bara Imambara",
+          "description": "A historic monument in Lucknow.",
+          "tip": "Explore the Bhool Bhulaiyaa."
+        },
+        {
+          "name": "Sarnath",
+          "description": "Where Buddha delivered his first sermon.",
+          "tip": "Visit the museum."
+        },
+        {
+          "name": "Fatehpur Sikri",
+          "description": "A deserted Mughal city near Agra.",
+          "tip": "Wear comfortable shoes."
+        },
+        {
+          "name": "Allahabad Fort",
+          "description": "A historic fort on the banks of the Yamuna.",
+          "tip": "Visit during the Kumbh Mela."
+        }
+      ],
+      "travel_essentials": {
+        "how_to_reach": "By road: Agra is 200 km from Delhi (NH19, 3-4 hrs). By train: Varanasi Junction. By air: Chaudhary Charan Singh Airport (Lucknow).",
+        "best_time": "October to March",
+        "local_transport": "Buses, taxis, auto-rickshaws",
+        "tips": "Carry light clothing; avoid summer heat.",
+        "nearby_destinations": "Varanasi (120 km), Lucknow (200 km)"
+      }
+    }
+  }

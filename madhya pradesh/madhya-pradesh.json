@@ -1,0 +1,152 @@
+{
+    "state": {
+      "name": "Madhya Pradesh",
+      "hero_image": "state/madhya-pradesh.avif",
+      "overview": {
+        "description": "Madhya Pradesh, located in central India, is known for its historical monuments, wildlife sanctuaries, and cultural heritage. Established as a state on November 1, 1956, it features attractions like Bhopal and Khajuraho.",
+        "key_facts": {
+          "capital": "Bhopal",
+          "population": "85.3 million (approx.)",
+          "language": "Hindi",
+          "area": "308,252 sq km",
+          "established": "November 1, 1956"
+        }
+      },
+      "top_destinations": [
+        {
+          "name": "Bhopal",
+          "image": "place/bhopal.avif",
+          "description": "The city of lakes with Upper Lake and Van Vihar National Park.",
+          "explore_link": "../bhopal.html",
+          "best_time": "October to March",
+          "travel_tips": "Visit the Taj-ul-Masajid; explore the lake.",
+          "entry_fee": "Free (some sites ₹10-₹50)"
+        },
+        {
+          "name": "Khajuraho",
+          "image": "place/khajuraho.avif",
+          "description": "Famous for its erotic temple architecture and UNESCO site.",
+          "explore_link": "../khajuraho.html",
+          "best_time": "October to March",
+          "travel_tips": "Visit the Western Group of Temples; hire a guide.",
+          "entry_fee": "₹30 (Indians); ₹500 (foreigners)"
+        },
+        {
+          "name": "Kanha National Park",
+          "image": "place/kanha-national-park.avif",
+          "description": "A tiger reserve inspiring The Jungle Book.",
+          "explore_link": "../kanha.html",
+          "best_time": "November to April",
+          "travel_tips": "Book a jeep safari; carry binoculars.",
+          "entry_fee": "₹40 (park entry); ₹500 (safari)"
+        }
+      ],
+      "accommodation": [
+        {
+          "name": "Jehan Numa Palace Hotel",
+          "category": "Luxury",
+          "description": "Luxurious stay in Bhopal.",
+          "price_range": "₹8,000+",
+          "book_link": "https://example.com/book/jehan-numa"
+        },
+        {
+          "name": "Radisson Jass Khajuraho",
+          "category": "Luxury",
+          "description": "Premium resort in Khajuraho.",
+          "price_range": "₹7,000+",
+          "book_link": "https://example.com/book/radisson-jass"
+        },
+        {
+          "name": "Hotel Lake View Ashok",
+          "category": "Moderate",
+          "description": "Comfortable stay in Bhopal.",
+          "price_range": "₹2,500-¥4,500",
+          "book_link": "https://example.com/book/lake-view"
+        },
+        {
+          "name": "Hotel Kanha Jungle Lodge",
+          "category": "Budget",
+          "description": "Affordable option near Kanha National Park.",
+          "price_range": "¥1,500-¥3,000",
+          "book_link": "https://example.com/book/kanha-jungle"
+        }
+      ],
+      "culinary_delights": [
+        {
+          "name": "Shree Annapurna",
+          "cuisine": "Indian",
+          "cost": "¥200-¥500",
+          "description": "Famous for North Indian thalis."
+        },
+        {
+          "name": "Manohar Dairy",
+          "cuisine": "Indian",
+          "cost": "¥300-¥700",
+          "description": "Known for sweets and snacks."
+        },
+        {
+          "name": "Café Coffee Day",
+          "cuisine": "Cafe",
+          "cost": "¥200-¥500",
+          "description": "Cozy spot for coffee and snacks."
+        },
+        {
+          "name": "Kwality Restaurant",
+          "cuisine": "Multi-cuisine",
+          "cost": "¥400-¥900",
+          "description": "Popular for Indian and Chinese dishes."
+        },
+        {
+          "name": "Bhoj Restaurant",
+          "cuisine": "Indian",
+          "cost": "¥300-¥700",
+          "description": "Famous for local Madhya Pradesh cuisine."
+        },
+        {
+          "name": "Taj Restaurant",
+          "cuisine": "North Indian",
+          "cost": "¥500-¥1,200",
+          "description": "Offers a variety of North Indian specialties."
+        }
+      ],
+      "must_visit_spots": [
+        {
+          "name": "Sanchi Stupa",
+          "description": "An ancient Buddhist site with great stupas.",
+          "tip": "Visit early morning for peace."
+        },
+        {
+          "name": "Khajuraho Temples",
+          "description": "World-famous for intricate carvings.",
+          "tip": "Attend the light and sound show."
+        },
+        {
+          "name": "Pachmarhi",
+          "description": "A hill station with waterfalls and caves.",
+          "tip": "Trek to Bee Falls."
+        },
+        {
+          "name": "Bandhavgarh National Park",
+          "description": "Known for high tiger density.",
+          "tip": "Book a morning safari."
+        },
+        {
+          "name": "Gwalior Fort",
+          "description": "A historic fort with stunning architecture.",
+          "tip": "Visit the Man Mandir Palace."
+        },
+        {
+          "name": "Orchha",
+          "description": "Famous for palaces and temples along the Betwa River.",
+          "tip": "Explore the Chaturbhuj Temple."
+        }
+      ],
+      "travel_essentials": {
+        "how_to_reach": "By road: Bhopal is 780 km from Delhi (NH46, 12-14 hrs). By train: Bhopal Junction connects major cities. By air: Raja Bhoj Airport (Bhopal).",
+        "best_time": "October to March",
+        "local_transport": "Buses, auto-rickshaws, taxis",
+        "tips": "Carry light clothing; book safaris in advance.",
+        "nearby_destinations": "Khajuraho (280 km), Kanha (400 km)"
+      }
+    }
+  }

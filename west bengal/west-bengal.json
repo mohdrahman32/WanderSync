@@ -1,0 +1,152 @@
+{
+    "state": {
+      "name": "West Bengal",
+      "hero_image": "state/west-bengal.avif",
+      "overview": {
+        "description": "West Bengal, located in eastern India, is known for its rich culture, literature, and natural beauty. Established as a state on January 26, 1950, it features attractions like Kolkata and Darjeeling.",
+        "key_facts": {
+          "capital": "Kolkata",
+          "population": "100 million (approx.)",
+          "language": "Bengali",
+          "area": "88,752 sq km",
+          "established": "January 26, 1950"
+        }
+      },
+      "top_destinations": [
+        {
+          "name": "Kolkata",
+          "image": "place/kolkata.avif",
+          "description": "The cultural hub with Victoria Memorial and Howrah Bridge.",
+          "explore_link": "../kolkata.html",
+          "best_time": "October to March",
+          "travel_tips": "Visit during Durga Puja; explore street food.",
+          "entry_fee": "₹30 (Victoria Memorial)"
+        },
+        {
+          "name": "Darjeeling",
+          "image": "place/darjeeling.avif",
+          "description": "A hill station famous for tea gardens and Kanchenjunga views.",
+          "explore_link": "../darjeeling.html",
+          "best_time": "March to May, October to November",
+          "travel_tips": "Take the toy train; carry warm clothes.",
+          "entry_fee": "Free"
+        },
+        {
+          "name": "Sundarbans",
+          "image": "place/sundarbans.avif",
+          "description": "A UNESCO site with Royal Bengal Tiger safaris.",
+          "explore_link": "../sundarbans.html",
+          "best_time": "October to April",
+          "travel_tips": "Book a guided tour; wear insect repellent.",
+          "entry_fee": "₹50 (entry permit)"
+        }
+      ],
+      "accommodation": [
+        {
+          "name": "The Oberoi Grand",
+          "category": "Luxury",
+          "description": "Luxurious stay in Kolkata.",
+          "price_range": "₹8,000+",
+          "book_link": "https://example.com/book/oberoi-grand"
+        },
+        {
+          "name": "Mayfair Darjeeling",
+          "category": "Luxury",
+          "description": "Premium hotel in Darjeeling.",
+          "price_range": "¥6,500+",
+          "book_link": "https://example.com/book/mayfair-darjeeling"
+        },
+        {
+          "name": "Hotel Lindsay",
+          "category": "Moderate",
+          "description": "Comfortable stay in Kolkata.",
+          "price_range": "¥2,000-¥3,500",
+          "book_link": "https://example.com/book/lindsay"
+        },
+        {
+          "name": "Sundarbans Guest House",
+          "category": "Budget",
+          "description": "Affordable option in Sundarbans.",
+          "price_range": "¥1,000-¥2,500",
+          "book_link": "https://example.com/book/sundarbans-guest"
+        }
+      ],
+      "culinary_delights": [
+        {
+          "name": "6 Ballygunge Place",
+          "cuisine": "Bengali",
+          "cost": "¥300-¥700",
+          "description": "Famous for Bengali thali and fish curry."
+        },
+        {
+          "name": "Oh! Calcutta",
+          "cuisine": "Bengali",
+          "cost": "¥200-¥500",
+          "description": "Known for macher jhol and sweets."
+        },
+        {
+          "name": "Café Coffee Day",
+          "cuisine": "Cafe",
+          "cost": "¥200-¥500",
+          "description": "Cozy spot for coffee and snacks."
+        },
+        {
+          "name": "Bar-B-Q",
+          "cuisine": "Indian",
+          "cost": "¥400-¥900",
+          "description": "Popular for tandoori and biryani."
+        },
+        {
+          "name": "Street Food at New Market",
+          "cuisine": "Street Food",
+          "cost": "¥100-¥300",
+          "description": "Famous for phuchka and kathi rolls."
+        },
+        {
+          "name": "JW Marriott",
+          "cuisine": "Multi-cuisine",
+          "cost": "¥500-¥1,200",
+          "description": "Offers a variety of cuisines."
+        }
+      ],
+      "must_visit_spots": [
+        {
+          "name": "Victoria Memorial",
+          "description": "A grand monument in Kolkata.",
+          "tip": "Visit the museum inside."
+        },
+        {
+          "name": "Darjeeling Himalayan Railway",
+          "description": "A UNESCO heritage toy train.",
+          "tip": "Book tickets in advance."
+        },
+        {
+          "name": "Sundarbans National Park",
+          "description": "A tiger reserve and mangrove forest.",
+          "tip": "Take a boat safari."
+        },
+        {
+          "name": "Howrah Bridge",
+          "description": "An iconic cantilever bridge.",
+          "tip": "Photograph at night."
+        },
+        {
+          "name": "Kalimpong",
+          "description": "A quaint hill town with monasteries.",
+          "tip": "Visit flower nurseries."
+        },
+        {
+          "name": "Belur Math",
+          "description": "A spiritual site near Kolkata.",
+          "tip": "Attend evening aarti."
+        }
+      ],
+      "travel_essentials": {
+        "how_to_reach": "By road: Kolkata is 1,500 km from Delhi (NH19, 24-26 hrs). By train: Howrah Junction. By air: Netaji Subhas Chandra Bose Airport.",
+        "best_time": "October to March",
+        "local_transport": "Buses, taxis, trams",
+        "tips": "Carry light clothing; avoid monsoon floods.",
+        "nearby_destinations": "Darjeeling (650 km), Sundarbans (100 km)"
+      }
+    }
+  }
